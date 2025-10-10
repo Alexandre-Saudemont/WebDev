@@ -1,0 +1,47 @@
+{
+	"homePage": {
+		"home": "首页",
+		"title": "你好，我是",
+		"subtitle": "热衷于打造精美数字体验的全栈开发者",
+		"typingTexts": ["全栈 JavaScript", "网页", "前端"],
+		"skills": "技能",
+		"about": "关于",
+		"project": "我的作品",
+		"contact": "联系我",
+		"hero": {
+			"titlePrefix": "你好，我是",
+			"subtitle": "热衷于打造精美数字体验的全栈开发者",
+
+			"cards": {
+				"frontend": {"title": "Frontend", "desc": "React.js, JavaScript, Responsive Design"},
+				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
+			}
+		}
+	},
+	"aboutPage": {
+		"title": "我的经历",
+		"subtitle": "全栈网页开发者",
+		"paragraphs": [
+			"从小我就对计算机充满热情，在行政工作多年但职业发展没有太大进展后，我决定转行进入 Web 开发领域。",
+			"我最初是自学的，后来加入了 O’Clock 学校以进一步提升技能。培训分为三个阶段：前三个月专注于学习 JavaScript 开发的基础知识，随后一个月专攻 React。",
+			"最后一个月专注于开发一个专业项目，在此期间，我担任了前端开发人员的角色。"
+		]
+	},
+	"contactPage": {
+		"title": "保持联系！",
+		"text": "如想交流一下吗？欢迎通过邮件或电话联系我！",
+		"CV": "下载我的简历"
+	},
+	"projectsPage": {
+		"title1": "Pokedeck 网站",
+		"subtitle1": "一个宝可梦卡牌收集应用，用于构建、整理和管理你的个人卡组",
+		"title2": "台湾网站",
+		"subtitle2": "我在台湾的个人旅行日记，分享文化、美食和难忘的地方",
+		"title3": "Match HSK 网站",
+		"subtitle3": "一款有趣的互动游戏，通过配对学习汉字，按HSK等级分类",
+		"github": "GitHub",
+		"githubFront": "Front-End",
+		"githubBack": "Back-End",
+		"website": "网站"
+	}
+}

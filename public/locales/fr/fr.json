@@ -1,0 +1,45 @@
+{
+	"homePage": {
+		"home": "Accueil",
+		"title": "Salut, je m'appelle",
+		"subtitle": "Développeur full-stack passionné par les belles expériences numériques",
+		"typingTexts": ["FullStack JavaScript ", "Web", "Front-End"],
+		"skills": "Compétences",
+		"about": "A propos",
+		"contact": "Contact",
+		"project": "Mes projets",
+		"hero": {
+			"titlePrefix": "Salut, je m'appelle",
+			"subtitle": "Développeur full-stack passionné par les belles expériences numériques",
+			"cards": {
+				"frontend": {"title": "Frontend", "desc": "React.js, JavaScript, Responsive Design"},
+				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
+			}
+		}
+	},
+	"aboutPage": {
+		"title": "Mon parcours",
+		"paragraphs": [
+			"Passionné par l'informatique depuis mon plus jeune âge, et après plusieurs années dans l'administration sans réelle progression dans ma carrière, je me suis reconverti dans le développement web.",
+			"J’ai d’abord appris en autodidacte avant de rejoindre l’école O’Clock pour approfondir mes compétences. La formation s’est déroulée en trois parties : trois mois dédiés aux fondamentaux du développement en JavaScript, suivis d’un mois de spécialisation en React.",
+			"Le dernier mois était dédié à l'élaboration d'un projet professionnel, au sein duquel j'ai été développeur Front-End."
+		]
+	},
+	"contactPage": {
+		"title": "Restons en contact !",
+		"text": "Envie d’échanger ? Joignez moi par mail ou par téléphone !",
+		"CV": "Télécharger mon CV"
+	},
+	"projectsPage": {
+		"title1": "Site Pokedeck",
+		"subtitle1": "Une application de collection de cartes Pokémon pour créer, trier et gérer votre deck personnel",
+		"title2": "Site Taiwan",
+		"subtitle2": "Mon carnet de voyage interactif à Taïwan : découvertes culturelles, spécialités locales et lieux qui m’ont marqué",
+		"title3": "Site Match HSK",
+		"subtitle3": "Un jeu interactif pour apprendre les caractères chinois en s’amusant, classés par niveaux HSK",
+		"github": "GitHub",
+		"githubFront": "Front-End",
+		"githubBack": "Back-End",
+		"website": "Site Web"
+	}
+}

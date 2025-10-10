@@ -1,0 +1,90 @@
+{
+	"navigation": {
+		"home": "Home",
+		"about": "About",
+		"services": "Services",
+		"projects": "Projects",
+		"contact": "Contact"
+	},
+	"home": {
+		"title": "Hi, I'm",
+		"name": "Alexandre Saudemont",
+		"subtitle": "Full-stack developer passionate about creating beautiful digital experiences",
+		"cta": "View My Work",
+		"cards": {
+			"frontend": {
+				"title": "Frontend",
+				"description": "React, Vue, TypeScript"
+			},
+			"backend": {
+				"title": "Backend",
+				"description": "Node.js, Python, Go"
+			},
+			"devops": {
+				"title": "DevOps",
+				"description": "Docker, AWS, CI/CD"
+			}
+		}
+	},
+	"about": {
+		"title": "About Me",
+		"description": "I'm a passionate full-stack developer with 5+ years of experience building scalable web applications. I love working with modern technologies and creating intuitive user experiences.",
+		"skills": {
+			"title": "Skills",
+			"items": ["JavaScript", "React", "Node.js", "Python", "PostgreSQL", "Docker"]
+		}
+	},
+	"services": {
+		"title": "My Services",
+		"subtitle": "What I can do for you",
+		"items": {
+			"webdev": {
+				"title": "Web Development",
+				"description": "Modern and responsive web applications"
+			},
+			"mobile": {
+				"title": "Mobile Applications",
+				"description": "iOS and Android apps with React Native"
+			},
+			"consulting": {
+				"title": "Technical Consulting",
+				"description": "Architecture and optimization of your projects"
+			}
+		}
+	},
+	"projects": {
+		"title": "Featured Projects",
+		"subtitle": "Some of my recent work",
+		"project1": {
+			"title": "E-commerce Platform",
+			"description": "A modern e-commerce solution built with React and Node.js"
+		},
+		"project2": {
+			"title": "Task Management App",
+			"description": "Collaborative task management with real-time updates"
+		},
+		"project3": {
+			"title": "Analytics Dashboard",
+			"description": "Data visualization dashboard with interactive charts"
+		}
+	},
+	"contact": {
+		"title": "Let's Work Together",
+		"subtitle": "Feel free to reach out for collaborations or just a friendly hello",
+		"form": {
+			"name": "Name",
+			"email": "Email",
+			"message": "Message",
+			"submit": "Send Message"
+		},
+		"social": {
+			"email": "Email",
+			"github": "GitHub",
+			"linkedin": "LinkedIn",
+			"twitter": "Twitter"
+		}
+	},
+	"footer": {
+		"rights": "All rights reserved."
+	}
+}

@@ -8,7 +8,7 @@ import {Moon, Sun} from 'lucide-react';
 
 export default function Header() {
 	const {t} = useTranslation();
-	const {isDarkMode, toggleTheme} = useTheme();
+	const {isDarkMode, toggleDarkMode} = useTheme();
 	const [isScrolled, setIsScrolled] = useState(false);
 
 	useEffect(() => {
@@ -41,7 +41,7 @@ export default function Header() {
 				</ul>
 				<div className='header-controls'>
 					<LanguageSelector />
-					<button onClick={toggleTheme} className='theme-toggle'>
+					<button onClick={toggleDarkMode} className='theme-toggle'>
 						{isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
 					</button>
 				</div>
@@ -76,4 +76,3 @@ function LanguageSelector() {
 		</div>
 	);
 }
-

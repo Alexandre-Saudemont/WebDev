@@ -3,7 +3,7 @@
 import React from 'react';
 import {useTranslation} from 'react-i18next';
 
-export default function ProjectsSection() {
+export default function ProjectsPage() {
 	const {t} = useTranslation();
 
 	const projects = [
@@ -50,4 +50,3 @@ export default function ProjectsSection() {
 		</section>
 	);
 }
-

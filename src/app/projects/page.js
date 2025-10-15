@@ -1,9 +1,9 @@
+import ProjectsPage from '@/components/Projects/ProjectsPage';
+
 export default function Projects() {
 	return (
 		<div className='container'>
-			<h1>Projects Page</h1>
-			<p>This is the projects page.</p>
+			<ProjectsPage />
 		</div>
 	);
 }
-

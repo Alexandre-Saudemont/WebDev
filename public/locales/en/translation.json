@@ -6,85 +6,48 @@
 		"projects": "Projects",
 		"contact": "Contact"
 	},
-	"home": {
+	"homePage": {
+		"home": "Home",
 		"title": "Hi, I'm",
-		"name": "Alexandre Saudemont",
 		"subtitle": "Full-stack developer passionate about creating beautiful digital experiences",
-		"cta": "View My Work",
-		"cards": {
-			"frontend": {
-				"title": "Frontend",
-				"description": "React, Vue, TypeScript"
-			},
-			"backend": {
-				"title": "Backend",
-				"description": "Node.js, Python, Go"
-			},
-			"devops": {
-				"title": "DevOps",
-				"description": "Docker, AWS, CI/CD"
+		"typingTexts": ["FullStack JavaScript", "Web", "Front-End"],
+		"skills": "Skills",
+		"about": "About",
+		"contact": "Contact",
+		"project": "My Work",
+		"hero": {
+			"titlePrefix": "Hi, I'm",
+			"subtitle": "Full-stack developer passionate about creating beautiful digital experiences",
+
+			"cards": {
+				"frontend": {"title": "Frontend", "desc": "React.js, JavaScript, Responsive Design"},
+				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
 			}
 		}
 	},
-	"about": {
-		"title": "About Me",
-		"description": "I'm a passionate full-stack developer with 5+ years of experience building scalable web applications. I love working with modern technologies and creating intuitive user experiences.",
-		"skills": {
-			"title": "Skills",
-			"items": ["JavaScript", "React", "Node.js", "Python", "PostgreSQL", "Docker"]
-		}
+	"aboutPage": {
+		"title": "Career journey",
+		"paragraphs": [
+			"Passionate about computers from a young age, and after several years in administration without real career progression, I decided to transition into web development.",
+			"I first learned on my own before joining O’Clock school to deepen my skills. The training was divided into three parts: three months dedicated to learning the fundamentals of JavaScript development, followed by one month specializing in React.",
+			"The final month was dedicated to the creation of a professional project, in which I worked as a Front-End Developer."
+		]
 	},
-	"services": {
-		"title": "My Services",
-		"subtitle": "What I can do for you",
-		"items": {
-			"webdev": {
-				"title": "Web Development",
-				"description": "Modern and responsive web applications"
-			},
-			"mobile": {
-				"title": "Mobile Applications",
-				"description": "iOS and Android apps with React Native"
-			},
-			"consulting": {
-				"title": "Technical Consulting",
-				"description": "Architecture and optimization of your projects"
-			}
-		}
+	"contactPage": {
+		"title": "Stay in Touch !",
+		"text": "Want to chat? Feel free to reach out to me by email or phone!",
+		"CV": "Download my CV"
 	},
-	"projects": {
-		"title": "Featured Projects",
-		"subtitle": "Some of my recent work",
-		"project1": {
-			"title": "E-commerce Platform",
-			"description": "A modern e-commerce solution built with React and Node.js"
-		},
-		"project2": {
-			"title": "Task Management App",
-			"description": "Collaborative task management with real-time updates"
-		},
-		"project3": {
-			"title": "Analytics Dashboard",
-			"description": "Data visualization dashboard with interactive charts"
-		}
-	},
-	"contact": {
-		"title": "Let's Work Together",
-		"subtitle": "Feel free to reach out for collaborations or just a friendly hello",
-		"form": {
-			"name": "Name",
-			"email": "Email",
-			"message": "Message",
-			"submit": "Send Message"
-		},
-		"social": {
-			"email": "Email",
-			"github": "GitHub",
-			"linkedin": "LinkedIn",
-			"twitter": "Twitter"
-		}
-	},
-	"footer": {
-		"rights": "All rights reserved."
+	"projectsPage": {
+		"title1": "Pokedeck Website",
+		"subtitle1": "A Pokémon card collection app to create, sort, and manage your card deck",
+		"title2": "Taiwan Website",
+		"subtitle2": "Personal travel diary of my journey through Taiwan, sharing culture, food, and memorable places",
+		"title3": "Match HSK Website",
+		"subtitle3": "A fun and interactive game to learn Mandarin characters, organized by HSK levels.",
+		"github": "GitHub",
+		"githubFront": "Front-End",
+		"githubBack": "Back-End",
+		"website": "Website"
 	}
 }

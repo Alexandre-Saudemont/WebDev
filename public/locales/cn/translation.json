@@ -1,4 +1,11 @@
 {
+	"navigation": {
+		"home": "首页",
+		"about": "关于",
+		"services": "服务",
+		"projects": "项目",
+		"contact": "联系我"
+	},
 	"homePage": {
 		"home": "首页",
 		"title": "你好，我是",
@@ -13,7 +20,7 @@
 			"subtitle": "热衷于打造精美数字体验的全栈开发者",
 
 			"cards": {
-				"frontend": {"title": "Frontend", "desc": "React.js, JavaScript, Responsive Design"},
+				"frontend": {"title": "sssssFrontend", "desc": "React.js, JavaScript, Responsive Design"},
 				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
 			}
 		}

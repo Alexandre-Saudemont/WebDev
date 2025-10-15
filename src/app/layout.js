@@ -7,14 +7,9 @@ import Footer from '@/components/Footer';
 
 const inter = Inter({subsets: ['latin']});
 
-export const metadata = {
-	title: 'Alexandre Saudemont - Full Stack Developer',
-	description: 'Développeur full-stack passionné par les belles expériences numériques',
-};
-
 export default function RootLayout({children}) {
 	return (
-		<html lang='en'>
+		<html lang='fr'>
 			<body className={inter.className}>
 				<I18nProvider>
 					<ThemeProvider>

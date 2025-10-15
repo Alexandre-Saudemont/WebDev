@@ -24,16 +24,17 @@ export default function AboutPage() {
 	const {t} = useTranslation();
 	const isDarkMode = useTheme();
 
-	const skills = [
-		{name: 'HTML', dark: html_light, light: html_dark},
-		{name: 'CSS', dark: css_light, light: css_dark},
-		{name: 'JavaScript', dark: js_light, light: js_dark},
-		{name: 'ReactJS', dark: reactjs_light, light: reactjs_dark},
-		{name: 'NodeJs', dark: nodejs_light, light: nodejs_dark},
-		{name: 'ExpressJS', dark: expressjs_light, light: expressjs_dark},
-		{name: 'PostgreSQL', dark: psql_light, light: psql_dark},
-	];
+	const skills = ['HTML', 'CSS', 'JavaScript', 'ReactJS', 'NodeJs', 'ExpressJS', 'PostgreSQL'];
 
+	const skillIcons = {
+		HTML: {dark: html_dark, light: html_light},
+		CSS: {dark: css_dark, light: css_light},
+		JavaScript: {dark: js_dark, light: js_light},
+		ReactJS: {dark: reactjs_dark, light: reactjs_light},
+		NodeJs: {dark: nodejs_dark, light: nodejs_light},
+		ExpressJS: {dark: expressjs_dark, light: expressjs_light},
+		PostgreSQL: {dark: psql_dark, light: psql_light},
+	};
 	const paragraphs = t(`aboutPage.description`, {returnObjects: true});
 
 	return (
@@ -47,7 +48,7 @@ export default function AboutPage() {
 					{skills.map((skill, index) => (
 						<div key={index} className='skill'>
 							{skill.name}
-							<Image src={isDarkMode ? skill.dark : skill.light} alt={skill.name} width={32} height={32} />
+							<Image src={isDarkMode ? skillIcons[skill].light : skillIcons[skill].dark} alt={skill.name} width={32} height={32} />
 						</div>
 					))}
 				</div>

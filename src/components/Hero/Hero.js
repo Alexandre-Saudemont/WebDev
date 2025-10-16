@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {useTranslation} from 'react-i18next';
-import './Hero.module.css';
+import './Hero.css';
 
 export default function Hero() {
 	const {t} = useTranslation();

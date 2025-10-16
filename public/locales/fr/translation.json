@@ -46,7 +46,7 @@
 		},
 		"project2": {
 			"title": "Site Taiwan",
-			"description": "Mon carnet de voyage interactif à Taïwan : découvertes culturelles, spécialités locales et lieux qui m’ont marqué",
+			"description": "Carnet de voyage à Taïwan : découvertes culturelles, spécialités locales et lieux qui m’ont marqué",
 			"tech": ["ReactJS, TypeScript, Scss"]
 		},
 		"project3": {

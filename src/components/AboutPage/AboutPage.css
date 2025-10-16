@@ -8,7 +8,6 @@
 	font-size: 2.5rem;
 	margin-bottom: 2rem;
 	background: var(--gradient);
-
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 }

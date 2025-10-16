@@ -2,6 +2,7 @@
 
 import React from 'react';
 import {useTranslation} from 'react-i18next';
+import './ProjectsPage.css';
 
 export default function ProjectsPage() {
 	const {t} = useTranslation();
@@ -17,10 +18,10 @@ export default function ProjectsPage() {
 						<div key={index} className='project-card'>
 							<div className='project-image'></div>
 							<div className='project-content'>
-								<h3 className='project-title'>{t(`project.${key}.title`)}</h3>
-								<p>{t(`project.${key}.description`)}</p>
+								<h3 className='project-title'>{t(`projectsPage.${key}.title`)}</h3>
+								<p>{t(`projectsPage.${key}.description`)}</p>
 								<div className='project-tech'>
-									{t(`projects.$(key).tech`, {returnObjects: true}).map((tech, index) => (
+									{t(`projectsPage.${key}.tech`, {returnObjects: true}).map((tech, index) => (
 										<span key={index} className='tech-tag'>
 											{tech}
 										</span>

@@ -47,8 +47,8 @@ export default function AboutPage() {
 				<div className='skills'>
 					{skills.map((skill, index) => (
 						<div key={index} className='skill'>
-							{skill.name}
-							<Image src={isDarkMode ? skillIcons[skill].light : skillIcons[skill].dark} alt={skill.name} width={32} height={32} />
+							{skill}
+							<Image src={isDarkMode ? skillIcons[skill].light : skillIcons[skill].dark} alt={skill} width={32} height={32} />
 						</div>
 					))}
 				</div>

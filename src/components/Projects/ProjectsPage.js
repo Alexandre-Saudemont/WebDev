@@ -6,38 +6,22 @@ import {useTranslation} from 'react-i18next';
 export default function ProjectsPage() {
 	const {t} = useTranslation();
 
-	const projects = [
-		{
-			title: t('projects.project1.title'),
-			description: t('projects.project1.description'),
-			tech: ['React', 'Node.js', 'MongoDB'],
-		},
-		{
-			title: t('projects.project2.title'),
-			description: t('projects.project2.description'),
-			tech: ['Next.js', 'TypeScript', 'Tailwind'],
-		},
-		{
-			title: t('projects.project3.title'),
-			description: t('projects.project3.description'),
-			tech: ['Vue.js', 'Express', 'PostgreSQL'],
-		},
-	];
+	const projects = ['project1', 'project2', 'project3'];
 
 	return (
 		<section className='projects'>
 			<div className='container'>
-				<h2>{t('projects.title')}</h2>
+				<h2>{t('projectsPage.title')}</h2>
 				<div className='project-grid'>
-					{projects.map((project, index) => (
+					{projects.map((key, index) => (
 						<div key={index} className='project-card'>
 							<div className='project-image'></div>
 							<div className='project-content'>
-								<h3 className='project-title'>{project.title}</h3>
-								<p>{project.description}</p>
+								<h3 className='project-title'>{t(`project.${key}.title`)}</h3>
+								<p>{t(`project.${key}.description`)}</p>
 								<div className='project-tech'>
-									{project.tech.map((tech, i) => (
-										<span key={i} className='tech-tag'>
+									{t(`projects.$(key).tech`, {returnObjects: true}).map((tech, index) => (
+										<span key={index} className='tech-tag'>
 											{tech}
 										</span>
 									))}

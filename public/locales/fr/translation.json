@@ -25,12 +25,46 @@
 		}
 	},
 	"aboutPage": {
-		"title": "Mon parcours",
-		"description": [
-			"Passionné par l'informatique depuis mon plus jeune âge, et après plusieurs années dans l'administration sans réelle progression dans ma carrière, je me suis reconverti dans le développement web.",
-			"J’ai d’abord appris en autodidacte avant de rejoindre l’école O’Clock pour approfondir mes compétences. La formation s’est déroulée en trois parties : trois mois dédiés aux fondamentaux du développement en JavaScript, suivis d’un mois de spécialisation en React.",
-			"Le dernier mois était dédié à l'élaboration d'un projet professionnel, au sein duquel j'ai été développeur Front-End."
-		]
+		"sections": {
+			"intro": {
+				"title": "À propos de moi",
+				"content": [
+					"Développeur web freelance, j’aide les petites entreprises et les indépendants à créer une présence en ligne professionnelle et efficace.",
+					"Mon objectif : concevoir des sites modernes, performants et adaptés à vos besoins."
+				]
+			},
+			"parcours": {
+				"title": "Mon parcours",
+				"content": [
+					"Passionné par l’informatique depuis mon plus jeune âge, j’ai travaillé plusieurs années dans l’administration avant de me reconvertir dans le développement web.",
+					"J’ai commencé à apprendre en autodidacte, puis j’ai intégré l’école O’Clock pour consolider mes compétences.",
+					"La formation s’est déroulée en trois temps : trois mois dédiés aux fondamentaux du JavaScript, un mois de spécialisation en React, puis un dernier mois consacré à un projet d’équipe, au cours duquel j’ai occupé le rôle de développeur Front-End."
+				]
+			},
+			"method": {
+				"title": "Ma manière de travailler",
+				"content": [
+					"Chaque projet commence par un échange pour comprendre vos besoins et vos objectifs.",
+					"Je privilégie la transparence et la communication tout au long du développement : vous suivez l’avancée du site étape par étape.",
+					"Je peux également vous accompagner après la mise en ligne pour la maintenance ou les évolutions futures."
+				]
+			},
+			"values": {
+				"title": "Mes valeurs",
+				"content": [
+					"Ce qui me motive au quotidien, c’est de voir mes clients fiers du résultat final : un site web qui reflète leur identité, attire de nouveaux clients et leur simplifie la vie.",
+					"Je crois qu’un site réussi est avant tout une collaboration humaine, où la technique est au service de l’idée."
+				]
+			},
+			"skills": {
+				"title": "Mes outils",
+				"content": ["Je conçois des sites modernes et performants avec les technologies suivantes :"]
+			},
+			"cta": {
+				"title": "Discutons de votre projet",
+				"content": ["Vous avez une idée ou un besoin spécifique ? Contactez-moi pour en parler !"]
+			}
+		}
 	},
 	"contactPage": {
 		"title": "Restons en contact !",

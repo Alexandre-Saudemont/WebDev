@@ -194,6 +194,198 @@
 			},
 
 			"lastUpdate": "Dernière mise à jour : "
+		},
+
+		"cgvkeypoint": {
+			"intro": "En faisant appel à AS-WebDev, le Client accepte sans réserve les présentes Conditions Générales de Vente.",
+			"sections": {
+				"1_definitions": {
+					"title": "Définitions",
+					"text": "Client : personne physique ou morale passant commande. Prestataire : Saudemont Alexandre, Auto-entreprise. Contrat : devis signé + CGV. Force majeure : événement imprévisible libérant de l'obligation."
+				},
+				"2_commandes": {
+					"title": "Commandes",
+					"text": "Toute commande se fait via devis signé. Modifications ou prestations supplémentaires feront l'objet d'un nouveau devis."
+				},
+				"3_responsabilite": {
+					"title": "Responsabilités",
+					"text": "Le Client est responsable de ses contenus. Le Prestataire s'engage à fournir une prestation de qualité mais n'est pas responsable des retards imputables au Client, du serveur d'hébergement, ou d'autres causes externes."
+				},
+				"4_creation_site": {
+					"title": "Création de site internet",
+					"text": "Comprend conception, développement, mise en ligne et mises à jour selon devis. Les noms de domaine deviennent la propriété du Client après paiement intégral. L'hébergement et le référencement relèvent d'une obligation de moyens."
+				},
+				"5_paiement": {
+					"title": "Paiement",
+					"text": "Acompte de 30% à la signature, 50% à la fin du développement, solde de 20% à la livraison. Paiement par virement bancaire. Tout retard entraîne pénalités et possible suspension des prestations."
+				},
+				"6_annulation": {
+					"title": "Annulation",
+					"text": "En cas d'annulation par le Client, l'acompte reste acquis au Prestataire, sauf force majeure. En cas de non-respect des CGV, le Prestataire peut suspendre les prestations sans indemnité."
+				},
+				"7_propriete_intellectuelle": {
+					"title": "Propriété intellectuelle",
+					"text": "Les créations restent la propriété du Prestataire, sauf mention contraire. Le Client ne peut les modifier ou en extraire des éléments sans autorisation écrite."
+				},
+				"8_donnees_personnelles": {
+					"title": "Données personnelles",
+					"text": "Les données du Client sont collectées uniquement pour l'exécution du contrat. Le Client peut exercer ses droits d'accès, de rectification, d'effacement et d'opposition selon le RGPD."
+				},
+				"9_droit_applicable": {
+					"title": "Droit applicable",
+					"text": "Les prestations sont soumises au droit français. En cas de litige, le Tribunal du Commerce du domicile du Prestataire est compétent. La langue du contrat est le français."
+				}
+			},
+			"cgvtitle": "Conditions Générales de Vente",
+			"fullcgv": "Voir toutes les conditions générales de ventes",
+			"pdf_link": "Télécharger les Conditions générales de ventes"
+		},
+		"cgv": {
+			"legal": {
+				"cgvComplete": {
+					"title": "Conditions Générales de Vente et de Prestation de Services",
+					"subtitle": "Version complète du 28 Octobre 2025",
+					"articles": [
+						{
+							"title": "Définitions",
+							"paragraphs": [
+								"Client : Toute personne physique capable au sens des Articles 1123 et suivants du Code Civil, ou toute personne morale, qui passe commande d’une prestation auprès du Prestataire.",
+								"Conditions Générales : Désigne les présentes conditions générales de vente et de prestation de services.",
+								"Contrat : Ensemble indivisible constitué du devis signé par le Client et le Prestataire et des présentes Conditions Générales.",
+								"Force Majeure : Désigne un événement à la fois imprévisible, insurmontable et indépendant de la volonté des parties, empêchant celles-ci d’accomplir leurs obligations. La partie qui ne peut pas accomplir une obligation du fait d’un cas de force majeure se trouve libérée de celle-ci.",
+								"Parties : Désigne le Client et le Prestataire.",
+								"Prestataire : Saudemont Alexandre, Auto Entreprise",
+								"Prestation globale : Désigne un ensemble de prestations facturées à la journée, par opposition aux prestations facturées à l’heure."
+							]
+						},
+						{
+							"title": "Article 1. Préambule",
+							"paragraphs": [
+								"Les présentes Conditions Générales ont pour objet de définir les relations et obligations des Parties dans le cadre de leurs relations contractuelles.",
+								"En faisant appel au Prestataire pour la réalisation d’une prestation, le Client reconnaît avoir pris connaissance des Conditions Générales et déclare y adhérer sans réserve, au moment de la signature du devis."
+							]
+						},
+						{
+							"title": "Article 2. Modalités d’application",
+							"paragraphs": [
+								"Les présentes Conditions Générales s’appliquent sans restriction ni réserve, à l’ensemble des prestations de service proposées par le Prestataire. A défaut de dispositions particulières stipulées par écrit, le fait pour le Client de solliciter le Prestataire pour une prestation, implique l’acceptation pleine et entière des présentes Conditions Générales.",
+								"Les Conditions Générales peuvent être modifiées par le Prestataire sans préavis. Par conséquent, le Prestataire conseille au Client de consulter ces Conditions Générales en amont de la signature d’un nouveau devis."
+							]
+						},
+						{
+							"title": "Article 3. Responsabilité",
+							"paragraphs": [
+								"3.1. Responsabilité du Client : Le Client déclare disposer de tous les droits et autorisations nécessaires à la réalisation de la prestation. Le Client est le seul responsable des données et des contenus de son site : textes, vidéos, visuels et photos… Il s’engage à fournir au Prestataire des données conformes à la législation en vigueur, et notamment aux dispositions réglementaires relatives à l’informatique, aux fichiers et aux libertés.",
+								"3.2. Responsabilité du Prestataire : Le Prestataire s’engage à apporter toute l’attention et le soin nécessaires pour fournir une prestation de qualité. Il ne pourra être tenu responsable que pour des faits avérés qui lui seraient exclusivement imputables.",
+								"Par conséquent, la responsabilité du Prestataire ne pourra en aucun cas être retenue dans les cas suivants :",
+								"• Retard dans les délais de livraison, si le Client ne fournit pas les éléments nécessaires à la bonne réalisation de la prestation dans un délai de 5 jours ouvrés.",
+								"• Interruption du service d’hébergement résultant à l’indisponibilité du site Internet du Client, ce service étant assuré par un prestataire externe.",
+								"• Pannes ou ralentissements du réseau Internet ou des réseaux informatiques internes du Client.",
+								"• Utilisation illégale ou transmission du mot de passe ou de toute donnée confidentielle par le Client.",
+								"• Fautes de la part du Client : Dégradation, indisponibilité ou suppression partielle ou totale de fonctionnalités, des pages ou du contenu, anomalies d’affichage, dès le moment où les accès à l’administration du site via la plateforme (CMS) ou aux fichiers du serveur (FTP) auront été transmis au Client.",
+								"• Contenus fournis par le Client, illicites ou ne respectant pas la propriété intellectuelle.",
+								"• Fautes et faits d’un fournisseur de service externe indépendant au Prestataire.",
+								"• Virus présents sur l’ordinateur ou le réseau informatique interne du Client et transmis au site Internet du Client."
+							]
+						},
+						{
+							"title": "Article 4. Passation de commande",
+							"paragraphs": [
+								"La commande est passée par l’intermédiaire d’un devis établi par le Prestataire et signé par le Client. Il est indivisible des présentes Conditions Générales et l’ensemble fait office de contrat entre les Parties.",
+								"Toutes les prestations supplémentaires non prévues dans le devis initial, ou faisant l’objet de demandes de modifications à l’initiative du Client, feront l’objet d’un nouveau devis et seront facturées à l’heure, au taux en vigueur à la date de signature du devis, sauf décision contraire exceptionnelle du Prestataire.",
+								"Dans le cas d’ajout ou de modification de prestations à la demande du Client, le Prestataire ne pourra être tenu pour responsable de tout retard sur le délai de livraison initial."
+							]
+						},
+						{
+							"title": "Article 5. Création de site Internet",
+							"paragraphs": [
+								"5.1. Création : La conception d’un site inclut, sans s’y limiter, la prise de connaissance du projet, la mise en place, la création et le développement, ainsi que toute action jusqu’à la mise en ligne définitive.",
+								"5.2. Mise en Production : Mise en ligne définitive d’un site Internet ou d’une fonctionnalité, après validation de la dernière étape du projet par le Client, par la signature du procès-verbal de livraison. Toute modification demandée après cette étape par le Client fera l’objet d’un nouveau devis.",
+								"5.3. Noms de Domaine : Le Client est responsable du choix de son(ses) nom(s) de domaine et devra s’assurer de la disponibilité du(des) nom(s) de domaine retenu(s). Le Prestataire pourra enregistrer au nom du Client, le (les) nom(s) de domaine choisi(s). Le Client sera propriétaire du (des) nom(s) de domaine réservé(s) une fois la facture intégralement acquittée.",
+								"5.4. Hébergement : L’hébergement est réalisé par un des partenaires du Prestataire. Le Prestataire ne pourra pas être poursuivi pour des problèmes liés au serveur sur lequel est hébergé le site du Client.",
+								"5.5. Référencement : Le Prestataire n’est tenu qu’à une obligation de moyens pour l’optimisation du référencement. Les moteurs de recherche n’ont aucune obligation d’intégrer le site du Client.",
+								"5.6. Actualisation : Toute modification ou ajout de contenu se fera d’un commun accord écrit et pourra faire l’objet d’un nouveau devis.",
+								"5.7. Support : Le support technique est disponible du lundi au vendredi de 10h00 à 15h30, sauf indisponibilité du Prestataire et jours fériés."
+							]
+						},
+						{
+							"title": "Article 6. Partenaires & Sous-traitants",
+							"paragraphs": [
+								"Le Prestataire peut décider de sous-traiter ses prestations en partie ou en totalité, sans préavis. Toutefois, le Prestataire reste l’unique interlocuteur vis-à-vis du Client."
+							]
+						},
+						{
+							"title": "Article 7. Propriété intellectuelle",
+							"paragraphs": [
+								"Tous les droits de propriété intellectuelle relatifs aux prestations spécifiques réalisées pour le Client restent la propriété pleine et entière du Prestataire, sauf mention contraire indiquée sur le devis.",
+								"Le Client n’est pas autorisé à altérer les créations réalisées par le Prestataire, ni à en extraire des éléments, sans l’autorisation écrite préalable du Prestataire."
+							]
+						},
+						{
+							"title": "Article 8. Tarifs",
+							"paragraphs": [
+								"Les tarifs sont exprimés en Euros. La TVA n’étant pas applicable (art. 293B du CGI), les tarifs s’entendent net.",
+								"Les prestations à l’heure sont facturées au prorata du temps passé, par tranche de minutes minimum."
+							]
+						},
+						{
+							"title": "Article 9. Paiement",
+							"paragraphs": [
+								"9.1. Conditions de règlement : Toute commande de prestation globale n’est réputée définitive qu’après versement d’un acompte de 30%. Un second versement de 50% interviendra avant la livraison. Le solde de 20% est dû sous 5 jours ouvrés après signature du PV de livraison.",
+								"9.2. Modalités de paiement : Paiement uniquement par virement bancaire, RIB/IBAN fourni sur le devis et la facture.",
+								"9.3. Délais de paiement et pénalités de retard : Factures payables à réception. Retard entraîne intérêts BCE + 10%, indemnité forfaitaire de 40€, suspension des prestations."
+							]
+						},
+						{
+							"title": "Article 10. Délais de fourniture des prestations",
+							"paragraphs": [
+								"Les délais indiqués sur le devis sont fournis à titre indicatif et ne constituent pas des délais fermes. Le Prestataire ne pourra voir sa responsabilité engagée en cas de retard imputable au Client ou en cas de Force Majeure."
+							]
+						},
+						{
+							"title": "Article 11. Annulation de commande",
+							"paragraphs": [
+								"11.1. Annulation à l’initiative du Client :",
+								"• Prestations forfaitaires : l’acompte versé n’est pas remboursé sauf Force Majeure.",
+								"• Prestations facturées à l’heure : les sommes versées ne sont pas remboursées sauf Force Majeure.",
+								"11.2. Annulation à l’initiative du Prestataire : Non-respect des CGV entraîne l’annulation des prestations en cours, sans indemnité."
+							]
+						},
+						{
+							"title": "Article 12. Crédits & mentions",
+							"paragraphs": [
+								"Le Prestataire peut utiliser ses créations et celles du Client à des fins d’auto-promotion.",
+								"Le Client s’engage à mentionner : « Réalisé par AS-WebDev » sur tous les supports et intégrer le lien https://as-webdev.com pour les sites Internet."
+							]
+						},
+						{
+							"title": "Article 13. Clause résolutoire",
+							"paragraphs": [
+								"En cas de manquement à une obligation contractuelle, l’autre partie peut résilier tout ou partie du contrat après mise en demeure restée sans effet sous 30 jours, sans préjudice de dommages et intérêts."
+							]
+						},
+						{
+							"title": "Article 14. Données personnelles",
+							"paragraphs": [
+								"14.1. Données du Client : Collectées uniquement pour la bonne exécution du contrat, conservées 5 ans maximum. Droit d’accès, rectification, effacement, limitation, opposition et portabilité.",
+								"14.2. Données fournies par le Client : Le Client garantit le respect des obligations légales pour les données qu’il fournit.",
+								"14.3. Données du Prestataire : Le Client s’engage à respecter le RGPD concernant les données du Prestataire."
+							]
+						},
+						{
+							"title": "Article 15. Droit applicable & litige",
+							"paragraphs": [
+								"Les présentes Conditions Générales et les prestations sont régies par le droit français. Tout litige relève du Tribunal de Commerce compétent à la domiciliation du Prestataire."
+							]
+						},
+						{
+							"title": "Article 16. Langue du contrat",
+							"paragraphs": ["Les présentes CGV sont rédigées en français. Seul le texte français fait foi en cas de litige."]
+						}
+					],
+					"lastUpdate": "Dernière mise à jour :"
+				}
+			}
 		}
 	}
 }

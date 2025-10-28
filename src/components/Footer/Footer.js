@@ -4,10 +4,11 @@ import React from 'react';
 import Link from 'next/link';
 import {useTranslation} from 'react-i18next';
 import {Github, Linkedin, Mail} from 'lucide-react';
+import './Footer.css';
 
 export default function Footer() {
 	const {t} = useTranslation();
-
+	const currentYear = new Date().getFullYear();
 	const socialLinks = [
 		{
 			href: 'https://github.com/alexandre-saudemont',
@@ -36,24 +37,19 @@ export default function Footer() {
 						</a>
 					))}
 				</div>
-				<p>© 2024 Alexandre Saudemont. {t('footer.rights')}</p>
+				<p>
+					© {currentYear} AS-WebDev. {t('footer.copyrights')}
+				</p>
+				{t('footer.madeWith')}
+			</div>
+			<div className='footer-legal-container'>
+				<Link href='/legal/mentions-legales' className='footer-legal'>
+					{t('legal.title')}
+				</Link>
+				<Link href='/legal/conditions-generales-vente' className='footer-legal'>
+					{t('legal.subtitle')}
+				</Link>
 			</div>
 		</footer>
 	);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

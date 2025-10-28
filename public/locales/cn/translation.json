@@ -20,35 +20,78 @@
 			"subtitle": "热衷于打造精美数字体验的全栈开发者",
 
 			"cards": {
-				"frontend": {"title": "sssssFrontend", "desc": "React.js, JavaScript, Responsive Design"},
+				"frontend": {"title": "Frontend", "desc": "React.js, JavaScript, Responsive Design"},
 				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
 			}
 		}
 	},
 	"aboutPage": {
-		"title": "我的经历",
-		"subtitle": "全栈网页开发者",
-		"paragraphs": [
-			"从小我就对计算机充满热情，在行政工作多年但职业发展没有太大进展后，我决定转行进入 Web 开发领域。",
-			"我最初是自学的，后来加入了 O’Clock 学校以进一步提升技能。培训分为三个阶段：前三个月专注于学习 JavaScript 开发的基础知识，随后一个月专攻 React。",
-			"最后一个月专注于开发一个专业项目，在此期间，我担任了前端开发人员的角色。"
-		]
+		"sections": {
+			"intro": {
+				"title": "关于我",
+				"content": [
+					"作为一名自由网页开发者，我帮助小型企业和独立专业人士建立专业高效的线上形象。",
+					"我的目标：设计现代化、高性能且符合您需求的网站。"
+				]
+			},
+			"parcours": {
+				"title": "我的经历",
+				"content": [
+					"自幼对信息技术充满热情，在转入网页开发之前，我在行政领域工作了数年。",
+					"我从自学开始，随后加入了O'Clock学校来巩固我的技能。",
+					"培训分为三个阶段：三个月专注于JavaScript基础，一个月专攻React，最后一个月致力于团队项目，期间我担任前端开发人员。"
+				]
+			},
+			"method": {
+				"title": "我的工作方式",
+				"content": [
+					"每个项目都从沟通开始，以了解您的需求和目标。",
+					"在整个开发过程中，我注重透明度和沟通：您可以逐步跟进网站的进展。",
+					"网站上线后，我还可以为您提供维护或未来更新的支持。"
+				]
+			},
+			"values": {
+				"title": "我的价值观",
+				"content": [
+					"我日常的动力来自于看到客户对最终成果感到自豪：一个能够反映他们身份、吸引新客户并简化他们生活的网站。",
+					"我相信一个成功的网站首先是一次人文合作，技术在此服务于创意。"
+				]
+			},
+			"skills": {
+				"title": "我的工具",
+				"content": ["我使用以下技术创建现代且高性能的网站："]
+			},
+			"cta": {
+				"title": "讨论您的项目",
+				"content": ["有想法或具体需求吗？联系我聊聊吧！"]
+			}
+		}
+	},
+	"projectsPage": {
+		"title": "我的项目",
+		"project1": {
+			"title": "宝可梦卡牌网站",
+			"description": "一个宝可梦卡牌收藏应用，用于创建、整理和管理您的个人卡组",
+			"tech": ["ReactJS, NodeJS, PostgreSQL"]
+		},
+		"project2": {
+			"title": "台湾旅游网站",
+			"description": "台湾旅行日记：文化发现、当地特色美食和令我印象深刻的地方",
+			"tech": ["ReactJS, TypeScript, Scss"]
+		},
+		"project3": {
+			"title": "HSK配对网站",
+			"description": "一个互动游戏，通过趣味方式学习汉字，按HSK等级分类",
+			"tech": ["ReactJS, Interactive learning"]
+		},
+		"github": "GitHub",
+		"githubFront": "前端",
+		"githubBack": "后端",
+		"website": "网站"
 	},
 	"contactPage": {
 		"title": "保持联系！",
 		"text": "如想交流一下吗？欢迎通过邮件或电话联系我！",
 		"CV": "下载我的简历"
-	},
-	"projectsPage": {
-		"title1": "Pokedeck 网站",
-		"subtitle1": "一个宝可梦卡牌收集应用，用于构建、整理和管理你的个人卡组",
-		"title2": "台湾网站",
-		"subtitle2": "我在台湾的个人旅行日记，分享文化、美食和难忘的地方",
-		"title3": "Match HSK 网站",
-		"subtitle3": "一款有趣的互动游戏，通过配对学习汉字，按HSK等级分类",
-		"github": "GitHub",
-		"githubFront": "Front-End",
-		"githubBack": "Back-End",
-		"website": "网站"
 	}
 }

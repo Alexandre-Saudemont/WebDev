@@ -26,28 +26,72 @@
 		}
 	},
 	"aboutPage": {
-		"title": "Career journey",
-		"paragraphs": [
-			"Passionate about computers from a young age, and after several years in administration without real career progression, I decided to transition into web development.",
-			"I first learned on my own before joining O’Clock school to deepen my skills. The training was divided into three parts: three months dedicated to learning the fundamentals of JavaScript development, followed by one month specializing in React.",
-			"The final month was dedicated to the creation of a professional project, in which I worked as a Front-End Developer."
-		]
+		"sections": {
+			"intro": {
+				"title": "About Me",
+				"content": [
+					"Freelance web developer, I help small businesses and independent professionals create a professional and effective online presence.",
+					"My goal: to design modern, high-performance websites tailored to your needs."
+				]
+			},
+			"parcours": {
+				"title": "My Journey",
+				"content": [
+					"Passionate about IT since my childhood, I worked several years in administration before transitioning into web development.",
+					"I started learning on my own, then joined O'Clock school to strengthen my skills.",
+					"The training consisted of three phases: three months dedicated to JavaScript fundamentals, one month specializing in React, and a final month dedicated to a team project where I served as Front-End Developer."
+				]
+			},
+			"method": {
+				"title": "My Working Method",
+				"content": [
+					"Every project begins with a discussion to understand your needs and objectives.",
+					"I prioritize transparency and communication throughout the development process: you follow the website's progress step by step.",
+					"I can also support you after launch for maintenance or future updates."
+				]
+			},
+			"values": {
+				"title": "My Values",
+				"content": [
+					"What motivates me daily is seeing my clients proud of the final result: a website that reflects their identity, attracts new customers, and makes their lives easier.",
+					"I believe a successful website is first and foremost a human collaboration, where technique serves the idea."
+				]
+			},
+			"skills": {
+				"title": "My Tools",
+				"content": ["I create modern and performant websites using the following technologies:"]
+			},
+			"cta": {
+				"title": "Let's Discuss Your Project",
+				"content": ["Have an idea or specific need? Contact me to talk about it!"]
+			}
+		}
+	},
+	"projectsPage": {
+		"title": "My Projects",
+		"project1": {
+			"title": "Pokedeck Website",
+			"description": "A Pokémon card collection application to create, sort and manage your personal deck",
+			"tech": ["ReactJS, NodeJS, PostgreSQL"]
+		},
+		"project2": {
+			"title": "Taiwan Website",
+			"description": "Travel diary of Taiwan: cultural discoveries, local specialties and places that marked me",
+			"tech": ["ReactJS, TypeScript, Scss"]
+		},
+		"project3": {
+			"title": "HSK Match Website",
+			"description": "An interactive game to learn Chinese characters while having fun, classified by HSK levels",
+			"tech": ["ReactJS, Interactive learning"]
+		},
+		"github": "GitHub",
+		"githubFront": "Front-End",
+		"githubBack": "Back-End",
+		"website": "Website"
 	},
 	"contactPage": {
 		"title": "Stay in Touch !",
 		"text": "Want to chat? Feel free to reach out to me by email or phone!",
 		"CV": "Download my CV"
-	},
-	"projectsPage": {
-		"title1": "Pokedeck Website",
-		"subtitle1": "A Pokémon card collection app to create, sort, and manage your card deck",
-		"title2": "Taiwan Website",
-		"subtitle2": "Personal travel diary of my journey through Taiwan, sharing culture, food, and memorable places",
-		"title3": "Match HSK Website",
-		"subtitle3": "A fun and interactive game to learn Mandarin characters, organized by HSK levels.",
-		"github": "GitHub",
-		"githubFront": "Front-End",
-		"githubBack": "Back-End",
-		"website": "Website"
 	}
 }

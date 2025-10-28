@@ -66,10 +66,55 @@
 			}
 		}
 	},
-	"contactPage": {
-		"title": "Restons en contact !",
-		"text": "Envie d’échanger ? Joignez moi par mail ou par téléphone !",
-		"CV": "Télécharger mon CV"
+	"services": {
+		"title": "Mes Services",
+		"subtitle": "Des solutions web modernes et accessibles pour booster votre présence en ligne",
+		"items": [
+			{
+				"icon": "🌐",
+				"title": "Sites Vitrines modernes",
+				"description": "Des sites professionnels, rapides et adaptés à tous les écrans pour mettre en avant votre activité.",
+				"features": [
+					"Design moderne et personnalisable",
+					"Optimisation SEO pour être visible sur Google",
+					"Compatible mobile, tablette et ordinateur",
+					"Performance et accessibilité optimisées"
+				]
+			},
+			{
+				"icon": "🛒",
+				"title": "E-commerce sur mesure",
+				"description": "Des boutiques en ligne simples à utiliser et prêtes à vendre, avec paiement sécurisé et gestion facile des produits.",
+				"features": [
+					"Gestion des produits et commandes simplifiée",
+					"Paiements sécurisés et fiables",
+					"Suivi des ventes et statistiques en temps réel",
+					"Optimisation pour la conversion"
+				]
+			},
+			{
+				"icon": "⚙️",
+				"title": "Applications Web dynamiques",
+				"description": "Des applications modernes développées sur mesure pour répondre à vos besoins spécifiques.",
+				"features": [
+					"Architecture claire et évolutive",
+					"API et base de données sécurisées",
+					"Interface intuitive et ergonomique",
+					"Performances optimisées côté client et serveur"
+				]
+			},
+			{
+				"icon": "🔧",
+				"title": "Maintenance & Support",
+				"description": "Un accompagnement continu pour garder votre site performant et à jour.",
+				"features": [
+					"Mises à jour régulières et correctifs",
+					"Sauvegardes et sécurité renforcée",
+					"Optimisation continue des performances",
+					"Support réactif et à l’écoute"
+				]
+			}
+		]
 	},
 	"projectsPage": {
 		"title": "Mes Projets",
@@ -92,5 +137,63 @@
 		"githubFront": "Front-End",
 		"githubBack": "Back-End",
 		"website": "Site Web"
+	},
+	"contactPage": {
+		"title": "Restons en contact !",
+		"text": "Envie d’échanger ? Joignez moi par mail ou par téléphone !",
+		"CV": "Télécharger mon CV"
+	},
+	"footer": {
+		"copyrights": "Tous droits réservés",
+		"madeWith": "Conçu et développé par AS-WebDev"
+	},
+	"legal": {
+		"title": "Mentions Légales",
+		"subtitle": "Condition générales de vente",
+
+		"mention": {
+			"title": "Mentions Légales",
+			"subtitle": "Informations légales obligatoires selon la loi française",
+			"description": "Conformément à la législation française, cette page présente les informations relatives à l'éditeur, à l'hébergement, à la propriété intellectuelle et à la responsabilité du site.",
+
+			"editor": {
+				"title": "Éditeur du site",
+				"name": "AS-WebDev",
+				"address": "France - Télétravail uniquement",
+				"email": "contact@as-webdev.com",
+				"siret": "992 762 674 00016"
+			},
+
+			"hosting": {
+				"title": "Hébergement",
+
+				"prodiver": "Infomaniak Network SA",
+				"address": "Rue Eugène-Marziano 25, 1227 Genève, Suisse",
+				"phone": "+41 22 820 35 44",
+				"website": "https://www.infomaniak.com"
+			},
+			"intellectual": {
+				"title": "Propriété intellectuelle",
+				"description": "L'ensemble du site (structure, design, textes, logos, images, code, etc.) est la propriété exclusive de AS-WebDev, sauf mention contraire.",
+				"description2": "Toute reproduction, totale ou partielle, est interdite sans autorisation écrite préalable."
+			},
+
+			"liability": {
+				"title": "Responsabilité",
+				"description": "AS-WebDev s'efforce de maintenir les informations du site à jour et exactes, mais ne saurait être tenue responsable d'erreurs, d'interruptions ou de dommages liés à son utilisation."
+			},
+
+			"law": {
+				"title": "Droit applicable",
+				"description": "  Les présentes mentions légales sont régies par le droit français. Tout litige relève de la compétence exclusive des tribunaux français."
+			},
+
+			"privacy": {
+				"title": "Protection des données personnelles",
+				"description": "Ce site ne collecte aucune donnée personnelle à des fins commerciales. Aucune information nominative n'est enregistrée ou partagée."
+			},
+
+			"lastUpdate": "Dernière mise à jour : "
+		}
 	}
 }

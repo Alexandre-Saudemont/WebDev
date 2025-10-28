@@ -47,7 +47,7 @@ export default function AboutPage() {
 
 	return (
 		<section className='about'>
-			<div className='container'>
+			<div className='about-container'>
 				{Object.entries(sections).map(([key, section]) => (
 					<div key={key} className={`about-section ${key}`}>
 						<h2>{section.title}</h2>

@@ -254,7 +254,7 @@
 								"Contrat : Ensemble indivisible constitué du devis signé par le Client et le Prestataire et des présentes Conditions Générales.",
 								"Force Majeure : Désigne un événement à la fois imprévisible, insurmontable et indépendant de la volonté des parties, empêchant celles-ci d’accomplir leurs obligations. La partie qui ne peut pas accomplir une obligation du fait d’un cas de force majeure se trouve libérée de celle-ci.",
 								"Parties : Désigne le Client et le Prestataire.",
-								"Prestataire : Saudemont Alexandre, Auto Entreprise",
+								"Prestataire : Saudemont Alexandre, Auto Entreprise représentée sous l’enseigne commerciale AS-WebDev, immatriculée sous le numéro 992 762 674 00016, et dont le siège social est situé au 7 Ter rue du Bastion, 51100 - REIMS.",
 								"Prestation globale : Désigne un ensemble de prestations facturées à la journée, par opposition aux prestations facturées à l’heure."
 							]
 						},
@@ -382,8 +382,7 @@
 							"title": "Article 16. Langue du contrat",
 							"paragraphs": ["Les présentes CGV sont rédigées en français. Seul le texte français fait foi en cas de litige."]
 						}
-					],
-					"lastUpdate": "Dernière mise à jour :"
+					]
 				}
 			}
 		}

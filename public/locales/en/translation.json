@@ -93,5 +93,244 @@
 		"title": "Stay in Touch !",
 		"text": "Want to chat? Feel free to reach out to me by email or phone!",
 		"CV": "Download my CV"
+	},
+	"footer": {
+		"copyrights": "All rights reserved",
+		"madeWith": "Designed and developed by AS-WebDev"
+	},
+	"legal": {
+		"title": "Legal Notice",
+		"subtitle": "General Terms and Conditions of Sale",
+
+		"mention": {
+			"title": "Legal Notice",
+			"subtitle": "Mandatory legal information according to French law",
+			"description": "In accordance with French legislation, this page presents information regarding the publisher, hosting, intellectual property, and liability of the website.",
+
+			"editor": {
+				"title": "Website Publisher",
+				"name": "AS-WebDev",
+				"address": "France - Remote work only",
+				"email": "contact@as-webdev.com",
+				"siret": "992 762 674 00016"
+			},
+
+			"hosting": {
+				"title": "Hosting",
+
+				"prodiver": "Infomaniak Network SA",
+				"address": "Rue Eugène-Marziano 25, 1227 Genève, Switzerland",
+				"phone": "+41 22 820 35 44",
+				"website": "https://www.infomaniak.com"
+			},
+			"intellectual": {
+				"title": "Intellectual Property",
+				"description": "The entire website (structure, design, texts, logos, images, code, etc.) is the exclusive property of AS-WebDev, unless otherwise stated.",
+				"description2": "Any reproduction, in whole or in part, is prohibited without prior written authorization."
+			},
+
+			"liability": {
+				"title": "Liability",
+				"description": "AS-WebDev strives to keep the website's information up-to-date and accurate, but cannot be held responsible for errors, interruptions, or damages related to its use."
+			},
+
+			"law": {
+				"title": "Applicable Law",
+				"description": "These legal notices are governed by French law. Any dispute falls under the exclusive jurisdiction of French courts."
+			},
+
+			"privacy": {
+				"title": "Personal Data Protection",
+				"description": "This website does not collect any personal data for commercial purposes. No nominative information is recorded or shared."
+			},
+
+			"lastUpdate": "Last update: "
+		},
+		"cgvkeypoint": {
+			"intro": "By using AS-WebDev's services, the Client unreservedly accepts these General Terms and Conditions of Sale.",
+			"sections": {
+				"1_definitions": {
+					"title": "Definitions",
+					"text": "Client: individual or legal entity placing an order. Provider: Saudemont Alexandre, Sole Proprietorship. Contract: signed quote + GTC. Force majeure: unforeseeable event releasing from obligation."
+				},
+				"2_commandes": {
+					"title": "Orders",
+					"text": "All orders are placed via a signed quote. Modifications or additional services will be subject to a new quote."
+				},
+				"3_responsabilite": {
+					"title": "Responsibilities",
+					"text": "The Client is responsible for their content. The Provider commits to providing quality service but is not responsible for delays attributable to the Client, the hosting server, or other external causes."
+				},
+				"4_creation_site": {
+					"title": "Website creation",
+					"text": "Includes design, development, launch, and updates according to the quote. Domain names become the property of the Client after full payment. Hosting and SEO are subject to a best-efforts obligation."
+				},
+				"5_paiement": {
+					"title": "Payment",
+					"text": "30% deposit upon signing, 50% at the end of development, 20% balance upon delivery. Payment by bank transfer. Any delay results in penalties and possible suspension of services."
+				},
+				"6_annulation": {
+					"title": "Cancellation",
+					"text": "In case of cancellation by the Client, the deposit remains with the Provider, except in cases of force majeure. In case of non-compliance with the GTC, the Provider may suspend services without compensation."
+				},
+				"7_propriete_intellectuelle": {
+					"title": "Intellectual property",
+					"text": "The creations remain the property of the Provider, unless otherwise stated. The Client may not modify them or extract elements without written authorization."
+				},
+				"8_donnees_personnelles": {
+					"title": "Personal data",
+					"text": "The Client's data is collected solely for the execution of the contract. The Client can exercise their rights of access, rectification, erasure, and opposition under the GDPR."
+				},
+				"9_droit_applicable": {
+					"title": "Applicable law",
+					"text": "The services are subject to French law. In case of dispute, the Commercial Court of the Provider's domicile has jurisdiction. The language of the contract is French."
+				}
+			},
+			"cgvtitle": "General Terms and Conditions of Sale",
+			"fullcgv": "View all general terms and conditions of sale",
+			"pdf_link": "Download the General Terms and Conditions of Sale"
+		},
+		"cgv": {
+			"legal": {
+				"cgvComplete": {
+					"title": "General Terms and Conditions of Sale and Service Provision",
+					"subtitle": "Full version of October 28, 2025",
+					"articles": [
+						{
+							"title": "Definitions",
+							"paragraphs": [
+								"Client: Any capable natural person within the meaning of Articles 1123 et seq. of the Civil Code, or any legal entity, who places an order for a service with the Provider.",
+								"General Terms and Conditions: Refers to these general terms and conditions of sale and service provision.",
+								"Contract: The indivisible whole consisting of the quote signed by the Client and the Provider and these General Terms and Conditions.",
+								"Force Majeure: Refers to an event that is unforeseeable, insurmountable, and independent of the will of the parties, preventing them from fulfilling their obligations. The party unable to fulfill an obligation due to force majeure is released from it.",
+								"Parties: Refers to the Client and the Provider.",
+								"Provider: Saudemont Alexandre, Sole Proprietorship represented under the trade name AS-WebDev, registered under number 992 762 674  00016, with its registered office located at 7 Ter rue du Bastion, 51100 - REIMS.",
+								"Global service: Refers to a set of services billed per day, as opposed to services billed per hour."
+							]
+						},
+						{
+							"title": "Article 1. Preamble",
+							"paragraphs": [
+								"These General Terms and Conditions aim to define the relationships and obligations of the Parties within the framework of their contractual relations.",
+								"By using the Provider's services for the performance of a service, the Client acknowledges having read the General Terms and Conditions and declares to adhere to them without reservation, at the time of signing the quote."
+							]
+						},
+						{
+							"title": "Article 2. Application terms",
+							"paragraphs": [
+								"These General Terms and Conditions apply without restriction or reservation to all service provisions offered by the Provider. In the absence of specific provisions stipulated in writing, the Client's request to the Provider for a service implies full and complete acceptance of these General Terms and Conditions.",
+								"The General Terms and Conditions may be modified by the Provider without notice. Therefore, the Provider advises the Client to consult these General Terms and Conditions prior to signing a new quote."
+							]
+						},
+						{
+							"title": "Article 3. Liability",
+							"paragraphs": [
+								"3.1. Client's Liability: The Client declares to have all necessary rights and authorizations for the performance of the service. The Client is solely responsible for the data and content of their website: texts, videos, visuals, and photos... They undertake to provide the Provider with data compliant with the legislation in force, and in particular with the regulatory provisions relating to data processing, files, and freedoms.",
+								"3.2. Provider's Liability: The Provider undertakes to provide all necessary attention and care to deliver a quality service. They can only be held liable for proven facts that are exclusively attributable to them.",
+								"Consequently, the Provider's liability cannot in any case be retained in the following cases:",
+								"• Delay in delivery times, if the Client does not provide the elements necessary for the proper performance of the service within 5 working days.",
+								"• Interruption of the hosting service resulting in the unavailability of the Client's website, this service being provided by an external provider.",
+								"• Failures or slowdowns of the Internet network or the Client's internal computer networks.",
+								"• Illegal use or transmission of the password or any confidential data by the Client.",
+								"• Faults on the part of the Client: Degradation, unavailability or partial or total deletion of features, pages or content, display anomalies, from the moment access to the site administration via the platform (CMS) or to the server files (FTP) has been transmitted to the Client.",
+								"• Content provided by the Client that is unlawful or does not respect intellectual property.",
+								"• Faults and acts of an external service provider independent of the Provider.",
+								"• Viruses present on the Client's computer or internal computer network and transmitted to the Client's website."
+							]
+						},
+						{
+							"title": "Article 4. Order placement",
+							"paragraphs": [
+								"The order is placed via a quote prepared by the Provider and signed by the Client. It is indivisible from these General Terms and Conditions and the whole constitutes the contract between the Parties.",
+								"All additional services not provided for in the initial quote, or subject to modification requests initiated by the Client, will be subject to a new quote and will be billed per hour, at the rate in effect on the date of signing the quote, unless an exceptional contrary decision by the Provider.",
+								"In the case of addition or modification of services at the Client's request, the Provider cannot be held responsible for any delay in the initial delivery time."
+							]
+						},
+						{
+							"title": "Article 5. Website creation",
+							"paragraphs": [
+								"5.1. Creation: The design of a website includes, but is not limited to, project understanding, setup, creation and development, and all actions up to the final launch.",
+								"5.2. Production Launch: Final launch of a website or feature, after validation of the final project step by the Client, by signing the delivery report. Any modification requested after this step by the Client will be subject to a new quote.",
+								"5.3. Domain Names: The Client is responsible for choosing their domain name(s) and must ensure the availability of the chosen domain name(s). The Provider may register the chosen domain name(s) in the Client's name. The Client will own the reserved domain name(s) once the invoice is fully paid.",
+								"5.4. Hosting: Hosting is provided by one of the Provider's partners. The Provider cannot be pursued for problems related to the server hosting the Client's site.",
+								"5.5. SEO: The Provider is only bound by a best-efforts obligation for SEO optimization. Search engines have no obligation to include the Client's site.",
+								"5.6. Updates: Any modification or addition of content will be made by written mutual agreement and may be subject to a new quote.",
+								"5.7. Support: Technical support is available from Monday to Friday from 10:00 to 15:30, except during Provider unavailability and public holidays."
+							]
+						},
+						{
+							"title": "Article 6. Partners & Subcontractors",
+							"paragraphs": [
+								"The Provider may decide to subcontract its services in part or in full, without notice. However, the Provider remains the sole point of contact for the Client."
+							]
+						},
+						{
+							"title": "Article 7. Intellectual property",
+							"paragraphs": [
+								"All intellectual property rights relating to specific services performed for the Client remain the full and entire property of the Provider, unless otherwise indicated on the quote.",
+								"The Client is not authorized to alter the creations made by the Provider, nor to extract elements from them, without the prior written authorization of the Provider."
+							]
+						},
+						{
+							"title": "Article 8. Prices",
+							"paragraphs": [
+								"Prices are expressed in Euros. VAT not being applicable (art. 293B of the CGI), prices are net.",
+								"Hourly services are billed pro rata based on time spent, with a minimum minute block."
+							]
+						},
+						{
+							"title": "Article 9. Payment",
+							"paragraphs": [
+								"9.1. Payment Terms: Any order for a global service is only deemed final after payment of a 30% deposit. A second payment of 50% will occur before delivery. The 20% balance is due within 5 working days after signing the delivery report.",
+								"9.2. Payment Methods: Payment only by bank transfer, RIB/IBAN provided on the quote and invoice.",
+								"9.3. Payment Deadlines and Late Penalties: Invoices payable upon receipt. Delay results in ECB interest + 10%, fixed compensation of €40, suspension of services."
+							]
+						},
+						{
+							"title": "Article 10. Service delivery times",
+							"paragraphs": [
+								"The deadlines indicated on the quote are provided for information only and are not firm deadlines. The Provider cannot be held liable in case of delay attributable to the Client or in case of Force Majeure."
+							]
+						},
+						{
+							"title": "Article 11. Order cancellation",
+							"paragraphs": [
+								"11.1. Cancellation initiated by the Client:",
+								"• Fixed-price services: the deposit paid is not refundable except in cases of Force Majeure.",
+								"• Hourly-billed services: the sums paid are not refundable except in cases of Force Majeure.",
+								"11.2. Cancellation initiated by the Provider: Non-compliance with the GTC results in cancellation of ongoing services, without compensation."
+							]
+						},
+						{
+							"title": "Article 12. Credits & mentions",
+							"paragraphs": [
+								"The Provider may use its creations and those of the Client for self-promotion purposes.",
+								"The Client undertakes to mention: 'Created by AS-WebDev' on all media and integrate the link https://as-webdev.com for websites."
+							]
+						},
+						{
+							"title": "Article 13. Resolutory clause",
+							"paragraphs": [
+								"In case of breach of a contractual obligation, the other party may terminate all or part of the contract after a formal notice has remained without effect for 30 days, without prejudice to damages."
+							]
+						},
+						{
+							"title": "Article 14. Personal data",
+							"paragraphs": [
+								"14.1. Client's Data: Collected solely for the proper execution of the contract, kept for a maximum of 5 years. Right of access, rectification, erasure, limitation, opposition, and portability.",
+								"14.2. Data provided by the Client: The Client guarantees compliance with legal obligations for the data they provide.",
+								"14.3. Provider's Data: The Client undertakes to respect the GDPR regarding the Provider's data."
+							]
+						},
+						{
+							"title": "Article 15. Applicable law & dispute",
+							"paragraphs": [
+								"These General Terms and Conditions and the services are governed by French law. Any dispute falls under the jurisdiction of the competent Commercial Court at the Provider's domicile."
+							]
+						}
+					]
+				}
+			}
+		}
 	}
 }

@@ -1,6 +1,7 @@
 'use client';
 
 import {useTranslation} from 'react-i18next';
+import Link from 'next/link';
 import './CgvPage.css';
 
 export default function CGVPage() {
@@ -72,17 +73,19 @@ export default function CGVPage() {
 				<section className='legal-section'>
 					<h2>{t('legal.cgvkeypoint.cgvtitle')}</h2>
 					<p>
-						<a href={t('legal.cgv.sections.pdf.link')} target='_blank' rel='noopener noreferrer' className='legal-link'>
-							{t('legal.cgvkeypoint.sections.pdf.text')}
-						</a>
-						<a href={t('legal.cgvkeypoint.full_link')} target='_blank' rel='noopener noreferrer' className='legal-link'></a>
+						<Link href='/cgv' target='_blank' rel='noopener noreferrer' className='legal-link'>
+							{t('legal.cgvkeypoint.fullcgv')}
+						</Link>
 					</p>
+					<a href={t('legal.cgvkeypoint.full_link')} target='_blank' rel='noopener noreferrer' className='legal-link'>
+						{t('legal.cgvkeypoint.pdf_link')}
+					</a>
 				</section>
 
 				{/* Date de mise à jour */}
 				<div className='last-update'>
 					<p>
-						{t('legal.cgv.lastUpdate')} {currentYear}
+						{t('legal.mention.lastUpdate')} {currentYear}
 					</p>
 				</div>
 			</div>

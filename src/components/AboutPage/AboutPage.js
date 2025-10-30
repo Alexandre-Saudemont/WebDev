@@ -42,37 +42,100 @@ export default function AboutPage() {
 		PostgreSQL: {dark: psql_dark, light: psql_light},
 	};
 
-	// Récupère les sections depuis i18n (fallback sur {} si jamais)
+	// Récupère les sections depuis i18n
 	const sections = t('aboutPage.sections', {returnObjects: true}) || {};
 
 	return (
 		<section className='about'>
 			<div className='about-container'>
-				{Object.entries(sections).map(([key, section]) => (
-					<div key={key} className={`about-section ${key}`}>
-						<h2>{section.title}</h2>
+				{/* Groupe 1: Intro + Parcours côte à côte */}
+				<div className='about-section-group'>
+					<div className='about-section-pair'>
+						{sections.intro && (
+							<div className='about-section intro'>
+								<h2>{sections.intro.title}</h2>
+								{sections.intro.content.map((paragraph, i) => (
+									<p key={i}>{paragraph}</p>
+								))}
+							</div>
+						)}
 
-						{section.content.map((paragraph, i) => (
-							<p key={i}>{paragraph}</p>
-						))}
-
-						{key === 'skills' && (
-							<div className='skills-container'>
-								{skills.map((skill, index) => (
-									<div key={index} className='skill'>
-										<span className='skill-label'>{skill}</span>
-										<Image
-											src={isDarkMode ? skillIcons[skill].light : skillIcons[skill].dark}
-											alt={skill}
-											width={32}
-											height={32}
-										/>
-									</div>
+						{sections.parcours && (
+							<div className='about-section parcours'>
+								<h2>{sections.parcours.title}</h2>
+								{sections.parcours.content.map((paragraph, i) => (
+									<p key={i}>{paragraph}</p>
 								))}
 							</div>
 						)}
 					</div>
-				))}
+				</div>
+
+				{/* Groupe 2: Méthode + Valeurs côte à côte */}
+				<div className='about-section-group'>
+					<div className='about-section-pair'>
+						{sections.method && (
+							<div className='about-section method'>
+								<h2>{sections.method.title}</h2>
+								{sections.method.content.map((paragraph, i) => (
+									<p key={i}>{paragraph}</p>
+								))}
+							</div>
+						)}
+
+						{sections.values && (
+							<div className='about-section values'>
+								<h2>{sections.values.title}</h2>
+								{sections.values.content.map((paragraph, i) => (
+									<p key={i}>{paragraph}</p>
+								))}
+							</div>
+						)}
+					</div>
+				</div>
+
+				{/* Skills pleine largeur */}
+				{sections.skills && (
+					<div className='about-section-group'>
+						<div className='about-section-pair'>
+							<div className='about-section skills'>
+								<h2>{sections.skills.title}</h2>
+								{sections.skills.content.map((paragraph, i) => (
+									<p key={i}>{paragraph}</p>
+								))}
+
+								<div className='skills-container'>
+									{skills.map((skill, index) => (
+										<div key={index} className='skill'>
+											<Image
+												src={isDarkMode ? skillIcons[skill].light : skillIcons[skill].dark}
+												alt={skill}
+												width={32}
+												height={32}
+											/>
+											<span className='skill-label'>{skill}</span>
+										</div>
+									))}
+								</div>
+							</div>
+						</div>
+					</div>
+				)}
+
+				{/* CTA pleine largeur */}
+				{sections.cta && (
+					<div className='about-section-group'>
+						<div className='about-section-pair'>
+							<div className='about-section cta'>
+								<h2>{sections.cta.title}</h2>
+								{sections.cta.content.map((paragraph, i) => (
+									<p key={i}>{paragraph}</p>
+								))}
+								<button>Me contacter</button>
+							</div>
+						</div>
+					</div>
+				)}
 			</div>
 		</section>
 	);

@@ -29,93 +29,86 @@
 			"intro": {
 				"title": "À propos de moi",
 				"content": [
-					"Développeur web freelance, j’aide les petites entreprises et les indépendants à créer une présence en ligne professionnelle et efficace.",
-					"Mon objectif : concevoir des sites modernes, performants et adaptés à vos besoins."
+					"Je suis développeur web freelance, spécialisé dans la création de sites modernes et performants pour les indépendants et petites entreprises.",
+					"Mon approche : allier design, clarté et efficacité pour vous aider à développer votre activité en ligne."
 				]
 			},
-			"parcours": {
-				"title": "Mon parcours",
-				"content": [
-					"Passionné par l’informatique depuis mon plus jeune âge, j’ai travaillé plusieurs années dans l’administration avant de me reconvertir dans le développement web.",
-					"J’ai commencé à apprendre en autodidacte, puis j’ai intégré l’école O’Clock pour consolider mes compétences.",
-					"La formation s’est déroulée en trois temps : trois mois dédiés aux fondamentaux du JavaScript, un mois de spécialisation en React, puis un dernier mois consacré à un projet d’équipe, au cours duquel j’ai occupé le rôle de développeur Front-End."
-				]
+			"skills": {
+				"title": "Compétences principales",
+				"content": ["Je conçois et développe des sites sur mesure avec les technologies suivantes :"]
 			},
 			"method": {
 				"title": "Ma manière de travailler",
 				"content": [
-					"Chaque projet commence par un échange pour comprendre vos besoins et vos objectifs.",
-					"Je privilégie la transparence et la communication tout au long du développement : vous suivez l’avancée du site étape par étape.",
-					"Je peux également vous accompagner après la mise en ligne pour la maintenance ou les évolutions futures."
+					"Chaque projet démarre par une discussion pour comprendre vos besoins réels.",
+					"Je privilégie la transparence, la simplicité et la réactivité — vous savez toujours où en est votre projet."
 				]
 			},
 			"values": {
-				"title": "Mes valeurs",
+				"title": "Ce qui m’anime",
 				"content": [
-					"Ce qui me motive au quotidien, c’est de voir mes clients fiers du résultat final : un site web qui reflète leur identité, attire de nouveaux clients et leur simplifie la vie.",
-					"Je crois qu’un site réussi est avant tout une collaboration humaine, où la technique est au service de l’idée."
+					"Créer des sites utiles, esthétiques et pensés pour durer.",
+					"Mon but : que vous soyez fier de votre site et qu’il devienne un vrai atout pour votre activité."
 				]
 			},
-			"skills": {
-				"title": "Mes outils",
-				"content": ["Je conçois des sites modernes et performants avec les technologies suivantes :"]
-			},
 			"cta": {
-				"title": "Discutons de votre projet",
-				"content": ["Vous avez une idée ou un besoin spécifique ? Contactez-moi pour en parler !"]
+				"title": "Travaillons ensemble",
+				"content": ["Vous avez un projet ou une idée ? Parlons-en ! Je vous aide à donner vie à votre site, simplement et efficacement."]
 			}
 		}
 	},
+
 	"services": {
 		"title": "Mes Services",
-		"subtitle": "Des solutions web modernes et accessibles pour booster votre présence en ligne",
+		"subtitle": "Des solutions web claires et modernes, pensées pour les indépendants et petites entreprises",
 		"items": [
 			{
 				"icon": "🌐",
-				"title": "Sites Vitrines modernes",
-				"description": "Des sites professionnels, rapides et adaptés à tous les écrans pour mettre en avant votre activité.",
+				"title": "Sites vitrines modernes",
+				"description": "Je conçois des sites simples, rapides et agréables à utiliser, pour présenter efficacement votre activité en ligne.",
 				"features": [
-					"Design moderne et personnalisable",
-					"Optimisation SEO pour être visible sur Google",
+					"Design sobre et adapté à votre image",
+					"Structure claire pour une navigation fluide",
 					"Compatible mobile, tablette et ordinateur",
-					"Performance et accessibilité optimisées"
+					"Optimisé pour un bon référencement sur Google"
 				]
 			},
 			{
 				"icon": "🛒",
-				"title": "E-commerce sur mesure",
-				"description": "Des boutiques en ligne simples à utiliser et prêtes à vendre, avec paiement sécurisé et gestion facile des produits.",
+				"title": "Petits e-commerces efficaces",
+				"description": "Je mets en place des boutiques en ligne intuitives et sécurisées, parfaites pour démarrer vos ventes sur le web.",
 				"features": [
-					"Gestion des produits et commandes simplifiée",
+					"Interface simple pour gérer vos produits",
 					"Paiements sécurisés et fiables",
-					"Suivi des ventes et statistiques en temps réel",
-					"Optimisation pour la conversion"
+					"Optimisation pour faciliter la conversion",
+					"Accompagnement à la prise en main"
 				]
 			},
 			{
 				"icon": "⚙️",
-				"title": "Applications Web dynamiques",
-				"description": "Des applications modernes développées sur mesure pour répondre à vos besoins spécifiques.",
+				"title": "Applications web personnalisées",
+				"description": "Je développe des outils web adaptés à vos besoins : gestion, formulaires, tableaux de bord, etc.",
 				"features": [
-					"Architecture claire et évolutive",
-					"API et base de données sécurisées",
-					"Interface intuitive et ergonomique",
-					"Performances optimisées côté client et serveur"
+					"Solutions sur mesure à taille humaine",
+					"Développement clair et évolutif",
+					"Interface intuitive et responsive",
+					"Connexion possible à une base de données"
 				]
 			},
 			{
 				"icon": "🔧",
-				"title": "Maintenance & Support",
-				"description": "Un accompagnement continu pour garder votre site performant et à jour.",
+				"title": "Maintenance & accompagnement",
+				"description": "Je vous aide à garder votre site à jour et fonctionnel, même après la mise en ligne.",
 				"features": [
-					"Mises à jour régulières et correctifs",
-					"Sauvegardes et sécurité renforcée",
-					"Optimisation continue des performances",
+					"Mises à jour et petites évolutions",
+					"Sauvegardes régulières",
+					"Amélioration des performances",
 					"Support réactif et à l’écoute"
 				]
 			}
 		]
 	},
+
 	"projectsPage": {
 		"title": "Mes Projets",
 		"project1": {
@@ -147,6 +140,7 @@
 		"copyrights": "Tous droits réservés",
 		"madeWith": "Conçu et développé par AS-WebDev"
 	},
+
 	"legal": {
 		"title": "Mentions Légales",
 		"subtitle": "Condition générales de vente",

@@ -16,12 +16,12 @@ export default function Footer() {
 			label: 'GitHub',
 		},
 		{
-			href: 'https://linkedin.com/in/alexandre-saudemont',
+			href: 'https://www.linkedin.com/in/alexandre-saudemont-535481239/',
 			icon: <Linkedin size={20} />,
 			label: 'LinkedIn',
 		},
 		{
-			href: 'mailto:contact@alexandre-saudemont.fr',
+			href: 'https://mail.google.com/mail/?view=cm&to=alexandre.saudemont.pro@gmail.com',
 			icon: <Mail size={20} />,
 			label: 'Email',
 		},

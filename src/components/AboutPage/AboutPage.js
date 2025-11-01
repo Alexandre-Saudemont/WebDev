@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, {useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
 import Image from 'next/image';
 import {useTheme} from '@/contexts/ThemeContext';
@@ -43,80 +43,94 @@ export default function AboutPage() {
 	};
 
 	// Récupère les sections depuis i18n
-	const sections = t('aboutPage.sections', {returnObjects: true}) || {};
+	const sections = useMemo(() => {
+		try {
+			const data = t('aboutPage.sections', {returnObjects: true});
+			return JSON.parse(JSON.stringify(data));
+		} catch (error) {
+			console.error('Erreur i18n:', error);
+			return {};
+		}
+	}, [t]);
 
 	return (
 		<section className='about'>
 			<div className='about-container'>
-				{/* Groupe 1: Intro + Parcours côte à côte */}
-				<div className='about-section-group'>
-					<div className='about-section-pair'>
-						{sections.intro && (
-							<div className='about-section intro'>
-								<h2>{sections.intro.title}</h2>
-								{sections.intro.content.map((paragraph, i) => (
-									<p key={i}>{paragraph}</p>
-								))}
-							</div>
-						)}
-
-						{sections.parcours && (
-							<div className='about-section parcours'>
-								<h2>{sections.parcours.title}</h2>
-								{sections.parcours.content.map((paragraph, i) => (
-									<p key={i}>{paragraph}</p>
-								))}
-							</div>
-						)}
+				{/* 1er cadre seul et centré */}
+				{sections.intro && (
+					<div className='about-section-single'>
+						<div className='about-section intro'>
+							<h2>{sections.intro.title}</h2>
+							{sections.intro.content.map((paragraph, i) => (
+								<p key={i}>{paragraph}</p>
+							))}
+						</div>
 					</div>
+				)}
+
+				{/* 2ème ligne : Parcours + Méthode côte à côte */}
+				<div className='about-section-pair'>
+					{sections.parcours && (
+						<div className='about-section parcours'>
+							<h2>{sections.parcours.title}</h2>
+							{sections.parcours.content.map((paragraph, i) => (
+								<p key={i}>{paragraph}</p>
+							))}
+						</div>
+					)}
+
+					{sections.method && (
+						<div className='about-section method'>
+							<h2>{sections.method.title}</h2>
+							{sections.method.content.map((paragraph, i) => (
+								<p key={i}>{paragraph}</p>
+							))}
+						</div>
+					)}
+					{sections.values && (
+						<div className='about-section values'>
+							<h2>{sections.values.title}</h2>
+							{sections.values.content.map((paragraph, i) => (
+								<p key={i}>{paragraph}</p>
+							))}
+						</div>
+					)}
 				</div>
 
-				{/* Groupe 2: Méthode + Valeurs côte à côte */}
-				<div className='about-section-group'>
-					<div className='about-section-pair'>
-						{sections.method && (
-							<div className='about-section method'>
-								<h2>{sections.method.title}</h2>
-								{sections.method.content.map((paragraph, i) => (
-									<p key={i}>{paragraph}</p>
-								))}
-							</div>
-						)}
-
-						{sections.values && (
-							<div className='about-section values'>
-								<h2>{sections.values.title}</h2>
-								{sections.values.content.map((paragraph, i) => (
-									<p key={i}>{paragraph}</p>
-								))}
-							</div>
-						)}
-					</div>
+				{/* 3ème ligne : Values + Autre section côte à côte */}
+				<div className='about-section-pair'>
+					{/* Si vous avez une 4ème section, sinon laissez un cadre vide ou supprimez cette partie */}
+					{sections.autre && (
+						<div className='about-section autre'>
+							<h2>{sections.autre.title}</h2>
+							{sections.autre.content.map((paragraph, i) => (
+								<p key={i}>{paragraph}</p>
+							))}
+						</div>
+					)}
 				</div>
 
 				{/* Skills pleine largeur */}
 				{sections.skills && (
-					<div className='about-section-group'>
-						<div className='about-section-pair'>
-							<div className='about-section skills'>
-								<h2>{sections.skills.title}</h2>
-								{sections.skills.content.map((paragraph, i) => (
-									<p key={i}>{paragraph}</p>
-								))}
+					<div className='about-section-full'>
+						<div className='about-section skills'>
+							<h2>{sections.skills.title}</h2>
+							{sections.skills.content.map((paragraph, i) => (
+								<p key={i}>{paragraph}</p>
+							))}
 
-								<div className='skills-container'>
-									{skills.map((skill, index) => (
-										<div key={index} className='skill'>
-											<Image
-												src={isDarkMode ? skillIcons[skill].light : skillIcons[skill].dark}
-												alt={skill}
-												width={32}
-												height={32}
-											/>
-											<span className='skill-label'>{skill}</span>
-										</div>
-									))}
-								</div>
+							<div className='skills-container'>
+								{skills.map((skill, index) => (
+									<div key={index} className='skill'>
+										<Image
+											src={isDarkMode ? skillIcons[skill].light : skillIcons[skill].dark}
+											alt={skill}
+											width={32}
+											height={32}
+										/>
+										<span className='skill-label'>{skill}</span>
+									</div>
+								))}
 							</div>
 						</div>
 					</div>
@@ -124,15 +138,13 @@ export default function AboutPage() {
 
 				{/* CTA pleine largeur */}
 				{sections.cta && (
-					<div className='about-section-group'>
-						<div className='about-section-pair'>
-							<div className='about-section cta'>
-								<h2>{sections.cta.title}</h2>
-								{sections.cta.content.map((paragraph, i) => (
-									<p key={i}>{paragraph}</p>
-								))}
-								<button>Me contacter</button>
-							</div>
+					<div className='about-section-full'>
+						<div className='about-section cta'>
+							<h2>{sections.cta.title}</h2>
+							{sections.cta.content.map((paragraph, i) => (
+								<p key={i}>{paragraph}</p>
+							))}
+							<button>Me contacter</button>
 						</div>
 					</div>
 				)}

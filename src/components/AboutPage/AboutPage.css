@@ -3,7 +3,6 @@
 	padding: 6rem 2rem;
 	display: flex;
 	justify-content: center;
-
 	color: var(--text);
 }
 
@@ -12,22 +11,35 @@
 	max-width: 1100px;
 	display: flex;
 	flex-direction: column;
-	gap: 6rem;
+	gap: 4rem;
 }
 
-/* === Groupes de sections === */
-.about-section-group {
+/* === Cadre seul et centré === */
+.about-section-single {
+	display: flex;
+	justify-content: center;
+}
+
+.about-section-single .about-section {
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* === Paires de sections côte à côte - MÊME TAILLE === */
+.about-section-pair {
+	display: grid !important;
+	grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	gap: 4rem !important;
+	width: 100% !important;
+	align-items: start !important;
+}
+
+/* === Sections pleine largeur === */
+.about-section-full {
 	display: flex;
 	flex-direction: column;
-	gap: 4rem;
-}
-
-/* === Sections côte à côte === */
-.about-section-pair {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 4rem;
-	align-items: start;
 }
 
 /* Sections individuelles */
@@ -39,6 +51,12 @@
 	transition: all 0.3s ease;
 	position: relative;
 	overflow: hidden;
+	width: 100%;
+	box-sizing: border-box;
+	/* Pour forcer la même hauteur si nécessaire */
+	display: flex;
+	flex-direction: column;
+	min-height: 100%; /* S'assure qu'elles prennent toute la hauteur disponible */
 }
 
 .about-section::before {
@@ -56,6 +74,12 @@
 	transform: translateY(-5px);
 	border-color: var(--accent);
 	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* === Titre pour le cadre centré === */
+.about-section-single .about-section h2::after {
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 /* === Titre & texte === */
@@ -80,11 +104,18 @@
 	border-radius: 2px;
 }
 
+.about-section.skills h2::after {
+	left: 50% !important;
+	transform: translateX(-50%) !important;
+}
+
 .about-section p {
 	font-size: 1.05rem;
 	line-height: 1.7;
 	color: var(--text-secondary);
 	margin-bottom: 1rem;
+	/* Permet au texte de prendre l'espace disponible */
+	flex-grow: 1;
 }
 
 .about-section p:last-child {
@@ -93,15 +124,16 @@
 
 /* === Skills section pleine largeur === */
 .about-section.skills {
-	grid-column: 1 / -1;
 	text-align: center;
 }
 
 .skills-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
 	gap: 1.5rem;
 	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
 .skill {
@@ -115,6 +147,7 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 0.8rem;
+	min-width: 15%;
 }
 
 .skill:hover {
@@ -138,7 +171,6 @@
 
 /* === CTA finale pleine largeur === */
 .about-section.cta {
-	grid-column: 1 / -1;
 	text-align: center;
 	background: var(--gradient);
 	border-radius: 24px;
@@ -193,17 +225,16 @@
 /* === Responsive === */
 @media (max-width: 900px) {
 	.about-section-pair {
-		grid-template-columns: 1fr;
-		gap: 2rem;
+		grid-template-columns: 1fr !important; /* Une colonne sur mobile */
+		gap: 2rem !important;
+	}
+
+	.about-section-single .about-section {
+		max-width: 100%;
 	}
 
 	.about-section {
 		padding: 2.5rem 2rem;
-	}
-
-	.about-section.skills,
-	.about-section.cta {
-		grid-column: 1;
 	}
 
 	.skills-container {
@@ -226,7 +257,7 @@
 	}
 
 	.about-container {
-		gap: 4rem;
+		gap: 3rem;
 	}
 
 	.about-section {

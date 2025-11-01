@@ -1,13 +1,22 @@
 'use client';
 
+import {useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
 import {useEffect, useRef} from 'react';
 import './ServicesPage.css';
 
 export default function Services() {
 	const {t} = useTranslation();
-	const services = t('services.items', {returnObjects: true});
 	const containerRef = useRef(null);
+
+	const services = useMemo(() => {
+		try {
+			return t('services.items', {returnObjects: true});
+		} catch (error) {
+			console.error('Erreur i18n:', error);
+			return {};
+		}
+	}, [t]);
 
 	useEffect(() => {
 		const cards = containerRef.current?.querySelectorAll('.service-card');

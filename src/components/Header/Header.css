@@ -3,16 +3,11 @@ header {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding: 2rem 0;
+	padding: 2rem;
 	z-index: 100;
 	transition: all 0.3s ease;
 	background: var(--bg-primary);
 	backdrop-filter: blur(10px);
-}
-
-header.scrolled {
-	background: rgba(10, 10, 10, 0.95);
-	padding: 1rem 0;
 }
 
 nav {

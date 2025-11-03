@@ -4,6 +4,7 @@
 	display: flex;
 	justify-content: center;
 	color: var(--text);
+	background: var(--bg-primary);
 }
 
 .about-container {

@@ -20,11 +20,11 @@ export default function Hero() {
 					</Link>
 				</div>
 				<div className='hero-visual'>
-					<div className='card'>
+					<div className='hero-card'>
 						<h3 className='card-title'>{t('homePage.hero.cards.frontend.title')}</h3>
 						<p>{t('homePage.hero.cards.frontend.desc')}</p>
 					</div>
-					<div className='card'>
+					<div className='hero-card'>
 						<h3 className='card-title'>{t('homePage.hero.cards.backend.title')}</h3>
 						<p>{t('homePage.hero.cards.backend.desc')}</p>
 					</div>

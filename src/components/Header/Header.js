@@ -30,7 +30,7 @@ export default function Header() {
 
 	return (
 		<header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-			<nav className='container'>
+			<nav className='header-container'>
 				<div className='logo'>AS</div>
 				<ul className='nav-links'>
 					{navItems.map((item) => (

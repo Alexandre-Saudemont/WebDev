@@ -29,7 +29,7 @@ export default function Footer() {
 
 	return (
 		<footer>
-			<div className='container'>
+			<div className='footer-container'>
 				<div className='social-links'>
 					{socialLinks.map((social) => (
 						<a key={social.label} href={social.href} target='_blank' rel='noopener noreferrer' aria-label={social.label}>

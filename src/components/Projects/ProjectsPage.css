@@ -3,12 +3,12 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 2rem;
-	padding: 4rem 0;
+	padding: 4rem 2rem;
 }
 
 .project-card {
 	background: var(--bg-secondary);
-	border: 1px solid var(--border);
+	border: 1px solid var(--accent);
 	border-radius: 10px;
 	overflow: hidden;
 	transition: all 0.3s ease;

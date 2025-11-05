@@ -6,6 +6,7 @@ import {useTranslation} from 'react-i18next';
 import {useTheme} from '@/contexts/ThemeContext';
 import {Moon, Sun} from 'lucide-react';
 import './Header.css';
+
 export default function Header() {
 	const {t} = useTranslation();
 	const {isDarkMode, toggleDarkMode} = useTheme();

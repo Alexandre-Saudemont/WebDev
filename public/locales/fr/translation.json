@@ -131,11 +131,61 @@
 		"githubBack": "Back-End",
 		"website": "Site Web"
 	},
-	"contactPage": {
-		"title": "Restons en contact !",
-		"text": "Envie d’échanger ? Joignez moi par mail ou par téléphone !",
-		"CV": "Télécharger mon CV"
+
+	"contact": {
+		"title": "Contactez-moi",
+		"subtitle": "Vous avez un projet web ou souhaitez créer la présence en ligne de votre activité ? Discutons-en ensemble.",
+		"form": {
+			"title": "Formulaire de contact",
+			"description": "Expliquez-moi votre projet ou vos besoins, et je reviendrai vers vous rapidement.",
+			"fields": {
+				"name": "Nom complet",
+				"namePlaceholder": "Votre nom complet",
+				"email": "Adresse email",
+				"emailPlaceholder": "votre@email.com",
+				"subject": "Sujet",
+				"subjectPlaceholder": "Création de site, refonte, devis, question...",
+				"message": "Message",
+				"messagePlaceholder": "Décrivez votre projet ou votre demande..."
+			},
+			"submit": "Envoyer le message",
+			"submitting": "Envoi en cours...",
+			"success": "Message envoyé avec succès !",
+			"error": "Erreur lors de l'envoi",
+			"connectionError": "Erreur de connexion",
+			"securityError": "Erreur de sécurité détectée. Veuillez réessayer dans quelques instants.",
+			"validating": "Validation en cours...",
+			"securityIndicator": "Protection anti-bot active - Votre message est sécurisé"
+		},
+		"info": {
+			"title": "Informations de contact",
+			"description": "Vous pouvez me contacter directement ou via le formulaire ci-contre pour toute question ou demande.",
+			"email": {
+				"title": "Email"
+			},
+			"website": {
+				"title": "Site web"
+			},
+			"location": {
+				"title": "Localisation",
+				"value": "France - Télétravail uniquement"
+			},
+			"availability": {
+				"title": "Disponibilité",
+				"value": "Lun-Ven, 9h-18h (CET)"
+			}
+		},
+		"cta": {
+			"title": "Contact direct",
+			"description": "Vous préférez un contact direct ? Cliquez ici :",
+			"email": "Envoyer un email",
+			"emailTemplate": {
+				"subject": "Demande de projet web - Alexandre Saudemont",
+				"body": "Bonjour Alexandre,\n\nJe souhaite échanger avec vous au sujet d’un projet web.\n\n**Informations sur mon projet :**\n- Type de projet : \n- Description : \n- Budget estimé : \n- Délai souhaité : \n\n**Mes coordonnées :**\n- Nom : \n- Entreprise : \n- Téléphone : \n\nMerci de me recontacter pour en discuter plus en détail.\n\nCordialement,"
+			}
+		}
 	},
+
 	"footer": {
 		"copyrights": "Tous droits réservés",
 		"madeWith": "Conçu et développé par AS-WebDev"

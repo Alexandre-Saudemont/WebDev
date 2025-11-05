@@ -9,6 +9,7 @@ header {
 	transition: all 0.3s ease;
 	background: var(--bg-primary);
 	backdrop-filter: blur(10px);
+	border-bottom: solid 1px var(--accent);
 }
 
 nav {

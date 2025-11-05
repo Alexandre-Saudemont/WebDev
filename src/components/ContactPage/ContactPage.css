@@ -1,0 +1,130 @@
+.contact-section {
+	padding: 4rem 0;
+}
+
+.contact-container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+}
+
+.contact-title {
+	font-size: 2.2rem;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 0.5rem;
+}
+
+.contact-subtitle {
+	text-align: center;
+	color: var(--text-secondary);
+	margin-bottom: 3rem;
+}
+
+.contact-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.contact-form,
+.contact-info {
+	flex: 1;
+	min-width: 320px;
+}
+
+.contact-form label {
+	display: block;
+	margin-bottom: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	padding: 0.75rem;
+	border: 1px solid var(--border-color);
+	border-radius: 8px;
+	background: var(--bg-secondary);
+	color: var(--text-primary);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border-color: var(--accent);
+	outline: none;
+}
+
+.contact-content .contact-form label input:focus,
+.contact-content .contact-form label textarea:focus {
+	border: 1px solid var(--accent);
+}
+
+.contact-submit-btn {
+	display: inline-block;
+	background: var(--accent);
+	color: white;
+	padding: 0.8rem 1.5rem;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: 600;
+	transition: background 0.3s;
+}
+
+.contact-submit-btn:hover {
+	background: var(--accent-hover);
+}
+
+.form-success {
+	color: var(--success);
+	margin-top: 1rem;
+}
+
+.form-error {
+	color: var(--error);
+	margin-top: 1rem;
+}
+
+.contact-info ul {
+	list-style: none;
+	padding: 0;
+}
+
+.contact-info li {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin: 1rem 0;
+}
+
+.contact-icon {
+	color: var(--accent);
+	flex-shrink: 0;
+}
+
+.cta-btn {
+	text-decoration: none;
+	color: var(--accent);
+}
+
+.cta-btn {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.cta-btn span {
+	display: inline-block;
+	padding: 0.75rem 1.5rem;
+	color: var(--accent);
+	border: 2px solid var(--accent);
+	border-radius: 8px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.cta-btn:hover span {
+	background-color: var(--accent);
+	color: white;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}

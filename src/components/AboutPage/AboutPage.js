@@ -68,7 +68,7 @@ export default function AboutPage() {
 					</div>
 				)}
 
-				{/* 2ème ligne : Parcours + Méthode côte à côte */}
+				{/* 2ème ligne */}
 				<div className='about-section-pair'>
 					{sections.parcours && (
 						<div className='about-section parcours'>
@@ -97,9 +97,9 @@ export default function AboutPage() {
 					)}
 				</div>
 
-				{/* 3ème ligne : Values + Autre section côte à côte */}
+				{/* 3ème ligne
 				<div className='about-section-pair'>
-					{/* Si vous avez une 4ème section, sinon laissez un cadre vide ou supprimez cette partie */}
+					
 					{sections.autre && (
 						<div className='about-section autre'>
 							<h2>{sections.autre.title}</h2>
@@ -108,7 +108,7 @@ export default function AboutPage() {
 							))}
 						</div>
 					)}
-				</div>
+				</div> */}
 
 				{/* Skills pleine largeur */}
 				{sections.skills && (

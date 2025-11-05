@@ -7,7 +7,7 @@
 }
 
 .project-card {
-	background: var(--bg-secondary);
+	background: var(--bg-primary);
 	border: 1px solid var(--accent);
 	border-radius: 10px;
 	overflow: hidden;
@@ -74,7 +74,7 @@
 }
 
 .tech-tag {
-	background: var(--bg-primary);
+	background: var(--bg-secondary);
 	color: var(--accent);
 	padding: 0.25rem 0.75rem;
 	border-radius: 20px;

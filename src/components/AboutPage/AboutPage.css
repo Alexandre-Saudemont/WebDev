@@ -15,7 +15,7 @@
 	gap: 4rem;
 }
 
-/* === Cadre seul et centré === */
+/* Cadre seul et centré */
 .about-section-single {
 	display: flex;
 	justify-content: center;
@@ -28,7 +28,10 @@
 	text-align: center;
 }
 
-/* === Paires de sections côte à côte - MÊME TAILLE === */
+.about-section.intro {
+	background-color: var(--bg-primary);
+}
+/* Paires de sections côte à côte - MÊME TAILLE */
 .about-section-pair {
 	display: grid !important;
 	grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -37,7 +40,12 @@
 	align-items: start !important;
 }
 
-/* === Sections pleine largeur === */
+.about-section.parcours,
+.about-section.method,
+.about-section.values {
+	background-color: var(--bg-primary);
+}
+/* Sections pleine largeur */
 .about-section-full {
 	display: flex;
 	flex-direction: column;
@@ -58,6 +66,10 @@
 	display: flex;
 	flex-direction: column;
 	min-height: 100%; /* S'assure qu'elles prennent toute la hauteur disponible */
+}
+
+.about-section-.skills {
+	background-color: var(--bg-primary);
 }
 
 .about-section::before {
@@ -126,6 +138,7 @@
 /* === Skills section pleine largeur === */
 .about-section.skills {
 	text-align: center;
+	background-color: var(--bg-primary);
 }
 
 .skills-container {
@@ -138,7 +151,7 @@
 }
 
 .skill {
-	background: var(--bg-primary);
+	background: var(--bg-secondary);
 	border: 1px solid var(--border);
 	border-radius: 16px;
 	padding: 1.5rem 1rem;
@@ -149,6 +162,7 @@
 	align-items: center;
 	gap: 0.8rem;
 	min-width: 15%;
+	color: var(--text-secondary);
 }
 
 .skill:hover {
@@ -173,7 +187,7 @@
 /* === CTA finale pleine largeur === */
 .about-section.cta {
 	text-align: center;
-	background: var(--gradient);
+	background: var(--bg-primary);
 	border-radius: 24px;
 	padding: 4rem 3rem;
 	color: white;
@@ -186,9 +200,8 @@
 }
 
 .about-section.cta h2 {
-	background: none;
-	-webkit-text-fill-color: white;
 	font-size: 2.2rem;
+	color: var(--text-primary);
 }
 
 .about-section.cta h2::after {
@@ -202,6 +215,7 @@
 	font-size: 1.1rem;
 	max-width: 600px;
 	margin: 1rem auto 2rem;
+	color: var(--text-primary);
 }
 
 .about-section.cta button {
@@ -214,6 +228,12 @@
 	cursor: pointer;
 	transition: all 0.3s ease;
 	font-size: 1rem;
+	width: 20%;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	background-color: var(--bg-primary);
+	border: 1px solid var(--accent);
 }
 
 .about-section.cta button:hover {

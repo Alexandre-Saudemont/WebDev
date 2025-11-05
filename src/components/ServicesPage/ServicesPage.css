@@ -22,7 +22,7 @@
 
 .services-subtitle {
 	font-size: 1.3rem;
-	color: var(--text-secondary);
+	color: var(--text-primary);
 	line-height: 1.6;
 	max-width: 600px;
 	margin: 0 auto;
@@ -35,7 +35,7 @@
 }
 
 .service-card {
-	background: var(--bg-secondary);
+	background: var(--bg-primary);
 	padding: 2.5rem;
 	border-radius: 16px;
 	border: 1px solid var(--border);

@@ -42,7 +42,7 @@
 .contact-form textarea {
 	width: 100%;
 	padding: 0.75rem;
-	border: 1px solid var(--border-color);
+	border: 1px solid #0ca67820;
 	border-radius: 8px;
 	background: var(--bg-secondary);
 	color: var(--text-primary);
@@ -104,28 +104,23 @@
 	flex-shrink: 0;
 }
 
-.cta-btn {
-	text-decoration: none;
-	color: var(--accent);
+.contact-cta p {
+	padding-bottom: 2rem;
 }
 
 .cta-btn {
 	display: inline-block;
-	text-decoration: none;
-	padding-top: 2rem;
-}
-
-.cta-btn span {
-	display: inline-block;
-	padding: 0.75rem 1.5rem;
+	background: var(--bg-secondary);
 	color: var(--accent);
+	padding: 0.8rem 1.5rem;
 	border: 2px solid var(--accent);
 	border-radius: 8px;
+	cursor: pointer;
 	font-weight: 600;
-	transition: all 0.3s ease;
+	transition: background 0.3s;
 }
 
-.cta-btn:hover span {
+.cta-btn:hover {
 	background-color: var(--accent);
 	color: var(--text-primary);
 	transform: translateY(-2px);

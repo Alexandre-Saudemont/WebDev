@@ -131,9 +131,9 @@ const Contact = () => {
 						<div className='contact-cta'>
 							<h4>{t('contact.cta.title')}</h4>
 							<p>{t('contact.cta.description')}</p>
-							<button href={mailTo} className='cta-btn'>
-								{t('contact.cta.email')}
-							</button>
+							<a href={mailTo} className='cta-btn'>
+								<span>{t('contact.cta.email')}</span>
+							</a>
 						</div>
 					</div>
 				</div>

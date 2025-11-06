@@ -89,10 +89,58 @@
 		"githubBack": "后端",
 		"website": "网站"
 	},
-	"contactPage": {
-		"title": "保持联系！",
-		"text": "如想交流一下吗？欢迎通过邮件或电话联系我！",
-		"CV": "下载我的简历"
+	"contact": {
+		"title": "联系我",
+		"subtitle": "您有网页项目，或想为您的业务建立线上形象吗？让我们一起讨论吧。",
+		"form": {
+			"title": "联系表单",
+			"description": "请向我说明您的项目或需求，我会尽快回复您。",
+			"fields": {
+				"name": "全名",
+				"namePlaceholder": "您的全名",
+				"email": "电子邮箱",
+				"emailPlaceholder": "your@email.com",
+				"subject": "主题",
+				"subjectPlaceholder": "网站创建、改版、报价、问题等...",
+				"message": "留言",
+				"messagePlaceholder": "请描述您的项目或请求..."
+			},
+			"submit": "发送消息",
+			"submitting": "发送中...",
+			"success": "消息发送成功！",
+			"error": "发送时出错",
+			"connectionError": "连接错误",
+			"securityError": "检测到安全错误，请稍后重试。",
+			"validating": "验证中...",
+			"securityIndicator": "防机器人保护已启用 - 您的消息是安全的"
+		},
+		"info": {
+			"title": "联系信息",
+			"description": "您可以直接联系我，或通过旁边的表单提出问题或请求。",
+			"email": {
+				"title": "电子邮箱"
+			},
+			"website": {
+				"title": "网站"
+			},
+			"location": {
+				"title": "所在地",
+				"value": "法国 - 仅远程工作"
+			},
+			"availability": {
+				"title": "可用时间",
+				"value": "周一至周五，9:00–18:00（CET）"
+			}
+		},
+		"cta": {
+			"title": "直接联系",
+			"description": "更喜欢直接联系？请点击这里：",
+			"email": "发送邮件",
+			"emailTemplate": {
+				"subject": "网页项目咨询 - Alexandre Saudemont",
+				"body": "您好 Alexandre，\n\n我想与您讨论一个网页项目。\n\n**项目详情：**\n- 项目类型：\n- 项目描述：\n- 预计预算：\n- 希望完成时间：\n\n**我的信息：**\n- 姓名：\n- 公司：\n- 电话：\n\n请联系我进一步讨论。\n\n此致，敬礼。"
+			}
+		}
 	},
 	"footer": {
 		"copyrights": "保留所有权利",

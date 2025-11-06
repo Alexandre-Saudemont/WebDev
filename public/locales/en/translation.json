@@ -89,10 +89,59 @@
 		"githubBack": "Back-End",
 		"website": "Website"
 	},
-	"contactPage": {
-		"title": "Stay in Touch !",
-		"text": "Want to chat? Feel free to reach out to me by email or phone!",
-		"CV": "Download my CV"
+
+	"contact": {
+		"title": "Contact Me",
+		"subtitle": "Do you have a web project or want to build your online presence? Let’s discuss it together.",
+		"form": {
+			"title": "Contact Form",
+			"description": "Tell me about your project or your needs, and I’ll get back to you shortly.",
+			"fields": {
+				"name": "Full Name",
+				"namePlaceholder": "Your full name",
+				"email": "Email Address",
+				"emailPlaceholder": "your@email.com",
+				"subject": "Subject",
+				"subjectPlaceholder": "Website creation, redesign, quote, question...",
+				"message": "Message",
+				"messagePlaceholder": "Describe your project or request..."
+			},
+			"submit": "Send Message",
+			"submitting": "Sending...",
+			"success": "Message sent successfully!",
+			"error": "Error while sending",
+			"connectionError": "Connection error",
+			"securityError": "Security error detected. Please try again shortly.",
+			"validating": "Validating...",
+			"securityIndicator": "Anti-bot protection active - Your message is secured"
+		},
+		"info": {
+			"title": "Contact Information",
+			"description": "You can contact me directly or use the form to ask any question or request.",
+			"email": {
+				"title": "Email"
+			},
+			"website": {
+				"title": "Website"
+			},
+			"location": {
+				"title": "Location",
+				"value": "France - Remote only"
+			},
+			"availability": {
+				"title": "Availability",
+				"value": "Mon–Fri, 9am–6pm (CET)"
+			}
+		},
+		"cta": {
+			"title": "Direct Contact",
+			"description": "Prefer direct contact? Click here:",
+			"email": "Send an Email",
+			"emailTemplate": {
+				"subject": "Web Project Inquiry - Alexandre Saudemont",
+				"body": "Hello Alexandre,\n\nI would like to discuss a web project with you.\n\n**Project details:**\n- Project type:\n- Description:\n- Estimated budget:\n- Desired deadline:\n\n**My information:**\n- Name:\n- Company:\n- Phone:\n\nPlease contact me to discuss further.\n\nBest regards,"
+			}
+		}
 	},
 	"footer": {
 		"copyrights": "All rights reserved",

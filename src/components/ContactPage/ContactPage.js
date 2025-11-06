@@ -104,13 +104,13 @@ const Contact = () => {
 							<li>
 								<Mail className='contact-icon' />
 								<span>
-									<strong>{t('contact.info.email.title')} :</strong> contact@alexandre-saudemont.fr
+									<strong>{t('contact.info.email.title')} :</strong> contact@as-webdev.com
 								</span>
 							</li>
 							<li>
 								<Globe className='contact-icon' />
 								<span>
-									<strong>{t('contact.info.website.title')} :</strong> portfolio.alexandre-saudemont.fr
+									<strong>{t('contact.info.website.title')} :</strong> as-webdev.com
 								</span>
 							</li>
 							<li>

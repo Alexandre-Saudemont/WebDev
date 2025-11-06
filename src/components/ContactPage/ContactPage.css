@@ -104,6 +104,9 @@
 	flex-shrink: 0;
 }
 
+.contact-cta p {
+	padding-bottom: 2rem;
+}
 .cta-btn {
 	text-decoration: none;
 	color: var(--accent);

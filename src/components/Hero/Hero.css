@@ -97,6 +97,97 @@
 	background: #1a1a1a;
 }
 
+/* Home About Section */
+.home-about {
+	max-width: 1200px;
+	margin: auto;
+	padding-bottom: 4rem;
+}
+
+.home-about-container {
+	display: grid;
+	grid-template-columns: 1.2fr 1fr;
+	gap: 4rem;
+	align-items: start;
+	background: var(--bg-primary);
+	border: 1px solid var(--border);
+	border-radius: 20px;
+	padding: 3rem;
+}
+
+.home-about-content h2 {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+	background: var(--gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.home-about-content p {
+	color: var(--text-secondary);
+	line-height: 1.8;
+	margin-bottom: 1rem;
+	font-size: 1.05rem;
+}
+
+.home-about-link {
+	display: inline-block;
+	margin-top: 1rem;
+	color: var(--accent);
+	text-decoration: none;
+	font-weight: 600;
+	transition: transform 0.2s ease;
+}
+
+.home-about-link:hover {
+	transform: translateX(5px);
+}
+
+.home-skills-preview h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1.5rem;
+	color: var(--text-primary);
+}
+
+.home-skills-preview {
+	text-align: center;
+	margin: auto;
+}
+.home-skills-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center; /* ✅ centre chaque ligne, même la dernière */
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.home-skill-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.75rem;
+	padding: 1.25rem;
+	background: var(--bg-secondary);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	transition: all 0.3s ease;
+	width: 120px; /* ✅ taille uniforme des cases */
+	height: 120px;
+}
+
+.home-skill-item:hover {
+	transform: translateY(-4px);
+	border-color: var(--accent);
+	box-shadow: 0 8px 20px rgba(0, 255, 136, 0.1);
+}
+
+.home-skill-item span {
+	font-size: 0.9rem;
+	color: var(--text-primary);
+	font-weight: 500;
+}
+
 @media (max-width: 768px) {
 	.hero {
 		grid-template-columns: 1fr;
@@ -109,4 +200,124 @@
 		width: 90%;
 		flex-direction: column;
 	}
+}
+/* Home teasers */
+.home-teasers {
+	max-width: 1200px;
+	padding-bottom: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5rem;
+	justify-content: center;
+	margin: auto;
+}
+
+.teaser-card {
+	background: var(--bg-primary);
+	border: 1px solid var(--border);
+	border-radius: 20px;
+	padding: 2.5rem;
+	text-decoration: none;
+	color: var(--text-primary);
+	width: 100%;
+	max-width: 480px;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.teaser-card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: var(--gradient);
+	opacity: 0;
+	transition: opacity 0.3s ease;
+	z-index: 0;
+}
+
+.teaser-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 40px rgba(0, 255, 136, 0.2);
+	border-color: var(--accent);
+}
+
+.teaser-card:hover::before {
+	opacity: 0.05;
+}
+
+.teaser-icon {
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+	z-index: 1;
+}
+
+.teaser-card h3 {
+	font-size: 1.8rem;
+	margin: 0;
+	position: relative;
+	z-index: 1;
+	background: var(--gradient);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+.teaser-card > p {
+	margin: 0;
+	color: var(--text-secondary);
+	font-size: 1.05rem;
+	line-height: 1.6;
+	position: relative;
+	z-index: 1;
+}
+
+.teaser-features {
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	position: relative;
+	z-index: 1;
+}
+
+.teaser-features li {
+	color: var(--text-primary);
+	padding-left: 1.5rem;
+	position: relative;
+	font-size: 0.95rem;
+}
+
+.teaser-features li::before {
+	content: '✓';
+	position: absolute;
+	left: 0;
+	color: var(--accent);
+	font-weight: bold;
+}
+
+.teaser-cta {
+	margin-top: auto;
+	padding-top: 1rem;
+	color: var(--accent);
+	font-weight: 600;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	position: relative;
+	z-index: 1;
+	transition: transform 0.2s ease;
+}
+
+.teaser-card:hover .teaser-cta {
+	transform: translateX(5px);
 }

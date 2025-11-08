@@ -1,0 +1,26 @@
+.legal-content-section {
+	padding: 5rem 2rem;
+	background: var(--bg-primary);
+	position: relative;
+	z-index: 1;
+}
+
+.legal-content {
+	display: flex;
+	flex-direction: column;
+	gap: 2.5rem;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.legal-content-section {
+		padding: 4rem 1.5rem;
+	}
+
+	.legal-content {
+		gap: 2rem;
+	}
+}
+

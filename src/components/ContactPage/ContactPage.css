@@ -1,208 +1,33 @@
-.contact-section {
-	padding: 4rem 0;
-}
-
-.contact-container {
-	max-width: 1100px;
-	margin: 0 auto;
-	padding: 0 1.5rem;
-}
-
-.contact-title {
-	font-size: 2.2rem;
-	font-weight: 700;
-	text-align: center;
-	margin-bottom: 0.5rem;
-	color: var(--text-primary);
-	background: var(--gradient);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-}
-
-.contact-subtitle {
-	text-align: center;
-	color: var(--text-secondary);
-	margin-bottom: 3rem;
-}
-
-.contact-content {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 3rem;
-}
-
-.contact-form,
-.contact-info {
-	flex: 1;
-	min-width: 320px;
-}
-
-.contact-form h3,
-.contact-info h3 {
-	color: var(--text-primary);
-	margin-bottom: 1rem;
-	font-size: 1.5rem;
-}
-
-.contact-form h3 {
-	background: var(--gradient);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-}
-
-.form-description {
-	color: var(--text-secondary);
-	margin-bottom: 1.5rem;
-	line-height: 1.6;
-}
-
-.contact-info h3 {
-	color: var(--text-primary);
-}
-
-.contact-info p {
-	color: var(--text-secondary);
-	margin-bottom: 1.5rem;
-	line-height: 1.6;
-}
-
-.contact-info li span {
-	color: var(--text-primary);
-}
-
-.contact-info li span strong {
-	color: var(--text-primary);
-	font-weight: 600;
-}
-
-.contact-cta {
-	margin-top: 2rem;
-	padding-top: 2rem;
-	border-top: 1px solid var(--border);
-}
-
-.contact-cta h4 {
-	color: var(--text-primary);
-	margin-bottom: 0.75rem;
-	font-size: 1.2rem;
-}
-
-.contact-cta p {
-	color: var(--text-secondary);
-	margin-bottom: 1rem;
-	line-height: 1.6;
-}
-
-.contact-form label {
-	display: block;
-	margin-bottom: 1rem;
-	color: var(--text-primary);
-	font-weight: 500;
-}
-
-.contact-form input,
-.contact-form textarea {
+.contact-page {
 	width: 100%;
-	padding: 0.75rem;
-	border: 1px solid #0ca67820;
-	border-radius: 8px;
+	color: var(--text-primary);
 	background: var(--bg-secondary);
-	color: var(--text-primary);
-	font-family: var(--font-sans);
-	transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-	color: var(--text-secondary);
-	opacity: 0.7;
+/* Séparateurs subtils entre sections */
+.contact-page > section:not(:first-child),
+.contact-page > div:not(:first-child) {
+	position: relative;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-	border-color: var(--accent);
-	outline: none;
-	box-shadow: 0 0 0 3px rgba(12, 166, 120, 0.15);
+.contact-page > section:not(:first-child)::before,
+.contact-page > div:not(:first-child)::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	max-width: 1200px;
+	height: 1px;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		var(--border) 20%,
+		var(--border) 80%,
+		transparent
+	);
+	opacity: 0.3;
+	z-index: 0;
 }
 
-.contact-submit-btn {
-	display: inline-block;
-	background: var(--bg-primary);
-	color: var(--accent);
-	padding: 0.8rem 1.5rem;
-	border: 2px solid var(--accent);
-	border-radius: 8px;
-	cursor: pointer;
-	font-weight: 600;
-	transition: all 0.3s ease;
-	font-family: var(--font-sans);
-}
-
-.contact-submit-btn:hover:not(:disabled) {
-	background-color: var(--accent);
-	color: var(--bg-primary);
-	transform: translateY(-2px);
-	box-shadow: 0 4px 12px rgba(12, 166, 120, 0.4);
-}
-
-.contact-submit-btn:disabled {
-	opacity: 0.6;
-	cursor: not-allowed;
-}
-
-.form-success {
-	color: var(--success);
-	margin-top: 1rem;
-}
-
-.form-error {
-	color: var(--error);
-	margin-top: 1rem;
-}
-
-.contact-info ul {
-	list-style: none;
-	padding: 0;
-}
-
-.contact-info li {
-	display: flex;
-	align-items: center;
-	gap: 0.75rem;
-	margin: 1rem 0;
-}
-
-.contact-icon {
-	color: var(--accent);
-	flex-shrink: 0;
-}
-
-.contact-cta p {
-	padding-bottom: 2rem;
-}
-.cta-btn {
-	display: inline-block;
-	text-decoration: none;
-	padding-top: 2rem;
-	color: var(--accent);
-}
-
-.cta-btn span {
-	display: inline-block;
-	padding: 0.75rem 1.5rem;
-	color: var(--accent);
-	padding: 0.8rem 1.5rem;
-	border: 2px solid var(--accent);
-	border-radius: 8px;
-	cursor: pointer;
-	font-weight: 600;
-	transition: background 0.3s;
-}
-
-.cta-btn:hover {
-	background-color: var(--accent);
-	color: var(--text-primary);
-	transform: translateY(-2px);
-}

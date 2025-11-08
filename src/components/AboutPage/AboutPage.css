@@ -1,295 +1,31 @@
-.about {
+.about-page {
 	width: 100%;
-	padding: 6rem 2rem;
-	display: flex;
-	justify-content: center;
-	color: var(--text);
+	color: var(--text-primary);
 	background: var(--bg-secondary);
 }
 
-.about-container {
-	width: 100%;
-	max-width: 1100px;
-	display: flex;
-	flex-direction: column;
-	gap: 4rem;
-}
-
-/* Cadre seul et centré */
-.about-section-single {
-	display: flex;
-	justify-content: center;
-}
-
-.about-section-single .about-section {
-	max-width: 800px;
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.about-section.intro {
-	background-color: var(--bg-primary);
-}
-/* Paires de sections côte à côte - MÊME TAILLE */
-.about-section-pair {
-	display: grid !important;
-	grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-	gap: 4rem !important;
-	width: 100% !important;
-	align-items: start !important;
-}
-
-.about-section.parcours,
-.about-section.method,
-.about-section.values {
-	background-color: var(--bg-primary);
-}
-/* Sections pleine largeur */
-.about-section-full {
-	display: flex;
-	flex-direction: column;
-}
-
-/* Sections individuelles */
-.about-section {
-	background: var(--bg-secondary);
-	border: 1px solid var(--border);
-	border-radius: 20px;
-	padding: 3rem;
-	transition: all 0.3s ease;
+/* Séparateurs subtils entre sections */
+.about-page > section:not(:first-child) {
 	position: relative;
-	overflow: hidden;
-	width: 100%;
-	box-sizing: border-box;
-	/* Pour forcer la même hauteur si nécessaire */
-	display: flex;
-	flex-direction: column;
-	min-height: 100%; /* S'assure qu'elles prennent toute la hauteur disponible */
 }
 
-.about-section-.skills {
-	background-color: var(--bg-primary);
-}
-
-.about-section::before {
+.about-page > section:not(:first-child)::before {
 	content: '';
 	position: absolute;
 	top: 0;
-	left: 0;
-	right: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	max-width: 1200px;
 	height: 1px;
-	background: var(--gradient);
-	opacity: 0.7;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		var(--border) 20%,
+		var(--border) 80%,
+		transparent
+	);
+	opacity: 0.3;
+	z-index: 0;
 }
 
-.about-section:hover {
-	transform: translateY(-5px);
-	border-color: var(--accent);
-	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* === Titre pour le cadre centré === */
-.about-section-single .about-section h2::after {
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-/* === Titre & texte === */
-.about-section h2 {
-	font-size: 1.8rem;
-	font-weight: 700;
-	background: var(--gradient);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	margin-bottom: 1.5rem;
-	position: relative;
-}
-
-.about-section h2::after {
-	content: '';
-	position: absolute;
-	bottom: -8px;
-	left: 0;
-	width: 40px;
-	height: 2px;
-	background: var(--gradient);
-	border-radius: 2px;
-}
-
-.about-section.skills h2::after {
-	left: 50% !important;
-	transform: translateX(-50%) !important;
-}
-
-.about-section p {
-	font-size: 1.05rem;
-	line-height: 1.7;
-	color: var(--text-secondary);
-	margin-bottom: 1rem;
-	/* Permet au texte de prendre l'espace disponible */
-	flex-grow: 1;
-}
-
-.about-section p:last-child {
-	margin-bottom: 0;
-}
-
-/* === Skills section pleine largeur === */
-.about-section.skills {
-	text-align: center;
-	background-color: var(--bg-primary);
-}
-
-.skills-container {
-	gap: 1.5rem;
-	margin-top: 2rem;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-
-.skill {
-	background: var(--bg-secondary);
-	border: 1px solid var(--border);
-	border-radius: 16px;
-	padding: 1.5rem 1rem;
-	text-align: center;
-	transition: all 0.3s ease;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 0.8rem;
-	min-width: 15%;
-	color: var(--text-secondary);
-}
-
-.skill:hover {
-	transform: translateY(-5px);
-	border-color: var(--accent);
-}
-
-.skill-label {
-	font-weight: 600;
-	font-size: 0.95rem;
-	color: var(--text);
-}
-
-.skill img {
-	transition: transform 0.3s ease;
-}
-
-.skill:hover img {
-	transform: scale(1.1);
-}
-
-/* === CTA finale pleine largeur === */
-.about-section.cta {
-	text-align: center;
-	background: var(--bg-primary);
-	border-radius: 24px;
-	padding: 4rem 3rem;
-	color: white;
-	position: relative;
-	overflow: hidden;
-}
-
-.about-section.cta::before {
-	background: rgba(255, 255, 255, 0.1);
-}
-
-.about-section.cta h2 {
-	font-size: 2.2rem;
-	color: var(--text-primary);
-}
-
-.about-section.cta h2::after {
-	background: white;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-.about-section.cta p {
-	color: rgba(255, 255, 255, 0.9);
-	font-size: 1.1rem;
-	max-width: 600px;
-	margin: 1rem auto 2rem;
-	color: var(--text-primary);
-}
-
-.about-section.cta button {
-	background: white;
-	color: var(--accent);
-	padding: 1rem 2.5rem;
-	border-radius: 50px;
-	border: none;
-	font-weight: 600;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	font-size: 1rem;
-	width: 20%;
-	display: flex;
-	justify-content: center;
-	margin: auto;
-	background-color: var(--bg-primary);
-	border: 1px solid var(--accent);
-}
-
-.about-section.cta button:hover {
-	background: var(--accent);
-	color: white;
-	transform: translateY(-3px);
-	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* === Responsive === */
-@media (max-width: 900px) {
-	.about-section-pair {
-		grid-template-columns: 1fr !important; /* Une colonne sur mobile */
-		gap: 2rem !important;
-	}
-
-	.about-section-single .about-section {
-		max-width: 100%;
-	}
-
-	.about-section {
-		padding: 2.5rem 2rem;
-	}
-
-	.skills-container {
-		grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-		gap: 1rem;
-	}
-
-	.about-section.cta {
-		padding: 3rem 2rem;
-	}
-
-	.about-section.cta h2 {
-		font-size: 1.8rem;
-	}
-}
-
-@media (max-width: 600px) {
-	.about {
-		padding: 4rem 1rem;
-	}
-
-	.about-container {
-		gap: 3rem;
-	}
-
-	.about-section {
-		padding: 2rem 1.5rem;
-	}
-
-	.skills-container {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.about-section.cta {
-		padding: 2.5rem 1.5rem;
-	}
-}

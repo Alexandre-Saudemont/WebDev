@@ -1,0 +1,36 @@
+.projects-grid-section {
+	padding: 5rem 2rem;
+	background: var(--bg-primary);
+	position: relative;
+	z-index: 1;
+}
+
+.project-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 2.5rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.projects-grid-section {
+		padding: 4rem 1.5rem;
+	}
+
+	.project-grid {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.projects-grid-section {
+		padding: 3rem 1rem;
+	}
+
+	.project-grid {
+		gap: 1.5rem;
+	}
+}

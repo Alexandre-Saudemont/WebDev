@@ -1,0 +1,38 @@
+.last-update {
+	text-align: center;
+	margin-top: 4rem;
+	padding: 3rem 2rem;
+	background: var(--bg-secondary);
+	color: var(--text-secondary);
+	font-size: 0.95rem;
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 0.6s ease, transform 0.6s ease;
+	position: relative;
+	z-index: 1;
+}
+
+.last-update.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.last-update::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	max-width: 900px;
+	height: 1px;
+	background: linear-gradient(
+		90deg,
+		transparent,
+		var(--border) 20%,
+		var(--border) 80%,
+		transparent
+	);
+	opacity: 0.3;
+}
+

@@ -1,0 +1,60 @@
+.contact-header {
+	padding: 6rem 2rem 5rem;
+	text-align: center;
+	background: var(--bg-secondary);
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+	position: relative;
+	z-index: 1;
+}
+
+.contact-header.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.contact-header-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.header-badge {
+	display: inline-block;
+	padding: 0.5rem 1.25rem;
+	background: rgba(12, 166, 120, 0.1);
+	border: 1px solid rgba(12, 166, 120, 0.2);
+	border-radius: 50px;
+	font-size: 0.9rem;
+	color: var(--accent);
+	margin-bottom: 1.5rem;
+	font-weight: 500;
+}
+
+.darkMode .header-badge {
+	background: rgba(0, 255, 136, 0.1);
+	border-color: rgba(0, 255, 136, 0.2);
+}
+
+.contact-header h1 {
+	font-size: clamp(2.5rem, 5vw, 3.5rem);
+	font-weight: 700;
+	color: var(--text-primary);
+	margin-bottom: 1.5rem;
+	line-height: 1.2;
+	letter-spacing: -0.02em;
+}
+
+.header-subtitle {
+	font-size: clamp(1.1rem, 2vw, 1.25rem);
+	color: var(--text-secondary);
+	line-height: 1.7;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+	.contact-header {
+		padding: 4rem 1.5rem 3rem;
+	}
+}

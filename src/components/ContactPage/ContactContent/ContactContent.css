@@ -1,0 +1,47 @@
+.contact-content-section {
+	padding: 5rem 2rem;
+	background: var(--bg-primary);
+	position: relative;
+	z-index: 1;
+	opacity: 0;
+	transform: translateY(30px);
+	transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.contact-content-section.visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.contact-content {
+	display: grid;
+	grid-template-columns: 1.2fr 1fr;
+	gap: 4rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.contact-info-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+	.contact-content {
+		grid-template-columns: 1fr;
+		gap: 3rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact-content-section {
+		padding: 4rem 1.5rem;
+	}
+
+	.contact-content {
+		gap: 2.5rem;
+	}
+}
+

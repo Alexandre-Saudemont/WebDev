@@ -1,0 +1,474 @@
+{
+	"navigation": {
+		"home": "Accueil",
+		"about": "A propos",
+		"services": "Services",
+		"projects": "Projets",
+		"contact": "Contact"
+	},
+	"homePage": {
+		"home": "Accueil",
+		"title": "Salut, je m'appelle",
+		"subtitle": "Développeur full-stack passionné par les belles expériences numériques",
+		"typingTexts": ["FullStack JavaScript ", "Web", "Front-End"],
+		"skills": "Compétences",
+		"about": "A propos",
+		"contact": "Contact",
+		"project": "Mes projets",
+		"hero": {
+			"titlePrefix": "Salut, je m'appelle",
+			"subtitle": "Développeur full-stack passionné par les belles expériences numériques",
+			"description": "Je crée des sites web modernes et performants pour aider les entreprises à développer leur présence en ligne.",
+			"cards": {
+				"frontend": {"title": "Frontend", "desc": "React.js, JavaScript, Responsive Design"},
+				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
+			}
+		},
+		"stats": {
+			"projects": "Projets réalisés",
+			"satisfaction": "Satisfaction client",
+			"years": "Années d'expérience",
+			"support": "Support disponible"
+		},
+		"process": {
+			"title": "Comment je travaille",
+			"subtitle": "Un processus clair et transparent pour votre projet",
+			"discovery": {
+				"title": "Découverte",
+				"description": "Discussion pour comprendre vos besoins et objectifs"
+			},
+			"design": {
+				"title": "Conception",
+				"description": "Création d'un design moderne et adapté à votre identité"
+			},
+			"development": {
+				"title": "Développement",
+				"description": "Développement avec suivi régulier et transparence totale"
+			},
+			"launch": {
+				"title": "Lancement",
+				"description": "Mise en ligne et accompagnement pour la suite"
+			}
+		}
+	},
+	"aboutPage": {
+		"sections": {
+			"intro": {
+				"title": "À propos de moi",
+				"content": [
+					"Je suis développeur web freelance, spécialisé dans la création de sites modernes et performants pour les indépendants et petites entreprises.",
+					"Mon approche : allier design, clarté et efficacité pour vous aider à développer votre activité en ligne."
+				]
+			},
+			"parcours": {
+				"title": "Mon parcours",
+				"content": [
+					"Passionné par l'informatique depuis mon enfance, j'ai travaillé plusieurs années dans l'administration avant de me reconvertir dans le développement web.",
+					"J'ai commencé par apprendre en autodidacte, puis j'ai rejoint l'école O'Clock pour renforcer mes compétences.",
+					"La formation s'est déroulée en trois phases : trois mois dédiés aux fondamentaux JavaScript, un mois de spécialisation React, et un dernier mois consacré à un projet d'équipe où j'ai occupé le rôle de Front-End Developer."
+				]
+			},
+			"skills": {
+				"title": "Compétences principales",
+				"content": ["Je conçois et développe des sites sur mesure avec les technologies suivantes :"]
+			},
+			"method": {
+				"title": "Ma manière de travailler",
+				"content": [
+					"Chaque projet démarre par une discussion pour comprendre vos besoins réels.",
+					"Je privilégie la transparence, la simplicité et la réactivité — vous savez toujours où en est votre projet."
+				]
+			},
+			"values": {
+				"title": "Ce qui m’anime",
+				"content": [
+					"Créer des sites utiles, esthétiques et pensés pour durer.",
+					"Mon but : que vous soyez fier de votre site et qu’il devienne un vrai atout pour votre activité."
+				]
+			},
+			"cta": {
+				"title": "Travaillons ensemble",
+				"content": ["Vous avez un projet ou une idée ? Parlons-en ! Je vous aide à donner vie à votre site, simplement et efficacement."]
+			}
+		}
+	},
+
+	"services": {
+		"title": "Mes Services",
+		"subtitle": "Des solutions web claires et modernes, pensées pour les indépendants et petites entreprises",
+		"items": [
+			{
+				"icon": "🌐",
+				"title": "Sites vitrines modernes",
+				"description": "Je conçois des sites simples, rapides et agréables à utiliser, pour présenter efficacement votre activité en ligne.",
+				"features": [
+					"Design sobre et adapté à votre image",
+					"Structure claire pour une navigation fluide",
+					"Compatible mobile, tablette et ordinateur",
+					"Optimisé pour un bon référencement sur Google"
+				]
+			},
+			{
+				"icon": "🛒",
+				"title": "Petits e-commerces efficaces",
+				"description": "Je mets en place des boutiques en ligne intuitives et sécurisées, parfaites pour démarrer vos ventes sur le web.",
+				"features": [
+					"Interface simple pour gérer vos produits",
+					"Paiements sécurisés et fiables",
+					"Optimisation pour faciliter la conversion",
+					"Accompagnement à la prise en main"
+				]
+			},
+			{
+				"icon": "⚙️",
+				"title": "Applications web personnalisées",
+				"description": "Je développe des outils web adaptés à vos besoins : gestion, formulaires, tableaux de bord, etc.",
+				"features": [
+					"Solutions sur mesure à taille humaine",
+					"Développement clair et évolutif",
+					"Interface intuitive et responsive",
+					"Connexion possible à une base de données"
+				]
+			},
+			{
+				"icon": "🔧",
+				"title": "Maintenance & accompagnement",
+				"description": "Je vous aide à garder votre site à jour et fonctionnel, même après la mise en ligne.",
+				"features": [
+					"Mises à jour et petites évolutions",
+					"Sauvegardes régulières",
+					"Amélioration des performances",
+					"Support réactif et à l’écoute"
+				]
+			}
+		]
+	},
+
+	"projectsPage": {
+		"title": "Mes Projets",
+		"project1": {
+			"title": "Site Pokedeck",
+			"description": "Une application de collection de cartes Pokémon pour créer, trier et gérer votre deck personnel",
+			"tech": ["ReactJS", "NodeJS", "PostgreSQL"]
+		},
+		"project2": {
+			"title": "Site Taiwan",
+			"description": "Carnet de voyage à Taïwan : découvertes culturelles, spécialités locales et lieux qui m'ont marqué",
+			"tech": ["ReactJS", "TypeScript", "Scss"]
+		},
+		"project3": {
+			"title": "Site Match HSK",
+			"description": "Un jeu interactif pour apprendre les caractères chinois en s'amusant, classés par niveaux HSK",
+			"tech": ["ReactJS", "Interactive learning"]
+		},
+		"github": "GitHub",
+		"githubFront": "Front-End",
+		"githubBack": "Back-End",
+		"website": "Site Web"
+	},
+
+	"contact": {
+		"title": "Contactez-moi",
+		"subtitle": "Vous avez un projet web ou souhaitez créer la présence en ligne de votre activité ? Discutons-en ensemble.",
+		"form": {
+			"title": "Formulaire de contact",
+			"description": "Expliquez-moi votre projet ou vos besoins, et je reviendrai vers vous rapidement.",
+			"fields": {
+				"name": "Nom complet",
+				"namePlaceholder": "Votre nom complet",
+				"email": "Adresse email",
+				"emailPlaceholder": "votre@email.com",
+				"subject": "Sujet",
+				"subjectPlaceholder": "Création de site, refonte, devis, question...",
+				"message": "Message",
+				"messagePlaceholder": "Décrivez votre projet ou votre demande..."
+			},
+			"submit": "Envoyer le message",
+			"submitting": "Envoi en cours...",
+			"success": "Message envoyé avec succès !",
+			"error": "Erreur lors de l'envoi",
+			"connectionError": "Erreur de connexion",
+			"securityError": "Erreur de sécurité détectée. Veuillez réessayer dans quelques instants.",
+			"validating": "Validation en cours...",
+			"securityIndicator": "Protection anti-bot active - Votre message est sécurisé"
+		},
+		"info": {
+			"title": "Informations de contact",
+			"description": "Vous pouvez me contacter directement ou via le formulaire ci-contre pour toute question ou demande.",
+			"email": {
+				"title": "Email"
+			},
+			"website": {
+				"title": "Site web"
+			},
+			"location": {
+				"title": "Localisation",
+				"value": "France - Télétravail uniquement."
+			},
+			"availability": {
+				"title": "Disponibilité",
+				"value": "Lun-Ven, 9h-18h (CET)"
+			}
+		},
+		"cta": {
+			"title": "Contact direct",
+			"description": "Vous préférez un contact direct ? Cliquez ici :",
+			"email": "Envoyer un email",
+			"emailTemplate": {
+				"subject": "Demande de projet web - Alexandre Saudemont",
+				"body": "Bonjour Alexandre,\n\nJe souhaite échanger avec vous au sujet d’un projet web.\n\n**Informations sur mon projet :**\n- Type de projet : \n- Description : \n- Budget estimé : \n- Délai souhaité : \n\n**Mes coordonnées :**\n- Nom : \n- Entreprise : \n- Téléphone : \n\nMerci de me recontacter pour en discuter plus en détail.\n\nCordialement,"
+			}
+		}
+	},
+
+	"footer": {
+		"copyrights": "Tous droits réservés",
+		"madeWith": "Conçu et développé par AS-WebDev",
+		"sections": {
+			"navigation": "Navigation",
+			"information": "Informations",
+			"legal": "Légal"
+		}
+	},
+
+	"legal": {
+		"title": "Mentions Légales",
+		"subtitle": "Condition générales de vente",
+
+		"mention": {
+			"title": "Mentions Légales",
+			"subtitle": "Informations légales obligatoires selon la loi française",
+			"description": "Conformément à la législation française, cette page présente les informations relatives à l'éditeur, à l'hébergement, à la propriété intellectuelle et à la responsabilité du site.",
+
+			"editor": {
+				"title": "Éditeur du site",
+				"name": "AS-WebDev",
+				"address": "France - Télétravail uniquement",
+				"email": "contact@as-webdev.com",
+				"siret": "992 762 674 00016"
+			},
+
+			"hosting": {
+				"title": "Hébergement",
+
+				"prodiver": "Infomaniak Network SA",
+				"address": "Rue Eugène-Marziano 25, 1227 Genève, Suisse",
+				"phone": "+41 22 820 35 44",
+				"website": "https://www.infomaniak.com"
+			},
+			"intellectual": {
+				"title": "Propriété intellectuelle",
+				"description": "L'ensemble du site (structure, design, textes, logos, images, code, etc.) est la propriété exclusive de AS-WebDev, sauf mention contraire.",
+				"description2": "Toute reproduction, totale ou partielle, est interdite sans autorisation écrite préalable."
+			},
+
+			"liability": {
+				"title": "Responsabilité",
+				"description": "AS-WebDev s'efforce de maintenir les informations du site à jour et exactes, mais ne saurait être tenue responsable d'erreurs, d'interruptions ou de dommages liés à son utilisation."
+			},
+
+			"law": {
+				"title": "Droit applicable",
+				"description": "  Les présentes mentions légales sont régies par le droit français. Tout litige relève de la compétence exclusive des tribunaux français."
+			},
+
+			"privacy": {
+				"title": "Protection des données personnelles",
+				"description": "Ce site ne collecte aucune donnée personnelle à des fins commerciales. Aucune information nominative n'est enregistrée ou partagée."
+			},
+
+			"lastUpdate": "Dernière mise à jour : "
+		},
+
+		"cgvkeypoint": {
+			"intro": "En faisant appel à AS-WebDev, le Client accepte sans réserve les présentes Conditions Générales de Vente.",
+			"sections": {
+				"1_definitions": {
+					"title": "Définitions",
+					"text": "Client : personne physique ou morale passant commande. Prestataire : Saudemont Alexandre, Auto-entreprise. Contrat : devis signé + CGV. Force majeure : événement imprévisible libérant de l'obligation."
+				},
+				"2_commandes": {
+					"title": "Commandes",
+					"text": "Toute commande se fait via devis signé. Modifications ou prestations supplémentaires feront l'objet d'un nouveau devis."
+				},
+				"3_responsabilite": {
+					"title": "Responsabilités",
+					"text": "Le Client est responsable de ses contenus. Le Prestataire s'engage à fournir une prestation de qualité mais n'est pas responsable des retards imputables au Client, du serveur d'hébergement, ou d'autres causes externes."
+				},
+				"4_creation_site": {
+					"title": "Création de site internet",
+					"text": "Comprend conception, développement, mise en ligne et mises à jour selon devis. Les noms de domaine deviennent la propriété du Client après paiement intégral. L'hébergement et le référencement relèvent d'une obligation de moyens."
+				},
+				"5_paiement": {
+					"title": "Paiement",
+					"text": "Acompte de 30% à la signature, 50% à la fin du développement, solde de 20% à la livraison. Paiement par virement bancaire. Tout retard entraîne pénalités et possible suspension des prestations."
+				},
+				"6_annulation": {
+					"title": "Annulation",
+					"text": "En cas d'annulation par le Client, l'acompte reste acquis au Prestataire, sauf force majeure. En cas de non-respect des CGV, le Prestataire peut suspendre les prestations sans indemnité."
+				},
+				"7_propriete_intellectuelle": {
+					"title": "Propriété intellectuelle",
+					"text": "Les créations restent la propriété du Prestataire, sauf mention contraire. Le Client ne peut les modifier ou en extraire des éléments sans autorisation écrite."
+				},
+				"8_donnees_personnelles": {
+					"title": "Données personnelles",
+					"text": "Les données du Client sont collectées uniquement pour l'exécution du contrat. Le Client peut exercer ses droits d'accès, de rectification, d'effacement et d'opposition selon le RGPD."
+				},
+				"9_droit_applicable": {
+					"title": "Droit applicable",
+					"text": "Les prestations sont soumises au droit français. En cas de litige, le Tribunal du Commerce du domicile du Prestataire est compétent. La langue du contrat est le français."
+				}
+			},
+			"cgvtitle": "Conditions Générales de Vente",
+			"fullcgv": "Voir toutes les conditions générales de ventes",
+			"pdf_link": "Télécharger les Conditions générales de ventes"
+		},
+		"cgv": {
+			"legal": {
+				"cgvComplete": {
+					"title": "Conditions Générales de Vente et de Prestation de Services",
+					"subtitle": "Version complète du 28 Octobre 2025",
+					"articles": [
+						{
+							"title": "Définitions",
+							"paragraphs": [
+								"Client : Toute personne physique capable au sens des Articles 1123 et suivants du Code Civil, ou toute personne morale, qui passe commande d’une prestation auprès du Prestataire.",
+								"Conditions Générales : Désigne les présentes conditions générales de vente et de prestation de services.",
+								"Contrat : Ensemble indivisible constitué du devis signé par le Client et le Prestataire et des présentes Conditions Générales.",
+								"Force Majeure : Désigne un événement à la fois imprévisible, insurmontable et indépendant de la volonté des parties, empêchant celles-ci d’accomplir leurs obligations. La partie qui ne peut pas accomplir une obligation du fait d’un cas de force majeure se trouve libérée de celle-ci.",
+								"Parties : Désigne le Client et le Prestataire.",
+								"Prestataire : Saudemont Alexandre, Auto Entreprise représentée sous l’enseigne commerciale AS-WebDev, immatriculée sous le numéro 992 762 674 00016, et dont le siège social est situé au 7 Ter rue du Bastion, 51100 - REIMS.",
+								"Prestation globale : Désigne un ensemble de prestations facturées à la journée, par opposition aux prestations facturées à l’heure."
+							]
+						},
+						{
+							"title": "Article 1. Préambule",
+							"paragraphs": [
+								"Les présentes Conditions Générales ont pour objet de définir les relations et obligations des Parties dans le cadre de leurs relations contractuelles.",
+								"En faisant appel au Prestataire pour la réalisation d’une prestation, le Client reconnaît avoir pris connaissance des Conditions Générales et déclare y adhérer sans réserve, au moment de la signature du devis."
+							]
+						},
+						{
+							"title": "Article 2. Modalités d’application",
+							"paragraphs": [
+								"Les présentes Conditions Générales s’appliquent sans restriction ni réserve, à l’ensemble des prestations de service proposées par le Prestataire. A défaut de dispositions particulières stipulées par écrit, le fait pour le Client de solliciter le Prestataire pour une prestation, implique l’acceptation pleine et entière des présentes Conditions Générales.",
+								"Les Conditions Générales peuvent être modifiées par le Prestataire sans préavis. Par conséquent, le Prestataire conseille au Client de consulter ces Conditions Générales en amont de la signature d’un nouveau devis."
+							]
+						},
+						{
+							"title": "Article 3. Responsabilité",
+							"paragraphs": [
+								"3.1. Responsabilité du Client : Le Client déclare disposer de tous les droits et autorisations nécessaires à la réalisation de la prestation. Le Client est le seul responsable des données et des contenus de son site : textes, vidéos, visuels et photos… Il s’engage à fournir au Prestataire des données conformes à la législation en vigueur, et notamment aux dispositions réglementaires relatives à l’informatique, aux fichiers et aux libertés.",
+								"3.2. Responsabilité du Prestataire : Le Prestataire s’engage à apporter toute l’attention et le soin nécessaires pour fournir une prestation de qualité. Il ne pourra être tenu responsable que pour des faits avérés qui lui seraient exclusivement imputables.",
+								"Par conséquent, la responsabilité du Prestataire ne pourra en aucun cas être retenue dans les cas suivants :",
+								"• Retard dans les délais de livraison, si le Client ne fournit pas les éléments nécessaires à la bonne réalisation de la prestation dans un délai de 5 jours ouvrés.",
+								"• Interruption du service d’hébergement résultant à l’indisponibilité du site Internet du Client, ce service étant assuré par un prestataire externe.",
+								"• Pannes ou ralentissements du réseau Internet ou des réseaux informatiques internes du Client.",
+								"• Utilisation illégale ou transmission du mot de passe ou de toute donnée confidentielle par le Client.",
+								"• Fautes de la part du Client : Dégradation, indisponibilité ou suppression partielle ou totale de fonctionnalités, des pages ou du contenu, anomalies d’affichage, dès le moment où les accès à l’administration du site via la plateforme (CMS) ou aux fichiers du serveur (FTP) auront été transmis au Client.",
+								"• Contenus fournis par le Client, illicites ou ne respectant pas la propriété intellectuelle.",
+								"• Fautes et faits d’un fournisseur de service externe indépendant au Prestataire.",
+								"• Virus présents sur l’ordinateur ou le réseau informatique interne du Client et transmis au site Internet du Client."
+							]
+						},
+						{
+							"title": "Article 4. Passation de commande",
+							"paragraphs": [
+								"La commande est passée par l’intermédiaire d’un devis établi par le Prestataire et signé par le Client. Il est indivisible des présentes Conditions Générales et l’ensemble fait office de contrat entre les Parties.",
+								"Toutes les prestations supplémentaires non prévues dans le devis initial, ou faisant l’objet de demandes de modifications à l’initiative du Client, feront l’objet d’un nouveau devis et seront facturées à l’heure, au taux en vigueur à la date de signature du devis, sauf décision contraire exceptionnelle du Prestataire.",
+								"Dans le cas d’ajout ou de modification de prestations à la demande du Client, le Prestataire ne pourra être tenu pour responsable de tout retard sur le délai de livraison initial."
+							]
+						},
+						{
+							"title": "Article 5. Création de site Internet",
+							"paragraphs": [
+								"5.1. Création : La conception d’un site inclut, sans s’y limiter, la prise de connaissance du projet, la mise en place, la création et le développement, ainsi que toute action jusqu’à la mise en ligne définitive.",
+								"5.2. Mise en Production : Mise en ligne définitive d’un site Internet ou d’une fonctionnalité, après validation de la dernière étape du projet par le Client, par la signature du procès-verbal de livraison. Toute modification demandée après cette étape par le Client fera l’objet d’un nouveau devis.",
+								"5.3. Noms de Domaine : Le Client est responsable du choix de son(ses) nom(s) de domaine et devra s’assurer de la disponibilité du(des) nom(s) de domaine retenu(s). Le Prestataire pourra enregistrer au nom du Client, le (les) nom(s) de domaine choisi(s). Le Client sera propriétaire du (des) nom(s) de domaine réservé(s) une fois la facture intégralement acquittée.",
+								"5.4. Hébergement : L’hébergement est réalisé par un des partenaires du Prestataire. Le Prestataire ne pourra pas être poursuivi pour des problèmes liés au serveur sur lequel est hébergé le site du Client.",
+								"5.5. Référencement : Le Prestataire n’est tenu qu’à une obligation de moyens pour l’optimisation du référencement. Les moteurs de recherche n’ont aucune obligation d’intégrer le site du Client.",
+								"5.6. Actualisation : Toute modification ou ajout de contenu se fera d’un commun accord écrit et pourra faire l’objet d’un nouveau devis.",
+								"5.7. Support : Le support technique est disponible du lundi au vendredi de 10h00 à 15h30, sauf indisponibilité du Prestataire et jours fériés."
+							]
+						},
+						{
+							"title": "Article 6. Partenaires & Sous-traitants",
+							"paragraphs": [
+								"Le Prestataire peut décider de sous-traiter ses prestations en partie ou en totalité, sans préavis. Toutefois, le Prestataire reste l’unique interlocuteur vis-à-vis du Client."
+							]
+						},
+						{
+							"title": "Article 7. Propriété intellectuelle",
+							"paragraphs": [
+								"Tous les droits de propriété intellectuelle relatifs aux prestations spécifiques réalisées pour le Client restent la propriété pleine et entière du Prestataire, sauf mention contraire indiquée sur le devis.",
+								"Le Client n’est pas autorisé à altérer les créations réalisées par le Prestataire, ni à en extraire des éléments, sans l’autorisation écrite préalable du Prestataire."
+							]
+						},
+						{
+							"title": "Article 8. Tarifs",
+							"paragraphs": [
+								"Les tarifs sont exprimés en Euros. La TVA n’étant pas applicable (art. 293B du CGI), les tarifs s’entendent net.",
+								"Les prestations à l’heure sont facturées au prorata du temps passé, par tranche de minutes minimum."
+							]
+						},
+						{
+							"title": "Article 9. Paiement",
+							"paragraphs": [
+								"9.1. Conditions de règlement : Toute commande de prestation globale n’est réputée définitive qu’après versement d’un acompte de 30%. Un second versement de 50% interviendra avant la livraison. Le solde de 20% est dû sous 5 jours ouvrés après signature du PV de livraison.",
+								"9.2. Modalités de paiement : Paiement uniquement par virement bancaire, RIB/IBAN fourni sur le devis et la facture.",
+								"9.3. Délais de paiement et pénalités de retard : Factures payables à réception. Retard entraîne intérêts BCE + 10%, indemnité forfaitaire de 40€, suspension des prestations."
+							]
+						},
+						{
+							"title": "Article 10. Délais de fourniture des prestations",
+							"paragraphs": [
+								"Les délais indiqués sur le devis sont fournis à titre indicatif et ne constituent pas des délais fermes. Le Prestataire ne pourra voir sa responsabilité engagée en cas de retard imputable au Client ou en cas de Force Majeure."
+							]
+						},
+						{
+							"title": "Article 11. Annulation de commande",
+							"paragraphs": [
+								"11.1. Annulation à l’initiative du Client :",
+								"• Prestations forfaitaires : l’acompte versé n’est pas remboursé sauf Force Majeure.",
+								"• Prestations facturées à l’heure : les sommes versées ne sont pas remboursées sauf Force Majeure.",
+								"11.2. Annulation à l’initiative du Prestataire : Non-respect des CGV entraîne l’annulation des prestations en cours, sans indemnité."
+							]
+						},
+						{
+							"title": "Article 12. Crédits & mentions",
+							"paragraphs": [
+								"Le Prestataire peut utiliser ses créations et celles du Client à des fins d’auto-promotion.",
+								"Le Client s’engage à mentionner : « Réalisé par AS-WebDev » sur tous les supports et intégrer le lien https://as-webdev.com pour les sites Internet."
+							]
+						},
+						{
+							"title": "Article 13. Clause résolutoire",
+							"paragraphs": [
+								"En cas de manquement à une obligation contractuelle, l’autre partie peut résilier tout ou partie du contrat après mise en demeure restée sans effet sous 30 jours, sans préjudice de dommages et intérêts."
+							]
+						},
+						{
+							"title": "Article 14. Données personnelles",
+							"paragraphs": [
+								"14.1. Données du Client : Collectées uniquement pour la bonne exécution du contrat, conservées 5 ans maximum. Droit d’accès, rectification, effacement, limitation, opposition et portabilité.",
+								"14.2. Données fournies par le Client : Le Client garantit le respect des obligations légales pour les données qu’il fournit.",
+								"14.3. Données du Prestataire : Le Client s’engage à respecter le RGPD concernant les données du Prestataire."
+							]
+						},
+						{
+							"title": "Article 15. Droit applicable & litige",
+							"paragraphs": [
+								"Les présentes Conditions Générales et les prestations sont régies par le droit français. Tout litige relève du Tribunal de Commerce compétent à la domiciliation du Prestataire."
+							]
+						},
+						{
+							"title": "Article 16. Langue du contrat",
+							"paragraphs": ["Les présentes CGV sont rédigées en français. Seul le texte français fait foi en cas de litige."]
+						}
+					]
+				}
+			}
+		}
+	}
+}

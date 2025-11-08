@@ -1,0 +1,26 @@
+.services-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 2.5rem;
+	padding: 5rem 2rem;
+	background: var(--bg-primary);
+	position: relative;
+	z-index: 1;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.services-grid {
+		gap: 2rem;
+		padding: 4rem 1.5rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.services-grid {
+		grid-template-columns: 1fr;
+		padding: 3rem 1rem;
+	}
+}

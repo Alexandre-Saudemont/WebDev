@@ -1,0 +1,67 @@
+.contact-cta {
+	background: var(--bg-secondary);
+	border: 1px solid var(--border);
+	border-radius: 16px;
+	padding: 2.5rem;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+
+.contact-cta::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	background: var(--gradient);
+}
+
+.contact-cta h4 {
+	color: var(--text-primary);
+	margin-bottom: 0.75rem;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.contact-cta p {
+	color: var(--text-secondary);
+	margin-bottom: 1.5rem;
+	line-height: 1.7;
+	font-size: 1rem;
+}
+
+.cta-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	background: var(--accent);
+	color: var(--bg-primary);
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 1.05rem;
+	transition: all 0.3s ease;
+	width: 100%;
+}
+
+.darkMode .cta-btn {
+	color: #000;
+}
+
+.lightMode .cta-btn {
+	color: #fff;
+}
+
+.cta-btn:hover {
+	opacity: 0.9;
+	transform: translateY(-2px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cta-btn span {
+	display: inline;
+}
+

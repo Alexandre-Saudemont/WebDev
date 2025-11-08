@@ -20,7 +20,7 @@
 			"subtitle": "Full-stack developer passionate about creating beautiful digital experiences",
 			"description": "I create modern and performant websites to help businesses develop their online presence.",
 			"cards": {
-				"frontend": {"title": "Frontend", "desc": "React.js, JavaScript, Responsive Design"},
+				"frontend": {"title": "Frontend", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
 				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
 			}
 		},
@@ -92,12 +92,7 @@
 				"icon": "🔧",
 				"title": "Maintenance & support",
 				"description": "I help you keep your website up to date and functional, even after launch.",
-				"features": [
-					"Updates and small evolutions",
-					"Regular backups",
-					"Performance improvements",
-					"Reactive and attentive support"
-				]
+				"features": ["Updates and small evolutions", "Regular backups", "Performance improvements", "Reactive and attentive support"]
 			}
 		]
 	},

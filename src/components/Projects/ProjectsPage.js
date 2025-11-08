@@ -1,37 +1,47 @@
 'use client';
 
-import React from 'react';
+import {useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
+import ProjectsHeader from './ProjectsHeader/ProjectsHeader';
+import ProjectsGrid from './ProjectsGrid/ProjectsGrid';
+import ProjectsCta from './ProjectsCta/ProjectsCta';
 import './ProjectsPage.css';
 
 export default function ProjectsPage() {
 	const {t} = useTranslation();
 
-	const projects = ['project1', 'project2', 'project3'];
+	const projects = useMemo(() => {
+		try {
+			const projectKeys = ['project1', 'project2', 'project3'];
+			const projectsList = [];
+
+			projectKeys.forEach((key) => {
+				const title = t(`projectsPage.${key}.title`);
+				const description = t(`projectsPage.${key}.description`);
+				const techArray = t(`projectsPage.${key}.tech`, {returnObjects: true});
+				const techList = Array.isArray(techArray) ? techArray : [];
+
+				if (title && description) {
+					projectsList.push({
+						title: title,
+						description: description,
+						tech: techList.map((item) => String(item)),
+					});
+				}
+			});
+
+			return projectsList;
+		} catch (error) {
+			console.error('Erreur i18n:', error);
+			return [];
+		}
+	}, [t]);
 
 	return (
-		<section className='projects'>
-			<div className='container'>
-				<h2>{t('projectsPage.title')}</h2>
-				<div className='project-grid'>
-					{projects.map((key, index) => (
-						<div key={index} className='project-card'>
-							<div className='project-image'></div>
-							<div className='project-content'>
-								<h3 className='project-title'>{t(`projectsPage.${key}.title`)}</h3>
-								<p>{t(`projectsPage.${key}.description`)}</p>
-								<div className='project-tech'>
-									{t(`projectsPage.${key}.tech`, {returnObjects: true}).map((tech, index) => (
-										<span key={index} className='tech-tag'>
-											{tech}
-										</span>
-									))}
-								</div>
-							</div>
-						</div>
-					))}
-				</div>
-			</div>
-		</section>
+		<div className='projects-page'>
+			<ProjectsHeader />
+			<ProjectsGrid projects={projects} />
+			<ProjectsCta />
+		</div>
 	);
 }

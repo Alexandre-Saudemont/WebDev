@@ -20,7 +20,7 @@
 			"subtitle": "Développeur full-stack passionné par les belles expériences numériques",
 			"description": "Je crée des sites web modernes et performants pour aider les entreprises à développer leur présence en ligne.",
 			"cards": {
-				"frontend": {"title": "Frontend", "desc": "React.js, JavaScript, Responsive Design"},
+				"frontend": {"title": "Frontend", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
 				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
 			}
 		},

@@ -2,15 +2,18 @@
 
 import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
+import {usePathname} from 'next/navigation';
 import {useTranslation} from 'react-i18next';
 import {useTheme} from '@/contexts/ThemeContext';
-import {Moon, Sun} from 'lucide-react';
+import {Moon, Sun, Menu, X} from 'lucide-react';
 import './Header.css';
 
 export default function Header() {
 	const {t} = useTranslation();
-	const {isDarkMode, toggleDarkMode} = useTheme();
+	const {isDarkMode, toggleTheme} = useTheme();
+	const pathname = usePathname();
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -21,6 +24,11 @@ export default function Header() {
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
+	useEffect(() => {
+		// Fermer le menu mobile lors du changement de page
+		setIsMobileMenuOpen(false);
+	}, [pathname]);
+
 	const navItems = [
 		{href: '/', label: t('navigation.home')},
 		{href: '/about', label: t('navigation.about')},
@@ -30,20 +38,33 @@ export default function Header() {
 	];
 
 	return (
-		<header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+		<header className={`header ${isScrolled ? 'scrolled' : ''} ${isMobileMenuOpen ? 'menu-open' : ''}`}>
 			<nav className='header-container'>
-				<div className='logo'>AS</div>
-				<ul className='nav-links'>
-					{navItems.map((item) => (
-						<li key={item.href}>
-							<Link href={item.href}>{item.label}</Link>
-						</li>
-					))}
+				<Link href='/' className='logo'>
+					<span className='logo-text'>AS</span>
+					<span className='logo-subtitle'>WebDev</span>
+				</Link>
+
+				<ul className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+					{navItems.map((item) => {
+						const isActive = pathname === item.href;
+						return (
+							<li key={item.href}>
+								<Link href={item.href} className={isActive ? 'active' : ''} onClick={() => setIsMobileMenuOpen(false)}>
+									{item.label}
+								</Link>
+							</li>
+						);
+					})}
 				</ul>
+
 				<div className='header-controls'>
 					<LanguageSelector />
-					<button onClick={toggleDarkMode} className='theme-toggle'>
+					<button onClick={toggleTheme} className='theme-toggle' aria-label='Toggle theme'>
 						{isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+					</button>
+					<button className='mobile-menu-toggle' onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label='Toggle menu'>
+						{isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
 					</button>
 				</div>
 			</nav>
@@ -70,7 +91,8 @@ function LanguageSelector() {
 				<button
 					key={lang.code}
 					onClick={() => changeLanguage(lang.code)}
-					className={`lang-btn ${i18n.language === lang.code ? 'active' : ''}`}>
+					className={`lang-btn ${i18n.language === lang.code ? 'active' : ''}`}
+					aria-label={`Switch to ${lang.name}`}>
 					{lang.name}
 				</button>
 			))}

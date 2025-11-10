@@ -1,4 +1,4 @@
-import CgvFullPage from '@/components/legal/CgvFullPage/CgvFullPage';
+import CgvFullPage from '@/components/Legal/CgvFullPage/CgvFullPage';
 
 export default function CgvFull() {
 	return (

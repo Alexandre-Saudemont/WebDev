@@ -14,55 +14,47 @@ export default function TeasersSection() {
 		const section = sectionRef.current;
 		if (!section) return;
 
-		// Fallback si l'Intersection Observer n'est pas supporté, afficher toutes les cartes
+		let observer = null;
+
+		// Fallback si IntersectionObserver n'est pas supporté
 		if (typeof IntersectionObserver === 'undefined') {
-			const indices = new Set();
-			indices.add(0);
-			indices.add(1);
-			setVisibleCards(indices);
+			const indices = new Set([0, 1]);
+			// Déférer le setState pour éviter le warning
+			requestAnimationFrame(() => setVisibleCards(indices));
 			return;
 		}
 
-		let observer = null;
-
-		// Utiliser requestAnimationFrame pour s'assurer que le DOM est prêt
 		const rafId = requestAnimationFrame(() => {
-			setTimeout(() => {
-				const cards = section.querySelectorAll('.teaser-card');
-				if (cards.length === 0) return;
+			const cards = section.querySelectorAll('.teaser-card');
+			if (cards.length === 0) return;
 
-				observer = new IntersectionObserver(
-					(entries) => {
-						entries.forEach((entry) => {
-							if (entry.isIntersecting) {
-								const cardIndex = Array.from(cards).indexOf(entry.target);
-								if (cardIndex !== -1) {
-									setTimeout(() => {
-										setVisibleCards((prev) => {
-											const newSet = new Set(prev);
-											newSet.add(cardIndex);
-											return newSet;
-										});
-									}, cardIndex * 200);
-									if (observer) {
-										observer.unobserve(entry.target);
-									}
-								}
+			observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							const cardIndex = Array.from(cards).indexOf(entry.target);
+							if (cardIndex !== -1) {
+								setTimeout(() => {
+									setVisibleCards((prev) => {
+										const newSet = new Set(prev);
+										newSet.add(cardIndex);
+										return newSet;
+									});
+								}, cardIndex * 200);
+								observer.unobserve(entry.target);
 							}
-						});
-					},
-					{threshold: 0.2},
-				);
+						}
+					});
+				},
+				{threshold: 0.2},
+			);
 
-				cards.forEach((card) => observer?.observe(card));
-			}, 50);
+			cards.forEach((card) => observer.observe(card));
 		});
 
 		return () => {
 			cancelAnimationFrame(rafId);
-			if (observer) {
-				observer.disconnect();
-			}
+			if (observer) observer.disconnect();
 		};
 	}, []);
 

@@ -3,6 +3,8 @@
 import {useTranslation} from 'react-i18next';
 import {useTheme} from '@/contexts/ThemeContext';
 import {SKILLS, SKILL_ICONS} from '@/lib/constants';
+import Image from 'next/image';
+
 import './SkillsPreview.css';
 
 export default function SkillsPreview() {
@@ -15,7 +17,7 @@ export default function SkillsPreview() {
 			<div className='home-skills-grid'>
 				{SKILLS.map((skill, index) => (
 					<div key={skill} className='home-skill-item visible' style={{transitionDelay: `${index * 0.05}s`}}>
-						<img src={isDarkMode ? SKILL_ICONS[skill].dark : SKILL_ICONS[skill].light} alt={skill} width={40} height={40} />
+						<Image src={isDarkMode ? SKILL_ICONS[skill].dark : SKILL_ICONS[skill].light} alt={skill} width={40} height={40} />
 						<span>{skill}</span>
 					</div>
 				))}

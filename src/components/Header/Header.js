@@ -15,18 +15,17 @@ export default function Header() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+	// Scroll detection
 	useEffect(() => {
-		const handleScroll = () => {
-			setIsScrolled(window.scrollY > 50);
-		};
-
+		const handleScroll = () => setIsScrolled(window.scrollY > 50);
 		window.addEventListener('scroll', handleScroll);
 		return () => window.removeEventListener('scroll', handleScroll);
 	}, []);
 
+	// Fermer le menu mobile lors du changement de page sans trigger de warning
 	useEffect(() => {
-		// Fermer le menu mobile lors du changement de page
-		setIsMobileMenuOpen(false);
+		const rafId = requestAnimationFrame(() => setIsMobileMenuOpen(false));
+		return () => cancelAnimationFrame(rafId);
 	}, [pathname]);
 
 	const navItems = [
@@ -60,10 +59,13 @@ export default function Header() {
 
 				<div className='header-controls'>
 					<LanguageSelector />
-					<button onClick={toggleTheme} className='theme-toggle' aria-label='Toggle theme'>
+					<button onClick={toggleTheme} className='theme-toggle' aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}>
 						{isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
 					</button>
-					<button className='mobile-menu-toggle' onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label='Toggle menu'>
+					<button
+						className='mobile-menu-toggle'
+						onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+						aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}>
 						{isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
 					</button>
 				</div>
@@ -74,16 +76,13 @@ export default function Header() {
 
 function LanguageSelector() {
 	const {i18n} = useTranslation();
-
 	const languages = [
 		{code: 'fr', name: 'FR'},
 		{code: 'en', name: 'EN'},
 		{code: 'cn', name: 'CN'},
 	];
 
-	const changeLanguage = (lng) => {
-		i18n.changeLanguage(lng);
-	};
+	const changeLanguage = (lng) => i18n.changeLanguage(lng);
 
 	return (
 		<div className='language-selector'>

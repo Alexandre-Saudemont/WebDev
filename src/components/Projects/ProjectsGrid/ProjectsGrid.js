@@ -12,54 +12,47 @@ export default function ProjectsGrid({projects}) {
 		const container = containerRef.current;
 		if (!container) return;
 
-		// Fallback si l'Intersection Observer n'est pas supporté, afficher toutes les cartes
+		let observer = null;
+
+		// Fallback si IntersectionObserver n'est pas supporté
 		if (typeof IntersectionObserver === 'undefined') {
-			const indices = new Set();
-			projects.forEach((_, index) => indices.add(index));
-			setVisibleCards(indices);
+			const allIndices = new Set(projects.map((_, index) => index));
+			// Déférer le setState pour éviter le warning
+			requestAnimationFrame(() => setVisibleCards(allIndices));
 			return;
 		}
 
-		let observer = null;
-
-		// Utiliser requestAnimationFrame pour s'assurer que le DOM est prêt
 		const rafId = requestAnimationFrame(() => {
-			setTimeout(() => {
-				const cards = container.querySelectorAll('.project-card');
-				if (cards.length === 0) return;
+			const cards = container.querySelectorAll('.project-card');
+			if (cards.length === 0) return;
 
-				observer = new IntersectionObserver(
-					(entries) => {
-						entries.forEach((entry) => {
-							if (entry.isIntersecting) {
-								const cardIndex = Array.from(cards).indexOf(entry.target);
-								if (cardIndex !== -1) {
-									setTimeout(() => {
-										setVisibleCards((prev) => {
-											const newSet = new Set(prev);
-											newSet.add(cardIndex);
-											return newSet;
-										});
-									}, cardIndex * 150);
-									if (observer) {
-										observer.unobserve(entry.target);
-									}
-								}
+			observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							const cardIndex = Array.from(cards).indexOf(entry.target);
+							if (cardIndex !== -1) {
+								setTimeout(() => {
+									setVisibleCards((prev) => {
+										const newSet = new Set(prev);
+										newSet.add(cardIndex);
+										return newSet;
+									});
+								}, cardIndex * 150);
+								observer.unobserve(entry.target);
 							}
-						});
-					},
-					{threshold: 0.2},
-				);
+						}
+					});
+				},
+				{threshold: 0.2},
+			);
 
-				cards.forEach((card) => observer?.observe(card));
-			}, 50);
+			cards.forEach((card) => observer.observe(card));
 		});
 
 		return () => {
 			cancelAnimationFrame(rafId);
-			if (observer) {
-				observer.disconnect();
-			}
+			if (observer) observer.disconnect();
 		};
 	}, [projects]);
 

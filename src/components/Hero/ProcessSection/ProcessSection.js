@@ -1,6 +1,6 @@
 'use client';
 
-import {useEffect, useRef, useState} from 'react';
+import {useEffect, useRef, useState, useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
 import './ProcessSection.css';
 
@@ -9,87 +9,84 @@ export default function ProcessSection() {
 	const [visibleSteps, setVisibleSteps] = useState(new Set());
 	const sectionRef = useRef(null);
 
-	const steps = [
-		{
-			number: '01',
-			title: t('homePage.process.discovery.title') || 'Découverte',
-			description: t('homePage.process.discovery.description') || 'Discussion pour comprendre vos besoins et objectifs',
-			icon: '💬',
-		},
-		{
-			number: '02',
-			title: t('homePage.process.design.title') || 'Conception',
-			description: t('homePage.process.design.description') || "Création d'un design moderne et adapté à votre identité",
-			icon: '🎨',
-		},
-		{
-			number: '03',
-			title: t('homePage.process.development.title') || 'Développement',
-			description: t('homePage.process.development.description') || 'Développement avec suivi régulier et transparence totale',
-			icon: '⚙️',
-		},
-		{
-			number: '04',
-			title: t('homePage.process.launch.title') || 'Lancement',
-			description: t('homePage.process.launch.description') || 'Mise en ligne et accompagnement pour la suite',
-			icon: '🚀',
-		},
-	];
+	// Utilisation de useMemo pour stabiliser les steps et éviter le warning SSR
+	const steps = useMemo(
+		() => [
+			{
+				number: '01',
+				title: t('homePage.process.discovery.title') || 'Découverte',
+				description: t('homePage.process.discovery.description') || 'Discussion pour comprendre vos besoins et objectifs',
+				icon: '💬',
+			},
+			{
+				number: '02',
+				title: t('homePage.process.design.title') || 'Conception',
+				description: t('homePage.process.design.description') || "Création d'un design moderne et adapté à votre identité",
+				icon: '🎨',
+			},
+			{
+				number: '03',
+				title: t('homePage.process.development.title') || 'Développement',
+				description: t('homePage.process.development.description') || 'Développement avec suivi régulier et transparence totale',
+				icon: '⚙️',
+			},
+			{
+				number: '04',
+				title: t('homePage.process.launch.title') || 'Lancement',
+				description: t('homePage.process.launch.description') || 'Mise en ligne et accompagnement pour la suite',
+				icon: '🚀',
+			},
+		],
+		[t],
+	);
 
 	useEffect(() => {
 		const section = sectionRef.current;
 		if (!section) return;
 
-		// Fallback si l'Intersection Observer n'est pas supporté, afficher tous les éléments
+		// Fallback si IntersectionObserver n'est pas supporté
 		if (typeof IntersectionObserver === 'undefined') {
-			const indices = new Set();
-			steps.forEach((_, index) => indices.add(index));
-			setVisibleSteps(indices);
+			const allIndices = new Set(steps.map((_, index) => index));
+			// Déférer le setState pour éviter le warning
+			requestAnimationFrame(() => setVisibleSteps(allIndices));
 			return;
 		}
 
 		let observer = null;
 
-		// Utiliser requestAnimationFrame pour s'assurer que le DOM est prêt
 		const rafId = requestAnimationFrame(() => {
-			setTimeout(() => {
-				const stepElements = section.querySelectorAll('.process-step');
-				if (stepElements.length === 0) return;
+			const stepElements = section.querySelectorAll('.process-step');
+			if (stepElements.length === 0) return;
 
-				observer = new IntersectionObserver(
-					(entries) => {
-						entries.forEach((entry) => {
-							if (entry.isIntersecting) {
-								const stepIndex = Array.from(stepElements).indexOf(entry.target);
-								if (stepIndex !== -1) {
-									setTimeout(() => {
-										setVisibleSteps((prev) => {
-											const newSet = new Set(prev);
-											newSet.add(stepIndex);
-											return newSet;
-										});
-									}, stepIndex * 150);
-									if (observer) {
-										observer.unobserve(entry.target);
-									}
-								}
+			observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							const stepIndex = Array.from(stepElements).indexOf(entry.target);
+							if (stepIndex !== -1) {
+								setTimeout(() => {
+									setVisibleSteps((prev) => {
+										const newSet = new Set(prev);
+										newSet.add(stepIndex);
+										return newSet;
+									});
+								}, stepIndex * 150);
+								observer.unobserve(entry.target);
 							}
-						});
-					},
-					{threshold: 0.2},
-				);
+						}
+					});
+				},
+				{threshold: 0.2},
+			);
 
-				stepElements.forEach((step) => observer?.observe(step));
-			}, 50);
+			stepElements.forEach((step) => observer.observe(step));
 		});
 
 		return () => {
 			cancelAnimationFrame(rafId);
-			if (observer) {
-				observer.disconnect();
-			}
+			if (observer) observer.disconnect();
 		};
-	}, []);
+	}, [steps]);
 
 	return (
 		<section ref={sectionRef} className='process-section'>

@@ -1,6 +1,6 @@
 'use client';
 
-import {useEffect, useRef, useState} from 'react';
+import {useEffect, useRef, useState, useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
 import './ValuesGrid.css';
 
@@ -9,81 +9,76 @@ export default function ValuesGrid() {
 	const [visibleCards, setVisibleCards] = useState(new Set());
 	const sectionRef = useRef(null);
 
-	const values = [
-		{
-			icon: '💡',
-			title: t('aboutPage.sections.method.title') || 'Ma manière de travailler',
-			description: t('aboutPage.sections.method.content.0') || '',
-		},
-		{
-			icon: '🤝',
-			title: t('aboutPage.sections.method.content.1')?.split('—')[0] || 'Transparence',
-			description: t('aboutPage.sections.method.content.1')?.split('—')[1] || '',
-		},
-		{
-			icon: '✨',
-			title: t('aboutPage.sections.values.title') || "Ce qui m'anime",
-			description: t('aboutPage.sections.values.content.0') || '',
-		},
-		{
-			icon: '🎯',
-			title: 'Objectif',
-			description: t('aboutPage.sections.values.content.1') || '',
-		},
-	];
+	const values = useMemo(
+		() => [
+			{
+				icon: '💡',
+				title: t('aboutPage.sections.method.title') || 'Ma manière de travailler',
+				description: t('aboutPage.sections.method.content.0') || '',
+			},
+			{
+				icon: '🤝',
+				title: t('aboutPage.sections.method.content.1')?.split('—')[0] || 'Transparence',
+				description: t('aboutPage.sections.method.content.1')?.split('—')[1] || '',
+			},
+			{
+				icon: '✨',
+				title: t('aboutPage.sections.values.title') || "Ce qui m'anime",
+				description: t('aboutPage.sections.values.content.0') || '',
+			},
+			{
+				icon: '🎯',
+				title: 'Objectif',
+				description: t('aboutPage.sections.values.content.1') || '',
+			},
+		],
+		[t],
+	);
 
 	useEffect(() => {
 		const section = sectionRef.current;
 		if (!section) return;
 
-		// Fallback si l'Intersection Observer n'est pas supporté, afficher toutes les cartes
+		let observer = null;
+
+		// Fallback si IntersectionObserver n'est pas supporté
 		if (typeof IntersectionObserver === 'undefined') {
-			const indices = new Set();
-			values.forEach((_, index) => indices.add(index));
-			setVisibleCards(indices);
+			const allIndices = new Set(values.map((_, index) => index));
+			requestAnimationFrame(() => setVisibleCards(allIndices));
 			return;
 		}
 
-		let observer = null;
-
-		// Utiliser requestAnimationFrame pour s'assurer que le DOM est prêt
 		const rafId = requestAnimationFrame(() => {
-			setTimeout(() => {
-				const cards = section.querySelectorAll('.value-card');
-				if (cards.length === 0) return;
+			const cards = section.querySelectorAll('.value-card');
+			if (cards.length === 0) return;
 
-				observer = new IntersectionObserver(
-					(entries) => {
-						entries.forEach((entry) => {
-							if (entry.isIntersecting) {
-								const cardIndex = Array.from(cards).indexOf(entry.target);
-								if (cardIndex !== -1) {
-									setTimeout(() => {
-										setVisibleCards((prev) => {
-											const newSet = new Set(prev);
-											newSet.add(cardIndex);
-											return newSet;
-										});
-									}, cardIndex * 150);
-									if (observer) {
-										observer.unobserve(entry.target);
-									}
-								}
+			observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							const cardIndex = Array.from(cards).indexOf(entry.target);
+							if (cardIndex !== -1) {
+								setTimeout(() => {
+									setVisibleCards((prev) => {
+										const newSet = new Set(prev);
+										newSet.add(cardIndex);
+										return newSet;
+									});
+								}, cardIndex * 150);
+								observer.unobserve(entry.target);
 							}
-						});
-					},
-					{threshold: 0.2},
-				);
+						}
+					});
+				},
+				{threshold: 0.2},
+			);
 
-				cards.forEach((card) => observer?.observe(card));
-			}, 50);
+			cards.forEach((card) => observer.observe(card));
 		});
 
 		return () => {
 			cancelAnimationFrame(rafId);
-			if (observer) {
-				observer.disconnect();
-			}
+			if (observer) observer.disconnect();
 		};
 	}, [values]);
 

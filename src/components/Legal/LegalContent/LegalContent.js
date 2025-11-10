@@ -12,54 +12,47 @@ export default function LegalContent({sections}) {
 		const container = containerRef.current;
 		if (!container) return;
 
-		// Fallback si l'Intersection Observer n'est pas supporté, afficher toutes les sections
+		let observer = null;
+
+		// Fallback si IntersectionObserver n'est pas supporté
 		if (typeof IntersectionObserver === 'undefined') {
-			const indices = new Set();
-			sections.forEach((_, index) => indices.add(index));
-			setVisibleSections(indices);
+			const allIndices = new Set(sections.map((_, index) => index));
+			// Déférer le setState pour éviter le warning
+			requestAnimationFrame(() => setVisibleSections(allIndices));
 			return;
 		}
 
-		let observer = null;
-
-		// Utiliser requestAnimationFrame pour s'assurer que le DOM est prêt
 		const rafId = requestAnimationFrame(() => {
-			setTimeout(() => {
-				const sectionElements = container.querySelectorAll('.legal-section');
-				if (sectionElements.length === 0) return;
+			const sectionElements = container.querySelectorAll('.legal-section');
+			if (sectionElements.length === 0) return;
 
-				observer = new IntersectionObserver(
-					(entries) => {
-						entries.forEach((entry) => {
-							if (entry.isIntersecting) {
-								const sectionIndex = Array.from(sectionElements).indexOf(entry.target);
-								if (sectionIndex !== -1) {
-									setTimeout(() => {
-										setVisibleSections((prev) => {
-											const newSet = new Set(prev);
-											newSet.add(sectionIndex);
-											return newSet;
-										});
-									}, sectionIndex * 100);
-									if (observer) {
-										observer.unobserve(entry.target);
-									}
-								}
+			observer = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((entry) => {
+						if (entry.isIntersecting) {
+							const sectionIndex = Array.from(sectionElements).indexOf(entry.target);
+							if (sectionIndex !== -1) {
+								setTimeout(() => {
+									setVisibleSections((prev) => {
+										const newSet = new Set(prev);
+										newSet.add(sectionIndex);
+										return newSet;
+									});
+								}, sectionIndex * 100);
+								observer.unobserve(entry.target);
 							}
-						});
-					},
-					{threshold: 0.1},
-				);
+						}
+					});
+				},
+				{threshold: 0.1},
+			);
 
-				sectionElements.forEach((section) => observer?.observe(section));
-			}, 50);
+			sectionElements.forEach((section) => observer.observe(section));
 		});
 
 		return () => {
 			cancelAnimationFrame(rafId);
-			if (observer) {
-				observer.disconnect();
-			}
+			if (observer) observer.disconnect();
 		};
 	}, [sections]);
 

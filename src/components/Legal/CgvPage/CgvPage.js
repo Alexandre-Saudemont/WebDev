@@ -32,7 +32,7 @@ export default function CGVPage() {
 			{
 				title: t('legal.cgvkeypoint.cgvtitle'),
 				content: (
-					<Link href='/legal/cgv' className='legal-link'>
+					<Link href='/legal/cgv' className='legal-link' key='cgv-link'>
 						{t('legal.cgvkeypoint.fullcgv')}
 					</Link>
 				),

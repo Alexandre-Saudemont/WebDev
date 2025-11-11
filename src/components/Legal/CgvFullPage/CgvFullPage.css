@@ -71,6 +71,7 @@
 	border: 1px solid var(--border);
 	transition: all 0.3s ease;
 	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+	opacity: 1 !important;
 }
 
 .legal-section:hover {

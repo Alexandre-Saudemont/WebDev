@@ -15,9 +15,9 @@ const TRANSLATION_DISCLAIMERS = {
 		message: '本文档为非官方翻译，仅供参考。唯一具有法律效力的是原始法语文档。如有歧义，以法语版本为准。',
 	},
 };
-
 export default function CgvFullPage() {
 	const {t, i18n} = useTranslation();
+
 	const currentLanguage = i18n.language;
 	const currentYear = new Date().getFullYear();
 

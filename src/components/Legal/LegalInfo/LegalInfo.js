@@ -1,7 +1,7 @@
 'use client';
 
 import './LegalInfo.css';
-
+import Link from 'next/link';
 export default function LegalInfo({items}) {
 	return (
 		<div className='legal-info'>
@@ -9,13 +9,15 @@ export default function LegalInfo({items}) {
 				<p key={index}>
 					<strong>{item.label}</strong>{' '}
 					{item.link ? (
-						<a
-							href={item.link.href}
-							className='legal-link'
-							target={item.link.type === 'url' ? '_blank' : undefined}
-							rel={item.link.type === 'url' ? 'noopener noreferrer' : undefined}>
-							{item.value}
-						</a>
+						item.link.type === 'url' ? (
+							<a href={item.link.href} className='legal-link' target='_blank' rel='noopener noreferrer'>
+								{item.value || item.label}
+							</a>
+						) : (
+							<Link href={item.link.href} className='legal-link'>
+								{item.value || item.label}
+							</Link>
+						)
 					) : (
 						item.value
 					)}

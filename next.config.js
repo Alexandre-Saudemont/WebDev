@@ -3,8 +3,11 @@ const nextConfig = {
 	images: {
 		unoptimized: true,
 	},
-	assetPrefix: './',
+
 	trailingSlash: true,
+	experimental: {
+		optimizeCss: true,
+	},
 };
 
 export default nextConfig;

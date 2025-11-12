@@ -10,8 +10,8 @@ import {themeScript} from './theme-script';
 const inter = Inter({subsets: ['latin']});
 
 export const metadata = {
-	title: 'Alexandre Saudemont',
-	description: "Site web d'Alexandre Saudemont",
+	title: 'AS-WebDev',
+	description: 'Bienvenue sur mon site',
 };
 
 export default function RootLayout({children}) {

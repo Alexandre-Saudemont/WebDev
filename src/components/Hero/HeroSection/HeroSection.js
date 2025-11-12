@@ -23,9 +23,9 @@ export default function HeroSection() {
 						{t('homePage.subtitle')}
 					</div>
 					<h1>
-						{t('homePage.title')} <span className='highlight'>Alexandre Saudemont</span>
+						{t('homePage.title')} <span className='highlight'>AS-WebDev</span>
 					</h1>
-					<p className='hero-subtitle'>{t('homePage.subtitle')}</p>
+					<p className='hero-subtitle'>{t('homePage.hero.subtitle')}</p>
 					<div className='hero-description'>
 						<p>
 							{t('homePage.hero.description') ||

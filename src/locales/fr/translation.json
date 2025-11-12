@@ -8,7 +8,7 @@
 	},
 	"homePage": {
 		"home": "Accueil",
-		"title": "Salut, je m'appelle",
+		"title": "Bienvenue sur \n ",
 		"subtitle": "Développeur full-stack passionné par les belles expériences numériques",
 		"typingTexts": ["FullStack JavaScript ", "Web", "Front-End"],
 		"skills": "Compétences",
@@ -16,9 +16,8 @@
 		"contact": "Contact",
 		"project": "Mes projets",
 		"hero": {
-			"titlePrefix": "Salut, je m'appelle",
-			"subtitle": "Développeur full-stack passionné par les belles expériences numériques",
-			"description": "Je crée des sites web modernes et performants pour aider les entreprises à développer leur présence en ligne.",
+			"subtitle": "Développeur full-stack freelance passionné par le web et le front-end (React, Next.js).",
+			"description": "Je conçois des sites web modernes, intuitifs et performants, pensés pour offrir une expérience utilisateur optimale.",
 			"cards": {
 				"frontend": {"title": "Frontend", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
 				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
@@ -26,9 +25,9 @@
 		},
 		"stats": {
 			"projects": "Projets réalisés",
-			"satisfaction": "Satisfaction client",
+			"satisfaction": "Implication sur chaque projet",
 			"years": "Années d'expérience",
-			"support": "Support disponible"
+			"support": "Lignes de code"
 		},
 		"process": {
 			"title": "Comment je travaille",
@@ -242,15 +241,14 @@
 
 			"editor": {
 				"title": "Éditeur du site",
-				"name": "AS-WebDev",
-				"address": "France - Télétravail uniquement",
+				"name": "Saudemont Alexandre - Entreprise individuelle",
+				"address": "7 Ter rue du Bastion, 51100 Reims, France",
 				"email": "contact@as-webdev.com",
 				"siret": "992 762 674 00016"
 			},
 
 			"hosting": {
 				"title": "Hébergement",
-
 				"prodiver": "Infomaniak Network SA",
 				"address": "Rue Eugène-Marziano 25, 1227 Genève, Suisse",
 				"phone": "+41 22 820 35 44",
@@ -274,7 +272,7 @@
 
 			"privacy": {
 				"title": "Protection des données personnelles",
-				"description": "Ce site ne collecte aucune donnée personnelle à des fins commerciales. Aucune information nominative n'est enregistrée ou partagée."
+				"description": "Ce site ne collecte aucune donnée personnelle à des fins commerciales. \nAucune information nominative n'est enregistrée ou partagée. \nLes données éventuellement transmises via le formulaire de contact sont utilisées uniquement pour répondre à votre demande et ne sont jamais partagées."
 			},
 
 			"lastUpdate": "Dernière mise à jour : "

@@ -12,10 +12,10 @@ export default function StatsSection() {
 	});
 
 	const stats = [
-		{value: '5+', label: t('homePage.stats.projects') || 'Projets réalisés'},
-		{value: '100%', label: t('homePage.stats.satisfaction') || 'Satisfaction client'},
-		{value: '3+', label: t('homePage.stats.years') || "Années d'expérience"},
-		{value: '24/7', label: t('homePage.stats.support') || 'Support disponible'},
+		{value: '3+', label: t('homePage.stats.projects') || 'Projets réalisés'},
+		{value: '100%', label: t('homePage.stats.satisfaction') || 'Implication projet'},
+		{value: '2+', label: t('homePage.stats.years') || "Années d'expérience"},
+		{value: '3000+', label: t('homePage.stats.support') || 'Ligne code'},
 	];
 
 	return (

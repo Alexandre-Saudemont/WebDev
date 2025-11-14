@@ -2,12 +2,15 @@
 
 import {useEffect, useRef, useState, useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
+import {useTheme} from '../../../contexts/ThemeContext';
 import './ProcessSection.css';
+import Image from 'next/image';
 
 export default function ProcessSection() {
 	const {t} = useTranslation();
 	const [visibleSteps, setVisibleSteps] = useState(new Set());
 	const sectionRef = useRef(null);
+	const {isDarkMode} = useTheme();
 
 	// Utilisation de useMemo pour stabiliser les steps et éviter le warning SSR
 	const steps = useMemo(
@@ -16,28 +19,28 @@ export default function ProcessSection() {
 				number: '01',
 				title: t('homePage.process.discovery.title') || 'Découverte',
 				description: t('homePage.process.discovery.description') || 'Discussion pour comprendre vos besoins et objectifs',
-				icon: '💬',
+				icon: isDarkMode ? '/img/dark/discovery_dark.svg' : '/img/light/discovery_light.svg',
 			},
 			{
 				number: '02',
 				title: t('homePage.process.design.title') || 'Conception',
 				description: t('homePage.process.design.description') || "Création d'un design moderne et adapté à votre identité",
-				icon: '🎨',
+				icon: isDarkMode ? '/img/dark/art_dark.svg' : '/img/light/art_light.svg',
 			},
 			{
 				number: '03',
 				title: t('homePage.process.development.title') || 'Développement',
 				description: t('homePage.process.development.description') || 'Développement avec suivi régulier et transparence totale',
-				icon: '⚙️',
+				icon: isDarkMode ? '/img/dark/gear_dark.svg' : '/img/light/gear_light.svg',
 			},
 			{
 				number: '04',
 				title: t('homePage.process.launch.title') || 'Lancement',
 				description: t('homePage.process.launch.description') || 'Mise en ligne et accompagnement pour la suite',
-				icon: '🚀',
+				icon: isDarkMode ? '/img/dark/rocket_dark.svg' : '/img/light/rocket_light.svg',
 			},
 		],
-		[t],
+		[t, isDarkMode],
 	);
 
 	useEffect(() => {
@@ -102,7 +105,7 @@ export default function ProcessSection() {
 						<div key={index} className={`process-step ${visibleSteps.has(index) ? 'visible' : ''}`}>
 							<div className='step-number'>{step.number}</div>
 							<div className='step-content'>
-								<div className='step-icon'>{step.icon}</div>
+								<Image className='step-icon' src={step.icon} alt={step.title} height={50} width={50}></Image>
 								<h3>{step.title}</h3>
 								<p>{step.description}</p>
 							</div>

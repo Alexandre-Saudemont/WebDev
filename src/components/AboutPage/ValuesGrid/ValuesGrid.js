@@ -2,37 +2,39 @@
 
 import {useEffect, useRef, useState, useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
+import {useTheme} from '../../../contexts/ThemeContext';
 import './ValuesGrid.css';
+import Image from 'next/image';
 
 export default function ValuesGrid() {
 	const {t} = useTranslation();
 	const [visibleCards, setVisibleCards] = useState(new Set());
 	const sectionRef = useRef(null);
-
+	const {isDarkMode} = useTheme();
 	const values = useMemo(
 		() => [
 			{
-				icon: '💡',
 				title: t('aboutPage.sections.method.title') || 'Ma manière de travailler',
 				description: t('aboutPage.sections.method.content.0') || '',
+				icon: isDarkMode ? '/img/dark/lightbulb_dark.svg' : '/img/light/lightbulb_light.svg',
 			},
 			{
-				icon: '🤝',
 				title: t('aboutPage.sections.method.content.1')?.split('—')[0] || 'Transparence',
 				description: t('aboutPage.sections.method.content.1')?.split('—')[1] || '',
+				icon: isDarkMode ? '/img/dark/handshake_dark.svg' : '/img/light/handshake_light.svg',
 			},
 			{
-				icon: '✨',
 				title: t('aboutPage.sections.values.title') || "Ce qui m'anime",
 				description: t('aboutPage.sections.values.content.0') || '',
+				icon: isDarkMode ? '/img/dark/stars_dark.svg' : '/img/light/stars_light.svg',
 			},
 			{
-				icon: '🎯',
 				title: 'Objectif',
 				description: t('aboutPage.sections.values.content.1') || '',
+				icon: isDarkMode ? '/img/dark/target_dark.svg' : '/img/light/target_light.svg',
 			},
 		],
-		[t],
+		[t, isDarkMode],
 	);
 
 	useEffect(() => {
@@ -92,7 +94,7 @@ export default function ValuesGrid() {
 				<div className='values-grid'>
 					{values.map((value, index) => (
 						<div key={index} className={`value-card ${visibleCards.has(index) ? 'visible' : ''}`}>
-							<div className='value-icon'>{value.icon}</div>
+							<Image className='value-icon' src={value.icon} alt='Icon' width={50} height={50}></Image>
 							<h3>{value.title}</h3>
 							<p>{value.description}</p>
 						</div>

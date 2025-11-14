@@ -3,12 +3,15 @@
 import {useEffect, useRef, useState} from 'react';
 import Link from 'next/link';
 import {useTranslation} from 'react-i18next';
+import Image from 'next/image';
+import {useTheme} from '../../../contexts/ThemeContext';
 import './TeasersSection.css';
 
 export default function TeasersSection() {
 	const {t} = useTranslation();
 	const [visibleCards, setVisibleCards] = useState(new Set());
 	const sectionRef = useRef(null);
+	const {isDarkMode} = useTheme();
 
 	useEffect(() => {
 		const section = sectionRef.current;
@@ -61,7 +64,12 @@ export default function TeasersSection() {
 	return (
 		<section ref={sectionRef} className='home-teasers'>
 			<Link href='/projects' className={`teaser-card projects-teaser ${visibleCards.has(0) ? 'visible' : ''}`}>
-				<div className='teaser-icon'>🚀</div>
+				<Image
+					className='teaser-icon'
+					src={isDarkMode ? '/img/dark/project_dark.svg' : '/img/light/project_light.svg'}
+					alt='Icon thunder'
+					width={50}
+					height={50}></Image>
 				<h3>{t('navigation.projects')}</h3>
 				<p>{t('projectsPage.title')}</p>
 				<ul className='teaser-features'>
@@ -73,7 +81,12 @@ export default function TeasersSection() {
 			</Link>
 
 			<Link href='/services' className={`teaser-card services-teaser ${visibleCards.has(1) ? 'visible' : ''}`}>
-				<div className='teaser-icon'>⚡</div>
+				<Image
+					className='teaser-icon'
+					src={isDarkMode ? '/img/dark/thunder_dark.svg' : '/img/light/thunder_light.svg'}
+					alt='Icon thunder'
+					width={50}
+					height={50}></Image>
 				<h3>{t('navigation.services')}</h3>
 				<p>{t('services.subtitle')}</p>
 				<ul className='teaser-features'>

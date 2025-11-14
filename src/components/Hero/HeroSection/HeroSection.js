@@ -5,6 +5,8 @@ import Link from 'next/link';
 import {useTranslation} from 'react-i18next';
 import {ArrowRight} from 'lucide-react';
 import {useIntersectionObserver} from '@/hooks/useIntersectionObserver';
+import Image from 'next/image';
+import {useTheme} from '../../../contexts/ThemeContext';
 import './HeroSection.css';
 
 export default function HeroSection() {
@@ -13,6 +15,7 @@ export default function HeroSection() {
 		threshold: 0.1,
 		triggerOnce: true,
 	});
+	const {isDarkMode} = useTheme();
 
 	return (
 		<section ref={elementRef} className={`hero-section ${isVisible ? 'visible' : ''}`}>
@@ -45,12 +48,22 @@ export default function HeroSection() {
 
 				<div className='hero-cards'>
 					<div className='hero-card'>
-						<div className='card-icon'>🎨</div>
+						<Image
+							className='card-icon'
+							src={isDarkMode ? '/img/dark/art_dark.svg' : '/img/light/art_light.svg'}
+							alt='Icon art'
+							width={40}
+							height={40}></Image>
 						<h3>{t('homePage.hero.cards.frontend.title')}</h3>
 						<p>{t('homePage.hero.cards.frontend.desc')}</p>
 					</div>
 					<div className='hero-card'>
-						<div className='card-icon'>⚙️</div>
+						<Image
+							className='card-icon'
+							src={isDarkMode ? '/img/dark/gear_dark.svg' : '/img/light/gear_light.svg'}
+							alt='Icon gear'
+							width={40}
+							height={40}></Image>
 						<h3>{t('homePage.hero.cards.backend.title')}</h3>
 						<p>{t('homePage.hero.cards.backend.desc')}</p>
 					</div>

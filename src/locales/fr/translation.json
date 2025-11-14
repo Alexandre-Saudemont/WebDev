@@ -97,7 +97,6 @@
 		"subtitle": "Des solutions web claires et modernes, pensées pour les indépendants et petites entreprises",
 		"items": [
 			{
-				"icon": "🌐",
 				"title": "Sites vitrines modernes",
 				"description": "Je conçois des sites simples, rapides et agréables à utiliser, pour présenter efficacement votre activité en ligne.",
 				"features": [
@@ -108,7 +107,6 @@
 				]
 			},
 			{
-				"icon": "🛒",
 				"title": "Petits e-commerces efficaces",
 				"description": "Je mets en place des boutiques en ligne intuitives et sécurisées, parfaites pour démarrer vos ventes sur le web.",
 				"features": [
@@ -119,7 +117,6 @@
 				]
 			},
 			{
-				"icon": "⚙️",
 				"title": "Applications web personnalisées",
 				"description": "Je développe des outils web adaptés à vos besoins : gestion, formulaires, tableaux de bord, etc.",
 				"features": [

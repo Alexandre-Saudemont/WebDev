@@ -17,8 +17,8 @@ export default function ProjectsCta() {
 		<section ref={elementRef} className={`projects-cta ${isVisible ? 'visible' : ''}`}>
 			<div className='projects-cta-container'>
 				<div className='projects-cta-content'>
-					<h2>Intéressé par un projet similaire ?</h2>
-					<p>Discutons de votre projet et créons ensemble une solution web adaptée à vos besoins.</p>
+					<h2>{t('projectsPage.cta.title')}</h2>
+					<p>{t('projectsPage.cta.description')}</p>
 					<Link href='/contact' className='cta-button'>
 						{t('navigation.contact')}
 						<ArrowRight size={18} />

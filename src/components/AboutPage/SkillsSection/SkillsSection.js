@@ -6,7 +6,7 @@ import {SKILLS, SKILL_ICONS} from '@/lib/constants';
 import Image from 'next/image';
 import './SkillsSection.css';
 
-export default function SkillsSection({title, description}) {
+export default function SkillsSection({title, description, subtitle}) {
 	const {isDarkMode} = useTheme();
 	const [visibleItems, setVisibleItems] = useState(new Set());
 	const sectionRef = useRef(null);
@@ -62,8 +62,8 @@ export default function SkillsSection({title, description}) {
 		<section ref={sectionRef} className='skills-section'>
 			<div className='skills-container-inner'>
 				<div className='section-header'>
-					<div className='section-badge'>Compétences</div>
-					<h2>{title}</h2>
+					<div className='section-badge'>{title}</div>
+					<h2>{subtitle}</h2>
 					{description && <p className='section-description'>{description}</p>}
 				</div>
 				<div className='skills-grid'>

@@ -54,19 +54,25 @@
 	"aboutPage": {
 		"sections": {
 			"intro": {
-				"title": "关于我",
+				"title": "关于",
+				"subtitle": "关于我",
 				"content": [
 					"作为一名自由网页开发者，我帮助小型企业和独立专业人士建立专业高效的线上形象。",
 					"我的目标：设计现代化、高性能且符合您需求的网站。"
 				]
 			},
 			"parcours": {
-				"title": "我的经历",
+				"title": "经历",
+				"subtitle": "我的经历",
 				"content": [
 					"自幼对信息技术充满热情，在转入网页开发之前，我在行政领域工作了数年。",
 					"我从自学开始，随后加入了O'Clock学校来巩固我的技能。",
 					"培训分为三个阶段：三个月专注于JavaScript基础，一个月专攻React，最后一个月致力于团队项目，期间我担任前端开发人员。"
 				]
+			},
+			"methodAndValues": {
+				"title": "价值观",
+				"subtitle": "我的方法与价值观"
 			},
 			"method": {
 				"title": "我的工作方法",
@@ -85,7 +91,8 @@
 				"content": ["我的目标：让您为自己的网站感到自豪，并让它成为推动业务发展的真正资产。"]
 			},
 			"skills": {
-				"title": "我的工具",
+				"title": "技能",
+				"subtitle": "核心技能",
 				"content": ["我使用以下技术创建现代且高性能的网站："]
 			},
 			"cta": {
@@ -95,8 +102,9 @@
 		}
 	},
 	"services": {
-		"title": "我的服务",
-		"subtitle": "清晰现代的网页解决方案，专为独立专业人士和小型企业设计",
+		"title": "服务",
+		"subtitle": "我的服务",
+		"description": "为自由职业者和小型企业设计的清晰且现代的网页解决方案。",
 		"items": [
 			{
 				"title": "现代展示网站",
@@ -126,7 +134,9 @@
 	},
 
 	"projectsPage": {
-		"title": "我的项目",
+		"title": "项目",
+		"subtitle": "我的项目",
+		"description": "探索我的作品以及每个项目所使用的技术。",
 		"project1": {
 			"title": "宝可梦卡牌网站",
 			"description": "一个宝可梦卡牌收藏应用，用于创建、整理和管理您的个人卡组",
@@ -142,14 +152,15 @@
 			"description": "一个互动游戏，通过趣味方式学习汉字，按HSK等级分类",
 			"tech": ["ReactJS", "Interactive learning"]
 		},
-		"github": "GitHub",
-		"githubFront": "前端",
-		"githubBack": "后端",
-		"website": "网站"
+		"cta": {
+			"title": "对类似项目感兴趣吗 ？",
+			"description": "让我们讨论您的项目，共同创建适合您需求的网页解决方案。"
+		}
 	},
 	"contact": {
-		"title": "联系我",
-		"subtitle": "您有网页项目，或想为您的业务建立线上形象吗？让我们一起讨论吧。",
+		"title": "联系",
+		"subtitle": "联系我",
+		"description": "您有网页项目，或想为您的业务打造线上形象吗？让我们一起讨论吧。",
 		"form": {
 			"title": "联系表单",
 			"description": "请向我说明您的项目或需求，我会尽快回复您。",

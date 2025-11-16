@@ -14,9 +14,9 @@ export default function ContactHeader() {
 	return (
 		<header ref={elementRef} className={`contact-header ${isVisible ? 'visible' : ''}`}>
 			<div className='contact-header-content'>
-				<div className='header-badge'>Contact</div>
-				<h1>{t('contact.title')}</h1>
-				<p className='header-subtitle'>{t('contact.subtitle')}</p>
+				<div className='header-badge'>{t('contact.title')}</div>
+				<h1>{t('contact.subtitle')}</h1>
+				<p className='header-subtitle'>{t('contact.description')}</p>
 			</div>
 		</header>
 	);

@@ -14,8 +14,8 @@ export default function ProjectsHeader() {
 	return (
 		<header ref={elementRef} className={`projects-header ${isVisible ? 'visible' : ''}`}>
 			<div className='projects-header-content'>
-				<div className='header-badge'>Projets</div>
-				<h1>{t('projectsPage.title')}</h1>
+				<div className='header-badge'>{t('projectsPage.title')}</div>
+				<h1>{t('projectsPage.subtitle')}</h1>
 				<p className='header-subtitle'>Découvrez mes réalisations et les technologies utilisées pour chaque projet</p>
 			</div>
 		</header>

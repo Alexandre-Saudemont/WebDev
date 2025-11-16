@@ -54,19 +54,25 @@
 	"aboutPage": {
 		"sections": {
 			"intro": {
-				"title": "About Me",
+				"title": "About",
+				"subtitle": "About me",
 				"content": [
 					"Freelance web developer, I help small businesses and independent professionals create a professional and effective online presence.",
 					"My goal: to design modern, high-performance websites tailored to your needs."
 				]
 			},
 			"parcours": {
-				"title": "My Journey",
+				"title": "Journey",
+				"subtitle": "My journey",
 				"content": [
 					"Passionate about IT since my childhood, I worked several years in administration before transitioning into web development.",
 					"I started learning on my own, then joined O'Clock school to strengthen my skills.",
 					"The training consisted of three phases: three months dedicated to JavaScript fundamentals, one month specializing in React, and a final month dedicated to a team project where I served as Front-End Developer."
 				]
+			},
+			"methodAndValues": {
+				"title": "Values",
+				"subtitle": "My Method & Values"
 			},
 			"method": {
 				"title": "My Working Method",
@@ -91,7 +97,8 @@
 				"content": ["My goal: for you to be proud of your website and for it to become a real asset for growing your business."]
 			},
 			"skills": {
-				"title": "My Tools",
+				"title": "Skills",
+				"subtitle": "Core skills",
 				"content": ["I create modern and performant websites using the following technologies:"]
 			},
 			"cta": {
@@ -101,8 +108,10 @@
 		}
 	},
 	"services": {
-		"title": "My Services",
-		"subtitle": "Clear and modern web solutions, designed for independent professionals and small businesses",
+		"title": "Services",
+		"subtitle": "My Services",
+		"description": "Clear and modern web solutions, designed for freelancers and small businesses.",
+
 		"items": [
 			{
 				"title": "Modern showcase websites",
@@ -147,7 +156,9 @@
 	},
 
 	"projectsPage": {
-		"title": "My Projects",
+		"title": "Projects",
+		"subtitle": "My Projects",
+		"description": "Discover my work and the technologies used for each project.",
 		"project1": {
 			"title": "Pokedeck Website",
 			"description": "A Pokémon card collection application to create, sort and manage your personal deck",
@@ -163,15 +174,16 @@
 			"description": "An interactive game to learn Chinese characters while having fun, classified by HSK levels",
 			"tech": ["ReactJS", "Interactive learning"]
 		},
-		"github": "GitHub",
-		"githubFront": "Front-End",
-		"githubBack": "Back-End",
-		"website": "Website"
+		"cta": {
+			"title": "Interested in a similar project ?",
+			"description": "Let's discuss your project and create a web solution tailored to your needs."
+		}
 	},
 
 	"contact": {
-		"title": "Contact Me",
-		"subtitle": "Do you have a web project or want to build your online presence? Let’s discuss it together.",
+		"title": "Contact",
+		"subtitle": "Contact me",
+		"description": "Do you have a web project or want to create the online presence of your business? Let's discuss it together.",
 		"form": {
 			"title": "Contact Form",
 			"description": "Tell me about your project or your needs, and I’ll get back to you shortly.",

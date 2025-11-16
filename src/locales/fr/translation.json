@@ -53,19 +53,25 @@
 	"aboutPage": {
 		"sections": {
 			"intro": {
-				"title": "À propos de moi",
+				"title": "À propos",
+				"subtitle": "À propos de moi",
 				"content": [
 					"Développeur web freelance, spécialisé dans la création de sites modernes et performants pour les indépendants et petites entreprises.",
 					"Mon approche : allier design, clarté et efficacité pour vous aider à développer votre activité en ligne."
 				]
 			},
 			"parcours": {
-				"title": "Mon parcours",
+				"title": "Parcours",
+				"subtitle": "Mon parcours",
 				"content": [
 					"Depuis mon enfance, l’informatique me passionne.\nAprès plusieurs années dans l’administration, j’ai choisi de me réorienter vers le développement web.",
 					"J'ai commencé par apprendre le développement web en autodidacte, puis j'ai rejoint l'école O'Clock pour structurer mes compétences. \nJ'y ai suivi un programme intensif de 5 mois, avec les fondamentaux du web (HTML, CSS, JS, Node.js, PostgreSQL) et une spécialisation Front-end avec React.js.",
 					"Grâce à cette formation, j’ai renforcé mes bases et participé à des projets concrets, ce qui m’a préparé à travailler efficacement en tant que développeur web junior."
 				]
+			},
+			"methodAndValues": {
+				"title": "Valeurs",
+				"subtitle": "Ma méthode & mes valeurs"
 			},
 			"method": {
 				"title": "Ma manière de travailler",
@@ -90,7 +96,8 @@
 				"content": ["Mon but : que vous soyez fier de votre site et qu’il devienne un vrai atout pour votre activité."]
 			},
 			"skills": {
-				"title": "Compétences principales",
+				"title": "Compétences",
+				"subtitle": "Compétences principales",
 				"content": ["Je conçois et développe des sites sur mesure avec les technologies suivantes :"]
 			},
 			"cta": {
@@ -101,8 +108,9 @@
 	},
 
 	"services": {
-		"title": "Mes Services",
-		"subtitle": "Des solutions web claires et modernes, pensées pour les indépendants et petites entreprises",
+		"title": "Services",
+		"subtitle": "Mes Services",
+		"description": "Des solutions web claires et modernes, pensées pour les indépendants et petites entreprises",
 		"items": [
 			{
 				"title": "Sites vitrines modernes",
@@ -152,7 +160,9 @@
 	},
 
 	"projectsPage": {
-		"title": "Mes Projets",
+		"title": "Projets",
+		"subtitle": "Mes Projets",
+		"description": "Découvrez mes réalisations et les technologies utilisées pour chaque projet",
 		"project1": {
 			"title": "Site Pokedeck",
 			"description": "Une application de collection de cartes Pokémon pour créer, trier et gérer votre deck personnel",
@@ -168,15 +178,17 @@
 			"description": "Un jeu interactif pour apprendre les caractères chinois en s'amusant, classés par niveaux HSK",
 			"tech": ["ReactJS", "Interactive learning"]
 		},
-		"github": "GitHub",
-		"githubFront": "Front-End",
-		"githubBack": "Back-End",
-		"website": "Site Web"
+
+		"cta": {
+			"title": "Intéressé par un projet similaire ?",
+			"description": "Discutons de votre projet et créons ensemble une solution web adaptée à vos besoins."
+		}
 	},
 
 	"contact": {
-		"title": "Contactez-moi",
-		"subtitle": "Vous avez un projet web ou souhaitez créer la présence en ligne de votre activité ? Discutons-en ensemble.",
+		"title": "Contact",
+		"subtitle": "Contactez-moi",
+		"description": "Vous avez un projet web ou souhaitez créer la présence en ligne de votre activité ? Discutons-en ensemble.",
 		"form": {
 			"title": "Formulaire de contact",
 			"description": "Expliquez-moi votre projet ou vos besoins, et je reviendrai vers vous rapidement.",

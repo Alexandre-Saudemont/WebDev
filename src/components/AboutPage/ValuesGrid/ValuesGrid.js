@@ -88,8 +88,8 @@ export default function ValuesGrid() {
 		<section ref={sectionRef} className='values-grid-section'>
 			<div className='values-container'>
 				<div className='section-header'>
-					<div className='section-badge'>Valeurs</div>
-					<h2>Ma méthode & mes valeurs</h2>
+					<div className='section-badge'>{t('aboutPage.sections.methodAndValues.title')}</div>
+					<h2>{t('aboutPage.sections.methodAndValues.subtitle')}</h2>
 				</div>
 				<div className='values-grid'>
 					{values.map((value, index) => (

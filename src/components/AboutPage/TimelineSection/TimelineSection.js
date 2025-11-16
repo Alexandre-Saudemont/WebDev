@@ -36,8 +36,8 @@ export default function TimelineSection() {
 		<section className='timeline-section'>
 			<div className='timeline-container'>
 				<div className='section-header'>
-					<div className='section-badge'>Parcours</div>
-					<h2>{t('aboutPage.sections.parcours.title') || 'Mon parcours'}</h2>
+					<div className='section-badge'>{t('aboutPage.sections.parcours.title')}</div>
+					<h2>{t('aboutPage.sections.parcours.subtitle') || 'Mon parcours'}</h2>
 				</div>
 				<div className='timeline'>
 					{timelineItems.map((item, index) => (

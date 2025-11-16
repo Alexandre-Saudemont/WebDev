@@ -14,9 +14,9 @@ export default function ServicesHeader() {
 	return (
 		<header ref={elementRef} className={`services-header ${isVisible ? 'visible' : ''}`}>
 			<div className='services-header-content'>
-				<div className='header-badge'>Services</div>
-				<h1>{t('services.title')}</h1>
-				<p className='header-subtitle'>{t('services.subtitle')}</p>
+				<div className='header-badge'>{t('services.title')}</div>
+				<h1>{t('services.subtitle')}</h1>
+				<p className='header-subtitle'>{t('services.description')}</p>
 			</div>
 		</header>
 	);

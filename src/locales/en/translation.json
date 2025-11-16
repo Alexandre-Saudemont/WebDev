@@ -51,51 +51,6 @@
 			}
 		}
 	},
-	"services": {
-		"title": "My Services",
-		"subtitle": "Clear and modern web solutions, designed for independent professionals and small businesses",
-		"items": [
-			{
-				"icon": "🌐",
-				"title": "Modern showcase websites",
-				"description": "I design simple, fast and pleasant-to-use websites to effectively present your business online.",
-				"features": [
-					"Clean design adapted to your image",
-					"Clear structure for smooth navigation",
-					"Compatible with mobile, tablet and computer",
-					"Optimized for good SEO on Google"
-				]
-			},
-			{
-				"icon": "🛒",
-				"title": "Effective small e-commerce",
-				"description": "I set up intuitive and secure online stores, perfect for starting your sales on the web.",
-				"features": [
-					"Simple interface to manage your products",
-					"Secure and reliable payments",
-					"Optimization to facilitate conversion",
-					"Support for getting started"
-				]
-			},
-			{
-				"icon": "⚙️",
-				"title": "Custom web applications",
-				"description": "I develop web tools adapted to your needs: management, forms, dashboards, etc.",
-				"features": [
-					"Tailor-made solutions at human scale",
-					"Clear and scalable development",
-					"Intuitive and responsive interface",
-					"Possible connection to a database"
-				]
-			},
-			{
-				"icon": "🔧",
-				"title": "Maintenance & support",
-				"description": "I help you keep your website up to date and functional, even after launch.",
-				"features": ["Updates and small evolutions", "Regular backups", "Performance improvements", "Reactive and attentive support"]
-			}
-		]
-	},
 	"aboutPage": {
 		"sections": {
 			"intro": {
@@ -116,17 +71,24 @@
 			"method": {
 				"title": "My Working Method",
 				"content": [
-					"Every project begins with a discussion to understand your needs and objectives.",
-					"I prioritize transparency and communication throughout the development process: you follow the website's progress step by step.",
-					"I can also support you after launch for maintenance or future updates."
+					"Each project starts with a discussion to understand your real needs and define priorities.\nI make sure every technical and design decision makes sense for your business."
+				]
+			},
+			"transparency": {
+				"title": "Transparency",
+				"content": [
+					"I prioritize transparency, simplicity, and responsiveness — you always know the status of your project and why certain decisions are made."
 				]
 			},
 			"values": {
-				"title": "My Values",
+				"title": "What Drives Me",
 				"content": [
-					"What motivates me daily is seeing my clients proud of the final result: a website that reflects their identity, attracts new customers, and makes their lives easier.",
-					"I believe a successful website is first and foremost a human collaboration, where technique serves the idea."
+					"Creating useful, aesthetic, and long-lasting websites.\nI love seeing my projects actually help clients achieve their goals."
 				]
+			},
+			"objectif": {
+				"title": "Goal",
+				"content": ["My goal: for you to be proud of your website and for it to become a real asset for growing your business."]
 			},
 			"skills": {
 				"title": "My Tools",
@@ -138,6 +100,52 @@
 			}
 		}
 	},
+	"services": {
+		"title": "My Services",
+		"subtitle": "Clear and modern web solutions, designed for independent professionals and small businesses",
+		"items": [
+			{
+				"title": "Modern showcase websites",
+				"description": "I design simple, fast and pleasant-to-use websites to effectively present your business online.",
+				"features": [
+					"Clean design adapted to your image",
+					"Clear structure for smooth navigation",
+					"Compatible with mobile, tablet and computer",
+					"Optimized for good SEO on Google"
+				]
+			},
+			{
+				"title": "Effective small e-commerce",
+				"description": "I set up intuitive and secure online stores, perfect for starting your sales on the web.",
+				"features": [
+					"Simple interface to manage your products",
+					"Secure and reliable payments",
+					"Optimization to facilitate conversion",
+					"Support for getting started"
+				]
+			},
+			{
+				"title": "Custom web applications",
+				"description": "I develop web tools adapted to your needs: management, forms, dashboards, etc.",
+				"features": [
+					"Tailor-made solutions at human scale",
+					"Clear and scalable development",
+					"Intuitive and responsive interface",
+					"Possible connection to a database"
+				]
+			},
+			{
+				"title": "Maintenance & support",
+				"description": "I help you keep your website up to date and functional, even after launch.",
+				"features": ["Updates and small evolutions", "Regular backups", "Performance improvements", "Reactive and attentive support"]
+			}
+		],
+		"cta": {
+			"title": "Ready to start your project?",
+			"description": "Let's discuss your needs and create a web solution together that fits your business perfectly."
+		}
+	},
+
 	"projectsPage": {
 		"title": "My Projects",
 		"project1": {

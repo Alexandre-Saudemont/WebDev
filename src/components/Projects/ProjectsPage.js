@@ -15,7 +15,9 @@ export default function ProjectsPage() {
 			const projectKeys = ['project1', 'project2', 'project3'];
 			const projectsList = [];
 
-			projectKeys.forEach((key) => {
+			const projectImages = ['/img/projects/pokedeck.webp', '/img/projects/taiwan.webp', '/img/projects/hsk.webp'];
+
+			projectKeys.forEach((key, index) => {
 				const title = t(`projectsPage.${key}.title`);
 				const description = t(`projectsPage.${key}.description`);
 				const techArray = t(`projectsPage.${key}.tech`, {returnObjects: true});
@@ -26,6 +28,7 @@ export default function ProjectsPage() {
 						title: title,
 						description: description,
 						tech: techList.map((item) => String(item)),
+						image: projectImages[index],
 					});
 				}
 			});

@@ -12,21 +12,22 @@ export default function ProjectsGrid({projects}) {
 		const container = containerRef.current;
 		if (!container) return;
 
-		let observer = null;
+		const cards = container.querySelectorAll('.project-card');
 
-		// Fallback si IntersectionObserver n'est pas supporté
-		if (typeof IntersectionObserver === 'undefined') {
-			const allIndices = new Set(projects.map((_, index) => index));
-			// Déférer le setState pour éviter le warning
-			requestAnimationFrame(() => setVisibleCards(allIndices));
-			return;
-		}
+		// Affiche directement toutes les cartes déjà dans le viewport avec un stagger
+		cards.forEach((card, index) => {
+			setTimeout(() => {
+				setVisibleCards((prev) => {
+					const newSet = new Set(prev);
+					newSet.add(index);
+					return newSet;
+				});
+			}, index * 150);
+		});
 
-		const rafId = requestAnimationFrame(() => {
-			const cards = container.querySelectorAll('.project-card');
-			if (cards.length === 0) return;
-
-			observer = new IntersectionObserver(
+		// IntersectionObserver pour les cartes ajoutées plus bas si nécessaire
+		if (typeof IntersectionObserver !== 'undefined') {
+			const observer = new IntersectionObserver(
 				(entries) => {
 					entries.forEach((entry) => {
 						if (entry.isIntersecting) {
@@ -48,12 +49,8 @@ export default function ProjectsGrid({projects}) {
 			);
 
 			cards.forEach((card) => observer.observe(card));
-		});
-
-		return () => {
-			cancelAnimationFrame(rafId);
-			if (observer) observer.disconnect();
-		};
+			return () => observer.disconnect();
+		}
 	}, [projects]);
 
 	return (

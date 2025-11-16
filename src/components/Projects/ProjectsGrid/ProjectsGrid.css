@@ -6,10 +6,11 @@
 }
 
 .project-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 2.5rem;
-	max-width: 1200px;
+	max-width: 1200px; /* comme avant avec grid */
 	margin: 0 auto;
 }
 

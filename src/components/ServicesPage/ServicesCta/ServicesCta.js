@@ -17,8 +17,8 @@ export default function ServicesCta() {
 		<section ref={elementRef} className={`services-cta ${isVisible ? 'visible' : ''}`}>
 			<div className='services-cta-container'>
 				<div className='services-cta-content'>
-					<h2>Prêt à démarrer votre projet ?</h2>
-					<p>Discutons de vos besoins et créons ensemble une solution web adaptée à votre activité.</p>
+					<h2>{t('services.cta.title')}</h2>
+					<p>{t('services.cta.description')}</p>
 					<Link href='/contact' className='cta-button'>
 						{t('navigation.contact')}
 						<ArrowRight size={18} />

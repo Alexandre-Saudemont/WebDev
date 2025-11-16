@@ -55,35 +55,43 @@
 			"intro": {
 				"title": "À propos de moi",
 				"content": [
-					"Je suis développeur web freelance, spécialisé dans la création de sites modernes et performants pour les indépendants et petites entreprises.",
+					"Développeur web freelance, spécialisé dans la création de sites modernes et performants pour les indépendants et petites entreprises.",
 					"Mon approche : allier design, clarté et efficacité pour vous aider à développer votre activité en ligne."
 				]
 			},
 			"parcours": {
 				"title": "Mon parcours",
 				"content": [
-					"Passionné par l'informatique depuis mon enfance, j'ai travaillé plusieurs années dans l'administration avant de me reconvertir dans le développement web.",
-					"J'ai commencé par apprendre en autodidacte, puis j'ai rejoint l'école O'Clock pour renforcer mes compétences.",
-					"La formation s'est déroulée en trois phases : trois mois dédiés aux fondamentaux JavaScript, un mois de spécialisation React, et un dernier mois consacré à un projet d'équipe où j'ai occupé le rôle de Front-End Developer."
+					"Depuis mon enfance, l’informatique me passionne.\nAprès plusieurs années dans l’administration, j’ai choisi de me réorienter vers le développement web.",
+					"J'ai commencé par apprendre le développement web en autodidacte, puis j'ai rejoint l'école O'Clock pour structurer mes compétences. \nJ'y ai suivi un programme intensif de 5 mois, avec les fondamentaux du web (HTML, CSS, JS, Node.js, PostgreSQL) et une spécialisation Front-end avec React.js.",
+					"Grâce à cette formation, j’ai renforcé mes bases et participé à des projets concrets, ce qui m’a préparé à travailler efficacement en tant que développeur web junior."
 				]
-			},
-			"skills": {
-				"title": "Compétences principales",
-				"content": ["Je conçois et développe des sites sur mesure avec les technologies suivantes :"]
 			},
 			"method": {
 				"title": "Ma manière de travailler",
 				"content": [
-					"Chaque projet démarre par une discussion pour comprendre vos besoins réels.",
-					"Je privilégie la transparence, la simplicité et la réactivité — vous savez toujours où en est votre projet."
+					"Chaque projet démarre par une discussion pour comprendre vos besoins réels et définir les priorités.\nJe m’assure que chaque décision technique et design a du sens pour votre activité."
+				]
+			},
+			"transparency": {
+				"title": "Transparence",
+				"content": [
+					"Je privilégie la transparence, la simplicité et la réactivité — vous savez toujours où en est votre projet et pourquoi certaines décisions sont prises."
 				]
 			},
 			"values": {
 				"title": "Ce qui m’anime",
 				"content": [
-					"Créer des sites utiles, esthétiques et pensés pour durer.",
-					"Mon but : que vous soyez fier de votre site et qu’il devienne un vrai atout pour votre activité."
+					"Créer des sites utiles, esthétiques et pensés pour durer. \nJ’aime voir mes projets aider concrètement les clients à atteindre leurs objectifs."
 				]
+			},
+			"objectif": {
+				"title": "Objectif",
+				"content": ["Mon but : que vous soyez fier de votre site et qu’il devienne un vrai atout pour votre activité."]
+			},
+			"skills": {
+				"title": "Compétences principales",
+				"content": ["Je conçois et développe des sites sur mesure avec les technologies suivantes :"]
 			},
 			"cta": {
 				"title": "Travaillons ensemble",
@@ -98,7 +106,7 @@
 		"items": [
 			{
 				"title": "Sites vitrines modernes",
-				"description": "Je conçois des sites simples, rapides et agréables à utiliser, pour présenter efficacement votre activité en ligne.",
+				"description": "Conception de sites simples, rapides et agréables à utiliser, pour présenter efficacement votre activité en ligne.",
 				"features": [
 					"Design sobre et adapté à votre image",
 					"Structure claire pour une navigation fluide",
@@ -108,7 +116,7 @@
 			},
 			{
 				"title": "Petits e-commerces efficaces",
-				"description": "Je mets en place des boutiques en ligne intuitives et sécurisées, parfaites pour démarrer vos ventes sur le web.",
+				"description": "Mise en place de boutiques en ligne intuitives et sécurisées, parfaites pour démarrer vos ventes sur le web.",
 				"features": [
 					"Interface simple pour gérer vos produits",
 					"Paiements sécurisés et fiables",
@@ -118,7 +126,7 @@
 			},
 			{
 				"title": "Applications web personnalisées",
-				"description": "Je développe des outils web adaptés à vos besoins : gestion, formulaires, tableaux de bord, etc.",
+				"description": "Développement d'outils web adaptés à vos besoins : gestion, formulaires, tableaux de bord, etc.",
 				"features": [
 					"Solutions sur mesure à taille humaine",
 					"Développement clair et évolutif",
@@ -127,9 +135,8 @@
 				]
 			},
 			{
-				"icon": "🔧",
 				"title": "Maintenance & accompagnement",
-				"description": "Je vous aide à garder votre site à jour et fonctionnel, même après la mise en ligne.",
+				"description": "Suivi technique continu et optimisation post-livraison pour une stabilité durable",
 				"features": [
 					"Mises à jour et petites évolutions",
 					"Sauvegardes régulières",
@@ -137,7 +144,11 @@
 					"Support réactif et à l’écoute"
 				]
 			}
-		]
+		],
+		"cta": {
+			"title": "Prêt à démarrer votre projet ?",
+			"description": "Discutons de vos besoins et créons ensemble une solution web adaptée à votre activité."
+		}
 	},
 
 	"projectsPage": {

@@ -15,22 +15,22 @@ export default function ValuesGrid() {
 		() => [
 			{
 				title: t('aboutPage.sections.method.title') || 'Ma manière de travailler',
-				description: t('aboutPage.sections.method.content.0') || '',
+				description: t('aboutPage.sections.method.content', {returnObjects: true}) || [],
 				icon: isDarkMode ? '/img/dark/lightbulb_dark.svg' : '/img/light/lightbulb_light.svg',
 			},
 			{
-				title: t('aboutPage.sections.method.content.1')?.split('—')[0] || 'Transparence',
-				description: t('aboutPage.sections.method.content.1')?.split('—')[1] || '',
+				title: t('aboutPage.sections.transparency.title') || 'Transparence',
+				description: t('aboutPage.sections.transparency.content', {returnObjects: true}) || [],
 				icon: isDarkMode ? '/img/dark/handshake_dark.svg' : '/img/light/handshake_light.svg',
 			},
 			{
-				title: t('aboutPage.sections.values.title') || "Ce qui m'anime",
-				description: t('aboutPage.sections.values.content.0') || '',
+				title: t('aboutPage.sections.values.title') || 'Ce qui m’anime',
+				description: t('aboutPage.sections.values.content', {returnObjects: true}) || [],
 				icon: isDarkMode ? '/img/dark/stars_dark.svg' : '/img/light/stars_light.svg',
 			},
 			{
-				title: 'Objectif',
-				description: t('aboutPage.sections.values.content.1') || '',
+				title: t('aboutPage.sections.objectif.title') || 'Objectif',
+				description: t('aboutPage.sections.objectif.content', {returnObjects: true}) || [],
 				icon: isDarkMode ? '/img/dark/target_dark.svg' : '/img/light/target_light.svg',
 			},
 		],
@@ -96,7 +96,11 @@ export default function ValuesGrid() {
 						<div key={index} className={`value-card ${visibleCards.has(index) ? 'visible' : ''}`}>
 							<Image className='value-icon' src={value.icon} alt='Icon' width={50} height={50}></Image>
 							<h3>{value.title}</h3>
-							<p>{value.description}</p>
+							{Array.isArray(value.description) ? (
+								value.description.map((text, i) => <p key={i}>{text}</p>)
+							) : (
+								<p>{value.description}</p>
+							)}
 						</div>
 					))}
 				</div>

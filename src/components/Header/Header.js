@@ -46,7 +46,7 @@ export default function Header() {
 
 				<ul className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
 					{navItems.map((item) => {
-						const isActive = pathname === item.href;
+						const isActive = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
 						return (
 							<li key={item.href}>
 								<Link href={item.href} className={isActive ? 'active' : ''} onClick={() => setIsMobileMenuOpen(false)}>

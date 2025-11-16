@@ -3,10 +3,14 @@
 	border: 1px solid var(--border);
 	border-radius: 16px;
 	overflow: hidden;
-	transition: all 0.3s ease;
-	position: relative;
+	flex: 1 1 30%;
+	max-width: 350px;
 	opacity: 0;
 	transform: translateY(40px);
+	position: relative;
+	transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease,
+		border-color 0.3s ease;
+	will-change: opacity, transform;
 }
 
 .project-card.visible {
@@ -115,4 +119,3 @@
 		padding: 1rem;
 	}
 }
-

@@ -26,10 +26,10 @@
 			}
 		},
 		"stats": {
-			"projects": "Projects completed",
-			"satisfaction": "Client satisfaction",
-			"years": "Years of experience",
-			"support": "Support available"
+			"projects": "Completed Projects",
+			"satisfaction": "Dedication to Every Project",
+			"years": "Years of Experience",
+			"support": "Lines of Code"
 		},
 		"process": {
 			"title": "Process",

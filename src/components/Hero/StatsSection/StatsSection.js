@@ -15,7 +15,7 @@ export default function StatsSection() {
 		{value: '3+', label: t('homePage.stats.projects') || 'Projets réalisés'},
 		{value: '100%', label: t('homePage.stats.satisfaction') || 'Implication projet'},
 		{value: '2+', label: t('homePage.stats.years') || "Années d'expérience"},
-		{value: '3000+', label: t('homePage.stats.support') || 'Ligne code'},
+		{value: '6000+', label: t('homePage.stats.support') || 'Ligne code'},
 	];
 
 	return (

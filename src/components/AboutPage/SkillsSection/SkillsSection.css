@@ -48,10 +48,12 @@
 }
 
 .skills-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
 	gap: 1.5rem;
-	justify-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 1000px;
 }
 
 .skill {
@@ -146,4 +148,3 @@
 		gap: 1rem;
 	}
 }
-

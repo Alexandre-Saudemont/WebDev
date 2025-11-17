@@ -250,6 +250,18 @@ header.menu-open {
 		display: block;
 	}
 
+	.nav-links a.active::after {
+		content: '';
+		position: absolute;
+		bottom: 0.25rem;
+		left: 14%;
+		transform: translateX(-50%);
+		width: 20%;
+		height: 2px;
+		background: var(--gradient);
+		border-radius: 2px;
+	}
+
 	.mobile-menu-toggle {
 		display: flex;
 		align-items: center;
@@ -286,4 +298,3 @@ header.menu-open {
 		padding: 0.5rem;
 	}
 }
-

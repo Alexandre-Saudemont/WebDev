@@ -26,9 +26,9 @@
 		},
 		"stats": {
 			"projects": "已完成项目",
-			"satisfaction": "客户满意度",
-			"years": "工作经验",
-			"support": "可用支持"
+			"satisfaction": "对每个项目的专注投入",
+			"years": "年经验",
+			"support": "代码行数"
 		},
 		"process": {
 			"title": "工作流程",

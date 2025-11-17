@@ -70,8 +70,8 @@ export default function TeasersSection() {
 					alt='Icon thunder'
 					width={50}
 					height={50}></Image>
-				<h3>{t('navigation.projects')}</h3>
-				<p>{t('projectsPage.title')}</p>
+				<h3>{t('projectsPage.title')}</h3>
+				<p>{t('projectsPage.subtitle')}</p>
 				<ul className='teaser-features'>
 					<li>{t('projectsPage.project1.title')}</li>
 					<li>{t('projectsPage.project2.title')}</li>

@@ -20,8 +20,8 @@
 			"subtitle": "热衷于打造精美数字体验的全栈开发者",
 			"description": "我创建现代化且高性能的网站，帮助企业发展其在线形象。",
 			"cards": {
-				"frontend": {"title": "前端", "desc": "React.js, Next.js, JavaScript, 响应式设计"},
-				"backend": {"title": "后端", "desc": "Node.js, Express.js, PostgreSQL"}
+				"frontend": {"title": "Front-end", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
+				"backend": {"title": "Back-end", "desc": "Node.js, Express.js, PostgreSQL"}
 			}
 		},
 		"stats": {
@@ -31,8 +31,9 @@
 			"support": "可用支持"
 		},
 		"process": {
-			"title": "我的工作方式",
-			"subtitle": "为您的项目提供清晰透明的流程",
+			"title": "工作流程",
+			"subtitle": "我的工作方式",
+			"description": "为您的项目提供清晰透明的工作流程",
 			"discovery": {
 				"title": "发现",
 				"description": "讨论以了解您的需求和目标"
@@ -65,9 +66,9 @@
 				"title": "经历",
 				"subtitle": "我的经历",
 				"content": [
-					"自幼对信息技术充满热情，在转入网页开发之前，我在行政领域工作了数年。",
-					"我从自学开始，随后加入了O'Clock学校来巩固我的技能。",
-					"培训分为三个阶段：三个月专注于JavaScript基础，一个月专攻React，最后一个月致力于团队项目，期间我担任前端开发人员。"
+					"自幼以来，我就对计算机科学充满热情。在行政领域工作数年后，我选择重新定向于网页开发。",
+					"我最初通过自学学习网页开发，随后加入了O'Clock学校来系统化我的技能。\n我完成了为期5个月的强化课程，学习了网页开发基础（HTML、CSS、JS、Node.js、PostgreSQL）并专攻前端 React.js 开发。",
+					"通过这次培训，我巩固了基础并参与了具体项目，这为我作为初级网页开发人员高效工作做好了准备。"
 				]
 			},
 			"methodAndValues": {

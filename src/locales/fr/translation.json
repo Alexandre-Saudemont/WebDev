@@ -19,8 +19,8 @@
 			"subtitle": "Développeur full-stack freelance passionné par le web et le front-end (React, Next.js).",
 			"description": "Je conçois des sites web modernes, intuitifs et performants, pensés pour offrir une expérience utilisateur optimale.",
 			"cards": {
-				"frontend": {"title": "Frontend", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
-				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
+				"frontend": {"title": "Front-end", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
+				"backend": {"title": "Back-end", "desc": "Node.js, Express.js, PostgreSQL"}
 			}
 		},
 		"stats": {
@@ -30,8 +30,9 @@
 			"support": "Lignes de code"
 		},
 		"process": {
-			"title": "Comment je travaille",
-			"subtitle": "Un processus clair et transparent pour votre projet",
+			"title": "Processus",
+			"subtitle": "Comment je travaille",
+			"description": "Un processus clair et transparent pour votre projet",
 			"discovery": {
 				"title": "Découverte",
 				"description": "Discussion pour comprendre vos besoins et objectifs"

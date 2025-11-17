@@ -6,6 +6,7 @@
 		"projects": "Projects",
 		"contact": "Contact"
 	},
+
 	"homePage": {
 		"home": "Home",
 		"title": "Hi, I'm",
@@ -20,8 +21,8 @@
 			"subtitle": "Full-stack developer passionate about creating beautiful digital experiences",
 			"description": "I create modern and performant websites to help businesses develop their online presence.",
 			"cards": {
-				"frontend": {"title": "Frontend", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
-				"backend": {"title": "Backend", "desc": "Node.js, Express.js, PostgreSQL"}
+				"frontend": {"title": "Front-end", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
+				"backend": {"title": "Back-end", "desc": "Node.js, Express.js, PostgreSQL"}
 			}
 		},
 		"stats": {
@@ -31,8 +32,10 @@
 			"support": "Support available"
 		},
 		"process": {
-			"title": "How I work",
-			"subtitle": "A clear and transparent process for your project",
+			"title": "Process",
+			"subtitle": "How I Work",
+			"description": "A clear and transparent process for your project",
+
 			"discovery": {
 				"title": "Discovery",
 				"description": "Discussion to understand your needs and objectives"
@@ -51,6 +54,7 @@
 			}
 		}
 	},
+
 	"aboutPage": {
 		"sections": {
 			"intro": {
@@ -65,9 +69,9 @@
 				"title": "Journey",
 				"subtitle": "My journey",
 				"content": [
-					"Passionate about IT since my childhood, I worked several years in administration before transitioning into web development.",
-					"I started learning on my own, then joined O'Clock school to strengthen my skills.",
-					"The training consisted of three phases: three months dedicated to JavaScript fundamentals, one month specializing in React, and a final month dedicated to a team project where I served as Front-End Developer."
+					"Since childhood, I have been passionate about computer science. After several years in administration, I chose to reorient myself towards web development.",
+					"I started by learning web development on my own, then joined O'Clock school to structure my skills.\nI followed an intensive 5-month program covering web fundamentals (HTML, CSS, JS, Node.js, PostgreSQL) and a Front-end specialization with React.js.",
+					"Thanks to this training, I strengthened my foundation and participated in concrete projects, which prepared me to work effectively as a junior web developer."
 				]
 			},
 			"methodAndValues": {
@@ -107,11 +111,11 @@
 			}
 		}
 	},
+
 	"services": {
 		"title": "Services",
 		"subtitle": "My Services",
 		"description": "Clear and modern web solutions, designed for freelancers and small businesses.",
-
 		"items": [
 			{
 				"title": "Modern showcase websites",
@@ -234,6 +238,7 @@
 			}
 		}
 	},
+
 	"footer": {
 		"copyrights": "All rights reserved",
 		"madeWith": "Designed and developed by AS-WebDev",
@@ -243,6 +248,7 @@
 			"legal": "Legal"
 		}
 	},
+
 	"legal": {
 		"title": "Legal Notice",
 		"subtitle": "General Terms and Conditions of Sale",

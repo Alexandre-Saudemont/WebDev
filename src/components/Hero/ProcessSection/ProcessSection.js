@@ -95,9 +95,9 @@ export default function ProcessSection() {
 		<section ref={sectionRef} className='process-section'>
 			<div className='process-container'>
 				<div className='process-header'>
-					<div className='section-badge'>Processus</div>
-					<h2>{t('homePage.process.title') || 'Comment je travaille'}</h2>
-					<p>{t('homePage.process.subtitle') || 'Un processus clair et transparent pour votre projet'}</p>
+					<div className='section-badge'>{t('homePage.process.title')}</div>
+					<h2>{t('homePage.process.subtitle')}</h2>
+					<p>{t('homePage.process.description')}</p>
 				</div>
 
 				<div className='process-steps'>

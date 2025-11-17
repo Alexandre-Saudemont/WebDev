@@ -39,9 +39,11 @@
 }
 
 .values-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 2rem;
+	align-items: stretch;
 }
 
 .value-card {
@@ -55,6 +57,10 @@
 	transform: translateY(30px);
 	position: relative;
 	overflow: hidden;
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	min-height: 350px;
 }
 
 .value-card::before {

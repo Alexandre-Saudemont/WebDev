@@ -166,17 +166,20 @@
 		"project1": {
 			"title": "Pokedeck Website",
 			"description": "A Pokémon card collection application to create, sort and manage your personal deck",
-			"tech": ["ReactJS", "NodeJS", "PostgreSQL"]
+			"tech": ["ReactJS", "NodeJS", "PostgreSQL"],
+			"link": "null"
 		},
 		"project2": {
 			"title": "Taiwan Website",
 			"description": "Travel diary of Taiwan: cultural discoveries, local specialties and places that marked me",
-			"tech": ["ReactJS", "TypeScript", "Scss"]
+			"tech": ["NextJS", "Responsive Design", "Scss"],
+			"link": "https://taiwan.as-webdev.com"
 		},
 		"project3": {
 			"title": "HSK Match Website",
 			"description": "An interactive game to learn Chinese characters while having fun, classified by HSK levels",
-			"tech": ["ReactJS", "Interactive learning"]
+			"tech": ["ReactJS", "Interactive learning", "React-DnD"],
+			"link": "null"
 		},
 		"cta": {
 			"title": "Interested in a similar project ?",

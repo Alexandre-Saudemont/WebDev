@@ -141,17 +141,20 @@
 		"project1": {
 			"title": "宝可梦卡牌网站",
 			"description": "一个宝可梦卡牌收藏应用，用于创建、整理和管理您的个人卡组",
-			"tech": ["ReactJS", "NodeJS", "PostgreSQL"]
+			"tech": ["ReactJS", "NodeJS", "PostgreSQL"],
+			"link": "null"
 		},
 		"project2": {
 			"title": "台湾旅游网站",
 			"description": "台湾旅行日记：文化发现、当地特色美食和令我印象深刻的地方",
-			"tech": ["ReactJS", "TypeScript", "Scss"]
+			"tech": ["NextJS", "Responsive Design", "Scss"],
+			"link": "https://taiwan.as-webdev.com"
 		},
 		"project3": {
 			"title": "HSK配对网站",
 			"description": "一个互动游戏，通过趣味方式学习汉字，按HSK等级分类",
-			"tech": ["ReactJS", "Interactive learning"]
+			"tech": ["ReactJS", "Interactive learning", "React-DnD"],
+			"link": "null"
 		},
 		"cta": {
 			"title": "对类似项目感兴趣吗 ？",

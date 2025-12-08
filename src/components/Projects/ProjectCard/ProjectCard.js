@@ -17,6 +17,9 @@ export default function ProjectCard({project, isVisible = false}) {
 				<h3 className='project-title'>{project.title}</h3>
 				<p className='project-description'>{project.description}</p>
 				<TechTags tech={project.tech} />
+				<a href={project.link} target='_blank' rel='noopener noreferrer' className='project-link'>
+					Voir le projet
+				</a>
 			</div>
 		</div>
 	);

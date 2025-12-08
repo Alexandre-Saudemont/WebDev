@@ -16,12 +16,12 @@ export default function ProjectsPage() {
 			const projectsList = [];
 
 			const projectImages = ['/img/projects/pokedeck.webp', '/img/projects/taiwan.webp', '/img/projects/hsk.webp'];
-
 			projectKeys.forEach((key, index) => {
 				const title = t(`projectsPage.${key}.title`);
 				const description = t(`projectsPage.${key}.description`);
 				const techArray = t(`projectsPage.${key}.tech`, {returnObjects: true});
 				const techList = Array.isArray(techArray) ? techArray : [];
+				const projectLinks = t(`projectsPage.${key}.link`);
 
 				if (title && description) {
 					projectsList.push({
@@ -29,6 +29,7 @@ export default function ProjectsPage() {
 						description: description,
 						tech: techList.map((item) => String(item)),
 						image: projectImages[index],
+						link: projectLinks,
 					});
 				}
 			});

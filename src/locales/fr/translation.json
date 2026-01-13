@@ -8,7 +8,7 @@
 	},
 	"homePage": {
 		"home": "Accueil",
-		"title": "Bienvenue sur \n ",
+		"title": "Création de sites web sur mesure pour entreprises et indépendants",
 		"subtitle": "Développeur full-stack passionné par les belles expériences numériques",
 		"typingTexts": ["FullStack JavaScript ", "Web", "Front-End"],
 		"skills": "Compétences",
@@ -168,7 +168,7 @@
 			"title": "Site Pokedeck",
 			"description": "Une application de collection de cartes Pokémon pour créer, trier et gérer votre deck personnel",
 			"tech": ["ReactJS", "NodeJS", "PostgreSQL"],
-			"link": "null"
+			"link": "https://github.com/Alexandre-Saudemont/Projet-Pokedeck/blob/main/README.md"
 		},
 		"project2": {
 			"title": "Site Taiwan",

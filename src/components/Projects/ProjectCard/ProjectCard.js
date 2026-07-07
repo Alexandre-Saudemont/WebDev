@@ -1,26 +1,52 @@
 'use client';
 
-import TechTags from '../TechTags/TechTags';
 import Image from 'next/image';
+import { useTranslation } from 'react-i18next';
 import './ProjectCard.css';
 
-export default function ProjectCard({project, isVisible = false}) {
-	return (
-		<div className={`project-card ${isVisible ? 'visible' : ''}`}>
-			<div className='project-image'>
-				<Image src={project.image} alt={project.title} fill className='project-image-tag' />
-				<div className='project-image-overlay'></div>
-			</div>
+export default function ProjectCard({ project, index }) {
+  const { t } = useTranslation();
 
-			<div className='project-content'>
-				<div className='project-badge'>Projet</div>
-				<h3 className='project-title'>{project.title}</h3>
-				<p className='project-description'>{project.description}</p>
-				<TechTags tech={project.tech} />
-				<a href={project.link} target='_blank' rel='noopener noreferrer' className='project-link'>
-					Voir le projet
-				</a>
-			</div>
-		</div>
-	);
+  return (
+    <div
+      className="pc-card"
+      data-reveal
+      style={{ '--reveal-delay': `${index * 90}ms` }}
+    >
+      <div className="pc-image">
+        <Image
+          src={project.image}
+          alt={project.title}
+          fill
+          className="pc-img"
+          sizes="(max-width: 768px) 100vw, 50vw"
+          style={{ objectPosition: project.imagePosition ?? 'center' }}
+        />
+        <div className="pc-overlay" />
+        {project.wip && (
+          <div className="pc-wip-badge">
+            <span className="pc-wip-dot" />
+            En cours
+          </div>
+        )}
+      </div>
+      <div className="pc-body">
+        <div className="pc-tags">
+          {project.tech.map((tag) => (
+            <span key={tag} className="pc-tag">{tag}</span>
+          ))}
+        </div>
+        <h3 className="pc-title">{project.title}</h3>
+        <p className="pc-desc">{project.description}</p>
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pc-link"
+        >
+          {t('projectsPage.viewProject', { defaultValue: 'Voir le projet →' })}
+        </a>
+      </div>
+    </div>
+  );
 }

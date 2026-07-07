@@ -1,33 +1,3 @@
 .contact-page {
-	width: 100%;
-	color: var(--text-primary);
-	background: var(--bg-secondary);
+  width: 100%;
 }
-
-/* Séparateurs subtils entre sections */
-.contact-page > section:not(:first-child),
-.contact-page > div:not(:first-child) {
-	position: relative;
-}
-
-.contact-page > section:not(:first-child)::before,
-.contact-page > div:not(:first-child)::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 80%;
-	max-width: 1200px;
-	height: 1px;
-	background: linear-gradient(
-		90deg,
-		transparent,
-		var(--border) 20%,
-		var(--border) 80%,
-		transparent
-	);
-	opacity: 0.3;
-	z-index: 0;
-}
-

@@ -1,119 +1,32 @@
 'use client';
 
-import {useEffect, useRef, useState, useMemo} from 'react';
-import {useTranslation} from 'react-i18next';
-import {useTheme} from '../../../contexts/ThemeContext';
+import { useTranslation } from 'react-i18next';
 import './ProcessSection.css';
-import Image from 'next/image';
 
 export default function ProcessSection() {
-	const {t} = useTranslation();
-	const [visibleSteps, setVisibleSteps] = useState(new Set());
-	const sectionRef = useRef(null);
-	const {isDarkMode} = useTheme();
+  const { t } = useTranslation();
 
-	// Utilisation de useMemo pour stabiliser les steps et éviter le warning SSR
-	const steps = useMemo(
-		() => [
-			{
-				number: '01',
-				title: t('homePage.process.discovery.title') || 'Découverte',
-				description: t('homePage.process.discovery.description') || 'Discussion pour comprendre vos besoins et objectifs',
-				icon: isDarkMode ? '/img/dark/discovery_dark.svg' : '/img/light/discovery_light.svg',
-			},
-			{
-				number: '02',
-				title: t('homePage.process.design.title') || 'Conception',
-				description: t('homePage.process.design.description') || "Création d'un design moderne et adapté à votre identité",
-				icon: isDarkMode ? '/img/dark/art_dark.svg' : '/img/light/art_light.svg',
-			},
-			{
-				number: '03',
-				title: t('homePage.process.development.title') || 'Développement',
-				description: t('homePage.process.development.description') || 'Développement avec suivi régulier et transparence totale',
-				icon: isDarkMode ? '/img/dark/gear_dark.svg' : '/img/light/gear_light.svg',
-			},
-			{
-				number: '04',
-				title: t('homePage.process.launch.title') || 'Lancement',
-				description: t('homePage.process.launch.description') || 'Mise en ligne et accompagnement pour la suite',
-				icon: isDarkMode ? '/img/dark/rocket_dark.svg' : '/img/light/rocket_light.svg',
-			},
-		],
-		[t, isDarkMode],
-	);
+  const steps = [
+    { num: '01', title: t('homePage.process.discovery.title'), desc: t('homePage.process.discovery.description') },
+    { num: '02', title: t('homePage.process.design.title'), desc: t('homePage.process.design.description') },
+    { num: '03', title: t('homePage.process.development.title'), desc: t('homePage.process.development.description') },
+    { num: '04', title: t('homePage.process.launch.title'), desc: t('homePage.process.launch.description') },
+  ];
 
-	useEffect(() => {
-		const section = sectionRef.current;
-		if (!section) return;
-
-		// Fallback si IntersectionObserver n'est pas supporté
-		if (typeof IntersectionObserver === 'undefined') {
-			const allIndices = new Set(steps.map((_, index) => index));
-			// Déférer le setState pour éviter le warning
-			requestAnimationFrame(() => setVisibleSteps(allIndices));
-			return;
-		}
-
-		let observer = null;
-
-		const rafId = requestAnimationFrame(() => {
-			const stepElements = section.querySelectorAll('.process-step');
-			if (stepElements.length === 0) return;
-
-			observer = new IntersectionObserver(
-				(entries) => {
-					entries.forEach((entry) => {
-						if (entry.isIntersecting) {
-							const stepIndex = Array.from(stepElements).indexOf(entry.target);
-							if (stepIndex !== -1) {
-								setTimeout(() => {
-									setVisibleSteps((prev) => {
-										const newSet = new Set(prev);
-										newSet.add(stepIndex);
-										return newSet;
-									});
-								}, stepIndex * 150);
-								observer.unobserve(entry.target);
-							}
-						}
-					});
-				},
-				{threshold: 0.2},
-			);
-
-			stepElements.forEach((step) => observer.observe(step));
-		});
-
-		return () => {
-			cancelAnimationFrame(rafId);
-			if (observer) observer.disconnect();
-		};
-	}, [steps]);
-
-	return (
-		<section ref={sectionRef} className='process-section'>
-			<div className='process-container'>
-				<div className='process-header'>
-					<div className='section-badge'>{t('homePage.process.title')}</div>
-					<h2>{t('homePage.process.subtitle')}</h2>
-					<p>{t('homePage.process.description')}</p>
-				</div>
-
-				<div className='process-steps'>
-					{steps.map((step, index) => (
-						<div key={index} className={`process-step ${visibleSteps.has(index) ? 'visible' : ''}`}>
-							<div className='step-number'>{step.number}</div>
-							<div className='step-content'>
-								<Image className='step-icon' src={step.icon} alt={step.title} height={50} width={50}></Image>
-								<h3>{step.title}</h3>
-								<p>{step.description}</p>
-							</div>
-							{index < steps.length - 1 && <div className='step-connector'></div>}
-						</div>
-					))}
-				</div>
-			</div>
-		</section>
-	);
+  return (
+    <section className="process-section">
+      <div className="proc-container">
+        <h2 data-reveal className="proc-title">{t('homePage.process.subtitle')}</h2>
+        <div className="proc-grid">
+          {steps.map((s, i) => (
+            <div key={i} data-reveal className="proc-step" style={{ transitionDelay: `${i * 80}ms` }}>
+              <div className="proc-num">{s.num}</div>
+              <h3 className="proc-step-title">{s.title}</h3>
+              <p className="proc-step-desc">{s.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 }

@@ -1,26 +1,16 @@
 .legal-content-section {
-	padding: 5rem 2rem;
-	background: var(--bg-primary);
-	position: relative;
-	z-index: 1;
+  padding: 56px 0 80px;
 }
 
 .legal-content {
-	display: flex;
-	flex-direction: column;
-	gap: 2.5rem;
-	max-width: 900px;
-	margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 56px;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-	.legal-content-section {
-		padding: 4rem 1.5rem;
-	}
-
-	.legal-content {
-		gap: 2rem;
-	}
+  .legal-content { padding: 0 24px; gap: 16px; }
 }
-

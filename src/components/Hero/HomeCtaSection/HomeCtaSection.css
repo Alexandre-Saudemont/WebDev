@@ -1,0 +1,66 @@
+.home-cta-section {
+  position: relative;
+  padding: 130px 56px;
+  text-align: center;
+  overflow: hidden;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.hcta-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(0,230,118,.15), transparent 60%);
+  pointer-events: none;
+  animation: asPulse 8s ease-in-out infinite;
+}
+
+.hcta-title {
+  position: relative;
+  margin: 0 auto;
+  max-width: 720px;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.04;
+  letter-spacing: -.038em;
+  font-weight: 600;
+}
+
+.gradient-heading {
+  background: linear-gradient(180deg, #fff, #b6bcc2);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hcta-desc {
+  position: relative;
+  margin: 24px auto 42px;
+  max-width: 480px;
+  color: var(--text-muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.hcta-actions {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.hcta-btn {
+  font-size: 16px;
+  padding: 17px 34px;
+  box-shadow: 0 16px 50px -14px rgba(0,230,118,.7);
+}
+
+.hcta-email {
+  font-family: var(--font-mono, monospace);
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .home-cta-section { padding: 80px 24px; }
+}

@@ -16,8 +16,14 @@
 		"contact": "Contact",
 		"project": "Mes projets",
 		"hero": {
+			"status": "Disponible",
+			"tagline": "React · Next.js · TypeScript",
 			"subtitle": "Développeur full-stack freelance passionné par le web et le front-end (React, Next.js).",
 			"description": "Je conçois des sites web modernes, intuitifs et performants, pensés pour offrir une expérience utilisateur optimale.",
+			"cta": {
+				"primary": "Voir mes services",
+				"secondary": "Mes projets"
+			},
 			"cards": {
 				"frontend": {"title": "Front-end", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
 				"backend": {"title": "Back-end", "desc": "Node.js, Express.js, PostgreSQL"}
@@ -49,6 +55,26 @@
 				"title": "Lancement",
 				"description": "Mise en ligne et accompagnement pour la suite"
 			}
+		},
+		"services": {
+			"viewAll": "Voir le détail →"
+		},
+		"realisations": {
+			"title": "Quelques réalisations",
+			"viewAll": "Voir tous les projets →"
+		},
+		"stack": {
+			"title": "Stack technique"
+		},
+		"cta": {
+			"title": "Un projet en tête ?",
+			"description": "Obtenez un devis gratuit et sans engagement sous 24h.",
+			"primary": "Discutons-en",
+			"email": "Email direct"
+		},
+		"about": {
+			"title": "Quelques mots sur moi",
+			"link": "En savoir plus →"
 		}
 	},
 	"aboutPage": {
@@ -110,53 +136,174 @@
 
 	"services": {
 		"title": "Services",
-		"subtitle": "Mes Services",
-		"description": "Des solutions web claires et modernes, pensées pour les indépendants et petites entreprises",
+		"subtitle": "Services & tarifs",
+		"description": "Des offres claires, pensées pour votre retour sur investissement.",
+		"badge": "Mes offres",
+		"headerSubtitle": "Un devis gratuit sous 24h, un tarif annoncé avant de commencer, et un interlocuteur unique du début à la fin.",
+		"pricingNote": "Chaque projet est unique — ces tarifs sont des points de départ. Le devis final est établi après un premier échange. · TVA non applicable, art. 293 B du CGI.",
+		"popularLabel": "Le plus populaire",
 		"items": [
 			{
-				"title": "Sites vitrines modernes",
-				"description": "Conception de sites simples, rapides et agréables à utiliser, pour présenter efficacement votre activité en ligne.",
+				"icon": "🌐",
+				"title": "Présence",
+				"description": "Pour les indépendants, artisans et petites entreprises souhaitant une présence professionnelle sur Internet.",
+				"priceLabel": "À partir de",
+				"price": "1 300 €",
+				"priceSuffix": "",
+				"popular": false,
 				"features": [
-					"Design sobre et adapté à votre image",
-					"Structure claire pour une navigation fluide",
-					"Compatible mobile, tablette et ordinateur",
-					"Optimisé pour un bon référencement sur Google"
-				]
+					"3 à 4 pages sur mesure",
+					"Design moderne adapté à votre activité",
+					"Responsive (mobile, tablette, ordinateur)",
+					"SEO de base",
+					"Formulaire de contact",
+					"Optimisation des performances",
+					"Livraison clé en main"
+				],
+				"cta": "Demander un devis"
 			},
 			{
-				"title": "Petits e-commerces efficaces",
-				"description": "Mise en place de boutiques en ligne intuitives et sécurisées, parfaites pour démarrer vos ventes sur le web.",
+				"icon": "🚀",
+				"title": "Business",
+				"description": "Pour les entreprises souhaitant un site plus complet et plus impactant.",
+				"priceLabel": "À partir de",
+				"price": "2 200 €",
+				"priceSuffix": "",
+				"popular": true,
 				"features": [
-					"Interface simple pour gérer vos produits",
-					"Paiements sécurisés et fiables",
-					"Optimisation pour faciliter la conversion",
-					"Accompagnement à la prise en main"
-				]
+					"5 à 7 pages sur mesure",
+					"Design sur mesure",
+					"SEO avancé",
+					"Animations et finitions premium",
+					"Optimisation des performances",
+					"Accompagnement au lancement"
+				],
+				"cta": "Démarrer mon projet"
 			},
 			{
-				"title": "Applications web personnalisées",
-				"description": "Développement d'outils web adaptés à vos besoins : gestion, formulaires, tableaux de bord, etc.",
+				"icon": "🛒",
+				"title": "E-commerce",
+				"description": "Pour vendre vos produits en ligne.",
+				"priceLabel": "À partir de",
+				"price": "4 500 €",
+				"priceSuffix": "",
+				"popular": false,
 				"features": [
-					"Solutions sur mesure à taille humaine",
-					"Développement clair et évolutif",
-					"Interface intuitive et responsive",
-					"Connexion possible à une base de données"
-				]
+					"Boutique en ligne",
+					"Gestion des produits",
+					"Paiement sécurisé",
+					"Gestion des commandes",
+					"Tableau de bord",
+					"Optimisation SEO"
+				],
+				"cta": "Demander un devis"
 			},
 			{
-				"title": "Maintenance & accompagnement",
-				"description": "Suivi technique continu et optimisation post-livraison pour une stabilité durable",
+				"icon": "💻",
+				"title": "Application web sur mesure",
+				"description": "Pour les SaaS, plateformes, outils internes et applications métier.",
+				"priceLabel": "À partir de",
+				"price": "6 000 €",
+				"priceSuffix": "",
+				"popular": false,
 				"features": [
-					"Mises à jour et petites évolutions",
-					"Sauvegardes régulières",
-					"Amélioration des performances",
-					"Support réactif et à l’écoute"
-				]
+					"Développement entièrement sur mesure",
+					"Authentification sécurisée",
+					"Tableau de bord personnalisé",
+					"Gestion des utilisateurs et des rôles",
+					"Architecture évolutive",
+					"Documentation du projet",
+					"Chiffrage personnalisé selon vos besoins"
+				],
+				"cta": "Discuter de mon projet"
 			}
 		],
+		"support": {
+			"eyebrow": "Après la livraison",
+			"title": "Votre projet ne s’arrête pas à la livraison",
+			"subtitle": "Une fois votre site ou votre application en ligne, je peux continuer à m’occuper de toute la partie technique : hébergement, sécurité, sauvegardes, maintenance et assistance. Vous restez concentré sur votre activité, je m’occupe du reste.",
+			"plans": [
+				{
+					"title": "Sérénité",
+					"price": "39 €",
+					"period": "/ mois",
+					"description": "L’essentiel pour garder votre site performant et sécurisé.",
+					"features": [
+						"Hébergement en France inclus",
+						"Mise en ligne & déploiement",
+						"Sauvegardes automatiques",
+						"Mises à jour de sécurité",
+						"Surveillance du site",
+						"Petites modifications de contenu"
+					],
+					"cta": "Choisir cette formule"
+				},
+				{
+					"popular": true,
+					"badge": "Le plus populaire",
+					"title": "Sérénité Business",
+					"price": "79 €",
+					"period": "/ mois",
+					"description": "Pour les entreprises souhaitant un accompagnement plus complet.",
+					"features": [
+						"Tout le forfait Sérénité",
+						"Support prioritaire",
+						"Optimisation des performances",
+						"Surveillance continue",
+						"Interventions mineures incluses",
+						"Conseils et accompagnement"
+					],
+					"cta": "Choisir cette formule"
+				},
+				{
+					"title": "Sérénité E-commerce",
+					"price": "149 €",
+					"period": "/ mois",
+					"description": "Une maintenance adaptée aux boutiques en ligne.",
+					"features": [
+						"Tout le forfait Sérénité Business",
+						"Maintenance de la boutique",
+						"Vérification des paiements",
+						"Suivi des commandes",
+						"Support prioritaire",
+						"Assistance en cas d’incident"
+					],
+					"cta": "Choisir cette formule"
+				}
+			],
+			"custom": {
+				"title": "Applications web sur mesure, SaaS, plateformes ou outils métier",
+				"text": "Chaque application étant différente, la maintenance est étudiée au cas par cas selon les fonctionnalités, le trafic et le niveau d’accompagnement souhaité.",
+				"cta": "Devis personnalisé"
+			},
+			"note": "Tous les forfaits incluent l’hébergement en France, les sauvegardes automatiques ainsi que les mises à jour de sécurité. Le nom de domaine reste la propriété du client. Les forfaits sont sans engagement et peuvent évoluer selon les besoins de votre projet."
+		},
+		"process": {
+			"title": "Comment on travaille ensemble",
+			"subtitle": "Un déroulé transparent, où vous validez à chaque étape.",
+			"steps": [
+				{"step": "01", "title": "Cadrage", "description": "On clarifie vos objectifs, vos utilisateurs et le périmètre exact du projet. Devis gratuit."},
+				{"step": "02", "title": "Design", "description": "Des maquettes claires, validées ensemble avant la moindre ligne de code."},
+				{"step": "03", "title": "Développement", "description": "Un code propre et testé, livré par itérations que vous suivez en direct."},
+				{"step": "04", "title": "Lancement & suivi", "description": "Mise en ligne, mesure des résultats et optimisation continue."}
+			]
+		},
+		"faq": {
+			"title": "Questions fréquentes",
+			"items": [
+				{"q": "Combien de temps prend un projet ?", "a": "Un site vitrine est généralement livré en 2 à 4 semaines. Pour une application web sur mesure, les délais dépendent de la complexité du projet. Un calendrier précis est défini ensemble avant le démarrage."},
+				{"q": "À qui appartient le projet une fois livré ?", "a": "Vous êtes pleinement propriétaire de votre site ou de votre application ainsi que de son code source. Vous êtes libre de l’héberger où vous le souhaitez, sans dépendance à une plateforme propriétaire."},
+				{"q": "Comment se passe le paiement ?", "a": "Un acompte est demandé à la signature afin de lancer le projet. Le solde est réglé à la livraison. Pour les projets les plus importants, un échéancier peut être mis en place."},
+				{"q": "Travaillez-vous avec des clients qui ne sont pas techniciens ?", "a": "Oui. J’accompagne principalement des entrepreneurs, artisans et PME. Mon rôle est de transformer vos besoins en une solution concrète, sans jargon technique et avec un interlocuteur unique."},
+				{"q": "Proposez-vous un accompagnement après la mise en ligne ?", "a": "Oui. Je peux continuer à assurer les mises à jour, les corrections de bugs, les optimisations et les évolutions de votre projet afin qu’il reste performant dans le temps."},
+				{"q": "Pourquoi choisir un développement sur mesure ?", "a": "Chaque projet est conçu selon vos besoins réels, sans fonctionnalités inutiles. Vous obtenez une solution performante, évolutive et pensée pour accompagner votre activité sur le long terme."},
+				{"q": "Pourquoi les tarifs sont-ils indiqués \"à partir de\" ?", "a": "Chaque projet est unique. Les tarifs affichés correspondent à un point de départ. Un devis détaillé est ensuite établi gratuitement en fonction de vos besoins et des fonctionnalités souhaitées."}
+			]
+		},
 		"cta": {
-			"title": "Prêt à démarrer votre projet ?",
-			"description": "Discutons de vos besoins et créons ensemble une solution web adaptée à votre activité."
+			"title": "Un projet en tête ?",
+			"description": "Obtenez un devis gratuit et sans engagement sous 24h.",
+			"button": "Demander mon devis →"
 		}
 	},
 
@@ -181,6 +328,12 @@
 			"description": "Un jeu interactif pour apprendre les caractères chinois en s'amusant, classés par niveaux HSK",
 			"tech": ["ReactJS", "Interactive learning", "React-DnD"],
 			"link": "https://matchpair.as-webdev.com/"
+		},
+		"project4": {
+			"title": "Avenso",
+			"description": "SaaS de gestion destiné aux artisans, seuls ou en équipe — clients, rendez-vous, devis et facturation électronique réunis dans une seule interface.",
+			"tech": ["SaaS", "Next.js", "TypeScript"],
+			"link": "https://avenso.fr/"
 		},
 
 		"cta": {

@@ -1,82 +1,44 @@
-.home-skills-preview {
-	text-align: center;
-	margin: auto;
+.stack-section {
+  padding: 90px 0;
 }
 
-.home-skills-preview h3 {
-	font-size: 1.3rem;
-	margin-bottom: 1.5rem;
-	color: var(--text-primary);
-	font-weight: 600;
+.stack-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 56px;
+  text-align: center;
 }
 
-.home-skills-grid {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 1.5rem;
+.stack-label {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.home-skill-item {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	gap: 0.75rem;
-	padding: 1.25rem;
-	background: var(--bg-primary);
-	border: 1px solid var(--border);
-	border-radius: 8px;
-	transition: all 0.2s ease;
-	width: 120px;
-	height: 120px;
-	opacity: 0;
-	transform: translateY(20px);
+.stack-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  max-width: 780px;
+  margin: 0 auto;
 }
 
-.home-skill-item.visible {
-	opacity: 1;
-	transform: translateY(0);
-	transition: opacity 0.4s ease, transform 0.4s ease;
+.stack-pill {
+  padding: 11px 20px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 100px;
+  font-size: 14px;
+  color: #e8eaec;
+  backdrop-filter: blur(8px);
 }
 
-.home-skill-item:hover {
-	border-color: var(--accent);
-	transform: translateY(-2px);
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+.stack-pill--highlight {
+  background: rgba(0,230,118,.08);
+  border-color: rgba(0,230,118,.3);
+  color: var(--green);
 }
 
-.home-skill-item img {
-	filter: brightness(0) saturate(100%);
-	opacity: 0.9;
-	transition: all 0.3s ease;
+@media (max-width: 600px) {
+  .stack-container { padding: 0 20px; }
 }
-
-.darkMode .home-skill-item img {
-	filter: brightness(0) invert(1);
-	opacity: 0.95;
-}
-
-.lightMode .home-skill-item img {
-	filter: brightness(0) saturate(100%);
-	opacity: 0.85;
-}
-
-.home-skill-item:hover img {
-	opacity: 1;
-	transform: scale(1.1);
-}
-
-.home-skill-item span {
-	font-size: 0.9rem;
-	color: var(--text-primary);
-	font-weight: 600;
-}
-
-@media (max-width: 768px) {
-	.home-skills-grid {
-		grid-template-columns: repeat(2, 1fr);
-		gap: 1rem;
-	}
-}
-

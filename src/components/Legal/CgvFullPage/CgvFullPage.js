@@ -40,7 +40,7 @@ export default function CgvFullPage() {
 
 			<div className='cgv-content'>
 				{t('legal.cgv.legal.cgvComplete.articles', {returnObjects: true}).map((article, index) => (
-					<section key={index} className='legal-section'>
+					<section key={index} className='legal-section visible'>
 						<h2>{article.title}</h2>
 						<div className='legal-article-content'>
 							{article.paragraphs.map((paragraph, pIndex) => (

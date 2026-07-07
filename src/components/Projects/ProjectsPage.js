@@ -12,10 +12,10 @@ export default function ProjectsPage() {
 
 	const projects = useMemo(() => {
 		try {
-			const projectKeys = ['project1', 'project2', 'project3'];
+			const projectKeys = ['project2', 'project3', 'project4', 'project1'];
 			const projectsList = [];
 
-			const projectImages = ['/img/projects/pokedeck.webp', '/img/projects/taiwan.webp', '/img/projects/hsk.webp'];
+			const projectImages = ['/img/projects/taiwan.webp', '/img/projects/hsk.webp', '/img/projects/avenso.webp', '/img/projects/pokedeck.webp'];
 			projectKeys.forEach((key, index) => {
 				const title = t(`projectsPage.${key}.title`);
 				const description = t(`projectsPage.${key}.description`);
@@ -30,6 +30,8 @@ export default function ProjectsPage() {
 						tech: techList.map((item) => String(item)),
 						image: projectImages[index],
 						link: projectLinks,
+						wip: index === 2,
+						imagePosition: index === 2 ? 'top' : 'center',
 					});
 				}
 			});

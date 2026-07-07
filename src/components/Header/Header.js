@@ -1,100 +1,108 @@
 'use client';
 
-import React, {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import {usePathname} from 'next/navigation';
-import {useTranslation} from 'react-i18next';
-import {useTheme} from '@/contexts/ThemeContext';
-import {Moon, Sun, Menu, X} from 'lucide-react';
+import { usePathname } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
 import './Header.css';
 
 export default function Header() {
-	const {t} = useTranslation();
-	const {isDarkMode, toggleTheme} = useTheme();
-	const pathname = usePathname();
-	const [isScrolled, setIsScrolled] = useState(false);
-	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  const pathname = usePathname();
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-	// Scroll detection
-	useEffect(() => {
-		const handleScroll = () => setIsScrolled(window.scrollY > 50);
-		window.addEventListener('scroll', handleScroll);
-		return () => window.removeEventListener('scroll', handleScroll);
-	}, []);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
-	// Fermer le menu mobile lors du changement de page sans trigger de warning
-	useEffect(() => {
-		const rafId = requestAnimationFrame(() => setIsMobileMenuOpen(false));
-		return () => cancelAnimationFrame(rafId);
-	}, [pathname]);
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
 
-	const navItems = [
-		{href: '/', label: t('navigation.home')},
-		{href: '/about', label: t('navigation.about')},
-		{href: '/services', label: t('navigation.services')},
-		{href: '/projects', label: t('navigation.projects')},
-		{href: '/contact', label: t('navigation.contact')},
-	];
+  const navLinks = [
+    { href: '/', label: t('navigation.home') },
+    { href: '/services', label: t('navigation.services') },
+    { href: '/projects', label: t('navigation.projects') },
+    { href: '/about', label: t('navigation.about') },
+  ];
 
-	return (
-		<header className={`header ${isScrolled ? 'scrolled' : ''} ${isMobileMenuOpen ? 'menu-open' : ''}`}>
-			<nav className='header-container'>
-				<Link href='/' className='logo'>
-					<span className='logo-text'>AS</span>
-					<span className='logo-subtitle'>WebDev</span>
-				</Link>
+  const isActive = (href) =>
+    href === '/' ? pathname === '/' : pathname.startsWith(href);
 
-				<ul className={`nav-links ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-					{navItems.map((item) => {
-						const isActive = item.href === '/' ? pathname === '/' : pathname.startsWith(item.href);
-						return (
-							<li key={item.href}>
-								<Link href={item.href} className={isActive ? 'active' : ''} onClick={() => setIsMobileMenuOpen(false)}>
-									{item.label}
-								</Link>
-							</li>
-						);
-					})}
-				</ul>
+  return (
+    <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
+      <div className="header-inner">
+        <Link href="/" className="header-logo">
+          <span className="logo-badge">AS</span>
+          AS-WebDev
+        </Link>
 
-				<div className='header-controls'>
-					<LanguageSelector />
-					<button onClick={toggleTheme} className='theme-toggle' aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}>
-						{isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
-					</button>
-					<button
-						className='mobile-menu-toggle'
-						onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-						aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}>
-						{isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-					</button>
-				</div>
-			</nav>
-		</header>
-	);
+        <nav className={`header-nav ${menuOpen ? 'open' : ''}`}>
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`nav-link ${isActive(link.href) ? 'active' : ''}`}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link href="/contact" className="nav-cta">
+            {t('navigation.contact')}
+          </Link>
+        </nav>
+
+        <div className="header-right">
+          <LanguageSelector i18n={i18n} />
+          <button
+            className="burger"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+          >
+            <span className={`burger-line ${menuOpen ? 'open' : ''}`} />
+            <span className={`burger-line ${menuOpen ? 'open' : ''}`} />
+            <span className={`burger-line ${menuOpen ? 'open' : ''}`} />
+          </button>
+        </div>
+      </div>
+
+      {menuOpen && (
+        <div className="mobile-menu">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`mobile-link ${isActive(link.href) ? 'active' : ''}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+          <Link href="/contact" className="mobile-cta" onClick={() => setMenuOpen(false)}>
+            {t('navigation.contact')}
+          </Link>
+        </div>
+      )}
+    </header>
+  );
 }
 
-function LanguageSelector() {
-	const {i18n} = useTranslation();
-	const languages = [
-		{code: 'fr', name: 'FR'},
-		{code: 'en', name: 'EN'},
-		{code: 'cn', name: 'CN'},
-	];
-
-	const changeLanguage = (lng) => i18n.changeLanguage(lng);
-
-	return (
-		<div className='language-selector'>
-			{languages.map((lang) => (
-				<button
-					key={lang.code}
-					onClick={() => changeLanguage(lang.code)}
-					className={`lang-btn ${i18n.language === lang.code ? 'active' : ''}`}
-					aria-label={`Switch to ${lang.name}`}>
-					{lang.name}
-				</button>
-			))}
-		</div>
-	);
+function LanguageSelector({ i18n }) {
+  const langs = ['fr', 'en', 'cn'];
+  return (
+    <div className="lang-selector">
+      {langs.map((l) => (
+        <button
+          key={l}
+          onClick={() => i18n.changeLanguage(l)}
+          className={`lang-btn ${i18n.language === l ? 'active' : ''}`}
+        >
+          {l.toUpperCase()}
+        </button>
+      ))}
+    </div>
+  );
 }

@@ -1,84 +1,74 @@
-.contact-info {
-	background: var(--bg-secondary);
-	border: 1px solid var(--border);
-	border-radius: 16px;
-	padding: 2.5rem;
-	position: relative;
-	overflow: hidden;
+.ci-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.contact-info::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: 3px;
-	background: var(--gradient);
+.ci-card {
+  padding: 28px;
+  background: rgba(255,255,255,.04);
+  border: 1px solid rgba(255,255,255,.09);
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
 }
 
-.contact-info h3 {
-	color: var(--text-primary);
-	margin-bottom: 0.75rem;
-	font-size: 1.5rem;
-	font-weight: 600;
+.ci-card--green {
+  background: linear-gradient(180deg, rgba(0,230,118,.08), rgba(255,255,255,.03));
+  border-color: rgba(0,230,118,.28);
 }
 
-.contact-info p {
-	color: var(--text-secondary);
-	margin-bottom: 2rem;
-	line-height: 1.7;
-	font-size: 1rem;
+.ci-card-label {
+  font: 500 11px var(--font-mono, monospace);
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 18px;
 }
 
-.contact-info ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	gap: 1.25rem;
+.ci-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
-.contact-info li {
-	display: flex;
-	align-items: flex-start;
-	gap: 1rem;
-	padding: 1rem;
-	background: var(--bg-primary);
-	border: 1px solid var(--border);
-	border-radius: 10px;
-	transition: all 0.3s ease;
+.ci-item-key {
+  font-size: 12.5px;
+  color: #7d848c;
+  margin-bottom: 4px;
 }
 
-.contact-info li:hover {
-	border-color: var(--accent);
-	transform: translateX(5px);
-	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+.ci-item-val {
+  font-size: 15px;
+  font-family: var(--font-mono, monospace);
 }
 
-.contact-info li span {
-	color: var(--text-primary);
-	line-height: 1.6;
+.ci-avail-dot {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 12px;
 }
 
-.contact-info li span strong {
-	color: var(--text-primary);
-	font-weight: 600;
-	display: block;
-	margin-bottom: 0.25rem;
+.ci-avail-text {
+  font-weight: 600;
+  font-size: 15px;
 }
 
-.contact-icon {
-	color: var(--accent);
-	flex-shrink: 0;
-	margin-top: 0.2rem;
+.ci-avail-desc {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-	.contact-info {
-		min-width: 100%;
-	}
+.ci-response-time {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -.02em;
+  margin-bottom: 4px;
 }
 
+.ci-response-label {
+  font-size: 13.5px;
+  color: var(--text-muted);
+}

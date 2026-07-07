@@ -1,23 +1,18 @@
 'use client';
 
-import {useTranslation} from 'react-i18next';
-import {useIntersectionObserver} from '@/hooks/useIntersectionObserver';
+import { useTranslation } from 'react-i18next';
 import './ProjectsHeader.css';
 
 export default function ProjectsHeader() {
-	const {t} = useTranslation();
-	const {elementRef, isVisible} = useIntersectionObserver({
-		threshold: 0.2,
-		triggerOnce: true,
-	});
+  const { t } = useTranslation();
 
-	return (
-		<header ref={elementRef} className={`projects-header ${isVisible ? 'visible' : ''}`}>
-			<div className='projects-header-content'>
-				<div className='header-badge'>{t('projectsPage.title')}</div>
-				<h1>{t('projectsPage.subtitle')}</h1>
-				<p className='header-subtitle'>Découvrez mes réalisations et les technologies utilisées pour chaque projet</p>
-			</div>
-		</header>
-	);
+  return (
+    <header className="ph-header">
+      <div className="ph-inner">
+        <div data-reveal className="section-label">{t('projectsPage.title')}</div>
+        <h1 data-reveal className="ph-title gradient-heading">{t('projectsPage.subtitle')}</h1>
+        <p data-reveal className="ph-desc">{t('projectsPage.description')}</p>
+      </div>
+    </header>
+  );
 }

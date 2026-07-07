@@ -1,60 +1,44 @@
 'use client';
 
 import Link from 'next/link';
-import {useMemo} from 'react';
-import {useTranslation} from 'react-i18next';
-import {useIntersectionObserver} from '@/hooks/useIntersectionObserver';
-import SkillsPreview from '../SkillsPreview/SkillsPreview';
+import { useTranslation } from 'react-i18next';
 import './AboutPreview.css';
 
 export default function AboutPreview() {
-	const {t} = useTranslation();
-	const {elementRef, isVisible} = useIntersectionObserver({
-		threshold: 0.15,
-		triggerOnce: true,
-	});
+  const { t } = useTranslation();
 
-	const aboutSections = useMemo(() => {
-		try {
-			return t('aboutPage.sections', {returnObjects: true}) || {};
-		} catch (error) {
-			console.error('Erreur i18n:', error);
-			return {};
-		}
-	}, [t]);
+  const miniStats = [
+    { value: '2+', label: t('homePage.stats.years') },
+    { value: '3+', label: t('homePage.stats.projects') },
+    { value: '100%', label: t('homePage.stats.satisfaction'), green: true },
+  ];
 
-	return (
-		<section ref={elementRef} className={`home-about ${isVisible ? 'visible' : ''}`}>
-			<div className='home-about-container'>
-				<div className='home-about-content'>
-					<div className='section-badge'>À propos</div>
-					<h2>{aboutSections?.intro?.title || t('aboutPage.sections.intro.title')}</h2>
-					{aboutSections?.intro?.content && Array.isArray(aboutSections.intro.content) ? (
-						aboutSections.intro.content.slice(0, 2).map((paragraph, i) => (
-							<p key={i} style={{animationDelay: `${0.3 + i * 0.1}s`}}>
-								{paragraph}
-							</p>
-						))
-					) : (
-						<p>{t('aboutPage.sections.intro.content.0')}</p>
-					)}
-					<div className='about-features'>
-						<div className='about-feature'>
-							<span className='feature-icon'>✓</span>
-							<span>{t('aboutPage.sections.method.title') || 'Méthode de travail'}</span>
-						</div>
-						<div className='about-feature'>
-							<span className='feature-icon'>✓</span>
-							<span>{t('aboutPage.sections.values.title') || 'Valeurs'}</span>
-						</div>
-					</div>
-					<Link href='/about' className='home-about-link'>
-						{t('navigation.about')} →
-					</Link>
-				</div>
+  return (
+    <section className="about-preview-section">
+      <div className="ap-container">
+        <div data-reveal className="ap-portrait">
+          <div className="ap-portrait-placeholder">[ portrait ]</div>
+        </div>
 
-				<SkillsPreview />
-			</div>
-		</section>
-	);
+        <div data-reveal className="ap-content" style={{ transitionDelay: '90ms' }}>
+          <div className="section-label">{t('navigation.about')}</div>
+          <h2 className="ap-title">{t('homePage.about.title')}</h2>
+          <p className="ap-desc">{t('aboutPage.sections.intro.content.0')}</p>
+
+          <div className="ap-stats">
+            {miniStats.map((s, i) => (
+              <div key={i} className="ap-stat">
+                <div className={`ap-stat-value ${s.green ? 'green' : ''}`}>{s.value}</div>
+                <div className="ap-stat-label">{s.label}</div>
+              </div>
+            ))}
+          </div>
+
+          <Link href="/about" className="ap-link">
+            {t('homePage.about.link')} →
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
 }

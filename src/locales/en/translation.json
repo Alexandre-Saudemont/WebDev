@@ -505,12 +505,12 @@
 			},
 			"privacy": {
 				"title": "Personal Data Protection",
-				"description": "This website does not collect any personal data for commercial purposes. No nominative information is recorded or shared."
+				"description": "Data submitted through the contact form (name, e-mail address, message) is used solely to answer your request. It is processed by our subprocessor Formspree Inc. (United States) under the European Commission's Standard Contractual Clauses, then deleted no later than 12 months after our last exchange. It is never sold to third parties nor used for commercial purposes.\nThis website uses neither cookies nor trackers.\nUnder the GDPR, you have rights of access, rectification, erasure, restriction, objection and portability by writing to contact@as-webdev.com. You may also lodge a complaint with the French supervisory authority (CNIL, www.cnil.fr)."
 			},
 			"lastUpdate": "Last update: "
 		},
 		"cgvkeypoint": {
-			"intro": "By using AS-WebDev's services, the Client unreservedly accepts these General Terms and Conditions of Sale.",
+			"intro": "By using AS-WebDev's services, the Client unreservedly accepts these General Terms and Conditions of Sale. Services are intended exclusively for professional clients.",
 			"sections": {
 				"1_definitions": {
 					"title": "Definitions",
@@ -547,6 +547,10 @@
 				"9_droit_applicable": {
 					"title": "Applicable law",
 					"text": "The services are subject to French law. In case of dispute, the Commercial Court of the Provider's domicile has jurisdiction. The language of the contract is French."
+				},
+				"10_maintenance": {
+					"title": "Maintenance plans",
+					"text": "Commitment-free monthly plans, terminable with one month's notice. The domain name remains the Client's property, and the Client receives their website files at the end of the contract. Non-payment leads to service suspension after formal notice."
 				}
 			},
 			"cgvtitle": "General Terms and Conditions of Sale",
@@ -581,6 +585,7 @@
 						{
 							"title": "Article 2. Application terms",
 							"paragraphs": [
+								"These terms and conditions are intended exclusively for professional clients, i.e. any natural or legal person engaging the Service Provider in the course of their professional activity. The Service Provider does not contract with consumers within the meaning of the French Consumer Code.",
 								"These General Terms and Conditions apply without restriction or reservation to all service provisions offered by the Provider. In the absence of specific provisions stipulated in writing, the Client's request to the Provider for a service implies full and complete acceptance of these General Terms and Conditions.",
 								"The General Terms and Conditions may be modified by the Provider without notice. Therefore, the Provider advises the Client to consult these General Terms and Conditions prior to signing a new quote."
 							]
@@ -695,6 +700,17 @@
 							"title": "Article 16. Contract language",
 							"paragraphs": [
 								"These terms and conditions are written in French. Only the French text is authoritative in the event of a dispute."
+							]
+						},
+						{
+							"title": "Article 17. Maintenance and hosting plans",
+							"paragraphs": [
+								"17.1. Purpose: maintenance plans (hosting, backups, security updates, monitoring and interventions depending on the chosen plan) are subscribed through a quote or purchase order specifying the selected plan.",
+								"17.2. Term and renewal: plans run for one month and renew tacitly. They are commitment-free.",
+								"17.3. Termination: either Party may terminate the plan in writing (e-mail accepted) with one (1) month's notice. Any month started is due in full.",
+								"17.4. Billing and non-payment: plans are billed monthly and payable upon receipt. If payment remains outstanding fifteen (15) days after formal notice, the Service Provider may suspend the services (including website hosting) without compensation, without prejudice to the penalties set out in article 9.3.",
+								"17.5. End of contract: the domain name remains the Client's property. Upon termination, the Service Provider provides the Client, on request, with a copy of the website files and data. Hosting ends on the effective termination date; migrating to a new host is the Client's responsibility.",
+								"17.6. Price revision: plan prices may be revised with two (2) months' written notice. In case of disagreement, the Client may terminate free of charge before the new price takes effect."
 							]
 						}
 					]

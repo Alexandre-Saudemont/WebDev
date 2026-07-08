@@ -22,6 +22,7 @@ export default function CGVPage() {
 			'7_propriete_intellectuelle',
 			'8_donnees_personnelles',
 			'9_droit_applicable',
+			'10_maintenance',
 		];
 
 		return [

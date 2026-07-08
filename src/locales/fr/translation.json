@@ -10,9 +10,16 @@
 		"home": "Accueil",
 		"title": "Création de sites web sur mesure pour entreprises et indépendants",
 		"subtitle": "Développeur full-stack passionné par les belles expériences numériques",
-		"typingTexts": ["FullStack JavaScript ", "Web", "Front-End"],
+		"typingTexts": [
+			"FullStack JavaScript ",
+			"Web",
+			"Front-End"
+		],
 		"skills": "Compétences",
-		"about": "A propos",
+		"about": {
+			"title": "Quelques mots sur moi",
+			"link": "En savoir plus →"
+		},
 		"contact": "Contact",
 		"project": "Mes projets",
 		"hero": {
@@ -25,8 +32,14 @@
 				"secondary": "Mes projets"
 			},
 			"cards": {
-				"frontend": {"title": "Front-end", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
-				"backend": {"title": "Back-end", "desc": "Node.js, Express.js, PostgreSQL"}
+				"frontend": {
+					"title": "Front-end",
+					"desc": "React.js, Next.js, JavaScript, Responsive Design"
+				},
+				"backend": {
+					"title": "Back-end",
+					"desc": "Node.js, Express.js, PostgreSQL"
+				}
 			}
 		},
 		"stats": {
@@ -71,10 +84,6 @@
 			"description": "Obtenez un devis gratuit et sans engagement sous 24h.",
 			"primary": "Discutons-en",
 			"email": "Email direct"
-		},
-		"about": {
-			"title": "Quelques mots sur moi",
-			"link": "En savoir plus →"
 		}
 	},
 	"aboutPage": {
@@ -120,20 +129,25 @@
 			},
 			"objectif": {
 				"title": "Objectif",
-				"content": ["Mon but : que vous soyez fier de votre site et qu’il devienne un vrai atout pour votre activité."]
+				"content": [
+					"Mon but : que vous soyez fier de votre site et qu’il devienne un vrai atout pour votre activité."
+				]
 			},
 			"skills": {
 				"title": "Compétences",
 				"subtitle": "Compétences principales",
-				"content": ["Je conçois et développe des sites sur mesure avec les technologies suivantes :"]
+				"content": [
+					"Je conçois et développe des sites sur mesure avec les technologies suivantes :"
+				]
 			},
 			"cta": {
 				"title": "Travaillons ensemble",
-				"content": ["Vous avez un projet ou une idée ? Parlons-en ! Je vous aide à donner vie à votre site, simplement et efficacement."]
+				"content": [
+					"Vous avez un projet ou une idée ? Parlons-en ! Je vous aide à donner vie à votre site, simplement et efficacement."
+				]
 			}
 		}
 	},
-
 	"services": {
 		"title": "Services",
 		"subtitle": "Services & tarifs",
@@ -282,22 +296,59 @@
 			"title": "Comment on travaille ensemble",
 			"subtitle": "Un déroulé transparent, où vous validez à chaque étape.",
 			"steps": [
-				{"step": "01", "title": "Cadrage", "description": "On clarifie vos objectifs, vos utilisateurs et le périmètre exact du projet. Devis gratuit."},
-				{"step": "02", "title": "Design", "description": "Des maquettes claires, validées ensemble avant la moindre ligne de code."},
-				{"step": "03", "title": "Développement", "description": "Un code propre et testé, livré par itérations que vous suivez en direct."},
-				{"step": "04", "title": "Lancement & suivi", "description": "Mise en ligne, mesure des résultats et optimisation continue."}
+				{
+					"step": "01",
+					"title": "Cadrage",
+					"description": "On clarifie vos objectifs, vos utilisateurs et le périmètre exact du projet. Devis gratuit."
+				},
+				{
+					"step": "02",
+					"title": "Design",
+					"description": "Des maquettes claires, validées ensemble avant la moindre ligne de code."
+				},
+				{
+					"step": "03",
+					"title": "Développement",
+					"description": "Un code propre et testé, livré par itérations que vous suivez en direct."
+				},
+				{
+					"step": "04",
+					"title": "Lancement & suivi",
+					"description": "Mise en ligne, mesure des résultats et optimisation continue."
+				}
 			]
 		},
 		"faq": {
 			"title": "Questions fréquentes",
 			"items": [
-				{"q": "Combien de temps prend un projet ?", "a": "Un site vitrine est généralement livré en 2 à 4 semaines. Pour une application web sur mesure, les délais dépendent de la complexité du projet. Un calendrier précis est défini ensemble avant le démarrage."},
-				{"q": "À qui appartient le projet une fois livré ?", "a": "Vous êtes pleinement propriétaire de votre site ou de votre application ainsi que de son code source. Vous êtes libre de l’héberger où vous le souhaitez, sans dépendance à une plateforme propriétaire."},
-				{"q": "Comment se passe le paiement ?", "a": "Un acompte est demandé à la signature afin de lancer le projet. Le solde est réglé à la livraison. Pour les projets les plus importants, un échéancier peut être mis en place."},
-				{"q": "Travaillez-vous avec des clients qui ne sont pas techniciens ?", "a": "Oui. J’accompagne principalement des entrepreneurs, artisans et PME. Mon rôle est de transformer vos besoins en une solution concrète, sans jargon technique et avec un interlocuteur unique."},
-				{"q": "Proposez-vous un accompagnement après la mise en ligne ?", "a": "Oui. Je peux continuer à assurer les mises à jour, les corrections de bugs, les optimisations et les évolutions de votre projet afin qu’il reste performant dans le temps."},
-				{"q": "Pourquoi choisir un développement sur mesure ?", "a": "Chaque projet est conçu selon vos besoins réels, sans fonctionnalités inutiles. Vous obtenez une solution performante, évolutive et pensée pour accompagner votre activité sur le long terme."},
-				{"q": "Pourquoi les tarifs sont-ils indiqués \"à partir de\" ?", "a": "Chaque projet est unique. Les tarifs affichés correspondent à un point de départ. Un devis détaillé est ensuite établi gratuitement en fonction de vos besoins et des fonctionnalités souhaitées."}
+				{
+					"q": "Combien de temps prend un projet ?",
+					"a": "Un site vitrine est généralement livré en 2 à 4 semaines. Pour une application web sur mesure, les délais dépendent de la complexité du projet. Un calendrier précis est défini ensemble avant le démarrage."
+				},
+				{
+					"q": "À qui appartient le projet une fois livré ?",
+					"a": "Vous êtes pleinement propriétaire de votre site ou de votre application ainsi que de son code source. Vous êtes libre de l’héberger où vous le souhaitez, sans dépendance à une plateforme propriétaire."
+				},
+				{
+					"q": "Comment se passe le paiement ?",
+					"a": "Un acompte est demandé à la signature afin de lancer le projet. Le solde est réglé à la livraison. Pour les projets les plus importants, un échéancier peut être mis en place."
+				},
+				{
+					"q": "Travaillez-vous avec des clients qui ne sont pas techniciens ?",
+					"a": "Oui. J’accompagne principalement des entrepreneurs, artisans et PME. Mon rôle est de transformer vos besoins en une solution concrète, sans jargon technique et avec un interlocuteur unique."
+				},
+				{
+					"q": "Proposez-vous un accompagnement après la mise en ligne ?",
+					"a": "Oui. Je peux continuer à assurer les mises à jour, les corrections de bugs, les optimisations et les évolutions de votre projet afin qu’il reste performant dans le temps."
+				},
+				{
+					"q": "Pourquoi choisir un développement sur mesure ?",
+					"a": "Chaque projet est conçu selon vos besoins réels, sans fonctionnalités inutiles. Vous obtenez une solution performante, évolutive et pensée pour accompagner votre activité sur le long terme."
+				},
+				{
+					"q": "Pourquoi les tarifs sont-ils indiqués \"à partir de\" ?",
+					"a": "Chaque projet est unique. Les tarifs affichés correspondent à un point de départ. Un devis détaillé est ensuite établi gratuitement en fonction de vos besoins et des fonctionnalités souhaitées."
+				}
 			]
 		},
 		"cta": {
@@ -306,7 +357,6 @@
 			"button": "Demander mon devis →"
 		}
 	},
-
 	"projectsPage": {
 		"title": "Projets",
 		"subtitle": "Mes Projets",
@@ -314,34 +364,48 @@
 		"project1": {
 			"title": "Site Pokedeck",
 			"description": "Une application de collection de cartes Pokémon pour créer, trier et gérer votre deck personnel",
-			"tech": ["ReactJS", "NodeJS", "PostgreSQL"],
+			"tech": [
+				"ReactJS",
+				"NodeJS",
+				"PostgreSQL"
+			],
 			"link": "https://github.com/Alexandre-Saudemont/Projet-Pokedeck/blob/main/README.md"
 		},
 		"project2": {
 			"title": "Site Taiwan",
 			"description": "Carnet de voyage à Taïwan : découvertes culturelles, spécialités locales et lieux qui m'ont marqué",
-			"tech": ["NextJS", "Responsive Design", "Scss"],
+			"tech": [
+				"NextJS",
+				"Responsive Design",
+				"Scss"
+			],
 			"link": "https://taiwan.as-webdev.com"
 		},
 		"project3": {
 			"title": "Site Match HSK",
 			"description": "Un jeu interactif pour apprendre les caractères chinois en s'amusant, classés par niveaux HSK",
-			"tech": ["ReactJS", "Interactive learning", "React-DnD"],
+			"tech": [
+				"ReactJS",
+				"Interactive learning",
+				"React-DnD"
+			],
 			"link": "https://matchpair.as-webdev.com/"
 		},
 		"project4": {
 			"title": "Avenso",
 			"description": "SaaS de gestion destiné aux artisans, seuls ou en équipe — clients, rendez-vous, devis et facturation électronique réunis dans une seule interface.",
-			"tech": ["SaaS", "Next.js", "TypeScript"],
+			"tech": [
+				"SaaS",
+				"Next.js",
+				"TypeScript"
+			],
 			"link": "https://avenso.fr/"
 		},
-
 		"cta": {
 			"title": "Intéressé(e) par un projet similaire ?",
 			"description": "Discutons de votre projet et créons ensemble une solution web adaptée à vos besoins."
 		}
 	},
-
 	"contact": {
 		"title": "Contact",
 		"subtitle": "Contactez-moi",
@@ -396,7 +460,6 @@
 			}
 		}
 	},
-
 	"footer": {
 		"copyrights": "Tous droits réservés",
 		"madeWith": "Conçu et développé par AS-WebDev",
@@ -406,16 +469,13 @@
 			"legal": "Légal"
 		}
 	},
-
 	"legal": {
 		"title": "Mentions Légales",
 		"subtitle": "Condition générales de vente",
-
 		"mention": {
 			"title": "Mentions Légales",
 			"subtitle": "Informations légales obligatoires selon la loi française",
 			"description": "Conformément à la législation française, cette page présente les informations relatives à l'éditeur, à l'hébergement, à la propriété intellectuelle et à la responsabilité du site.",
-
 			"editor": {
 				"title": "Éditeur du site",
 				"name": "Saudemont Alexandre - Entreprise individuelle",
@@ -423,7 +483,6 @@
 				"email": "contact@as-webdev.com",
 				"siret": "992 762 674 00016"
 			},
-
 			"hosting": {
 				"title": "Hébergement",
 				"prodiver": "Infomaniak Network SA",
@@ -436,27 +495,22 @@
 				"description": "L'ensemble du site (structure, design, textes, logos, images, code, etc.) est la propriété exclusive de AS-WebDev, sauf mention contraire.",
 				"description2": "Toute reproduction, totale ou partielle, est interdite sans autorisation écrite préalable."
 			},
-
 			"liability": {
 				"title": "Responsabilité",
 				"description": "AS-WebDev s'efforce de maintenir les informations du site à jour et exactes, mais ne saurait être tenue responsable d'erreurs, d'interruptions ou de dommages liés à son utilisation."
 			},
-
 			"law": {
 				"title": "Droit applicable",
 				"description": "  Les présentes mentions légales sont régies par le droit français. Tout litige relève de la compétence exclusive des tribunaux français."
 			},
-
 			"privacy": {
 				"title": "Protection des données personnelles",
-				"description": "Ce site ne collecte aucune donnée personnelle à des fins commerciales. \nAucune information nominative n'est enregistrée ou partagée. \nLes données éventuellement transmises via le formulaire de contact sont utilisées uniquement pour répondre à votre demande et ne sont jamais partagées."
+				"description": "Les données transmises via le formulaire de contact (nom, adresse e-mail, message) sont utilisées uniquement pour répondre à votre demande. Elles sont acheminées par notre sous-traitant Formspree Inc. (États-Unis), encadré par les clauses contractuelles types de la Commission européenne, puis supprimées au plus tard 12 mois après le dernier échange. Elles ne sont jamais cédées à des tiers ni utilisées à des fins commerciales.\nCe site n'utilise ni cookies ni traceurs.\nConformément au RGPD, vous disposez de droits d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité, en écrivant à contact@as-webdev.com. Vous pouvez également introduire une réclamation auprès de la CNIL (www.cnil.fr)."
 			},
-
 			"lastUpdate": "Dernière mise à jour : "
 		},
-
 		"cgvkeypoint": {
-			"intro": "En faisant appel à AS-WebDev, le Client accepte sans réserve les présentes Conditions Générales de Vente.",
+			"intro": "En faisant appel à AS-WebDev, le Client accepte sans réserve les présentes Conditions Générales de Vente. Les prestations s'adressent exclusivement aux clients professionnels.",
 			"sections": {
 				"1_definitions": {
 					"title": "Définitions",
@@ -493,6 +547,10 @@
 				"9_droit_applicable": {
 					"title": "Droit applicable",
 					"text": "Les prestations sont soumises au droit français. En cas de litige, le Tribunal du Commerce du domicile du Prestataire est compétent. La langue du contrat est le français."
+				},
+				"10_maintenance": {
+					"title": "Forfaits de maintenance",
+					"text": "Forfaits mensuels sans engagement, résiliables avec un préavis d'un mois. Le nom de domaine reste la propriété du Client, qui récupère les fichiers de son site à la fin du contrat. Impayé : suspension des services après mise en demeure."
 				}
 			},
 			"cgvtitle": "Conditions Générales de Vente",
@@ -527,6 +585,7 @@
 						{
 							"title": "Article 2. Modalités d’application",
 							"paragraphs": [
+								"Les présentes Conditions Générales s'adressent exclusivement aux clients professionnels, c'est-à-dire à toute personne physique ou morale sollicitant les prestations du Prestataire dans le cadre de son activité professionnelle. Le Prestataire ne contracte pas avec les consommateurs au sens du Code de la consommation.",
 								"Les présentes Conditions Générales s’appliquent sans restriction ni réserve, à l’ensemble des prestations de service proposées par le Prestataire. A défaut de dispositions particulières stipulées par écrit, le fait pour le Client de solliciter le Prestataire pour une prestation, implique l’acceptation pleine et entière des présentes Conditions Générales.",
 								"Les Conditions Générales peuvent être modifiées par le Prestataire sans préavis. Par conséquent, le Prestataire conseille au Client de consulter ces Conditions Générales en amont de la signature d’un nouveau devis."
 							]
@@ -639,7 +698,20 @@
 						},
 						{
 							"title": "Article 16. Langue du contrat",
-							"paragraphs": ["Les présentes CGV sont rédigées en français. Seul le texte français fait foi en cas de litige."]
+							"paragraphs": [
+								"Les présentes CGV sont rédigées en français. Seul le texte français fait foi en cas de litige."
+							]
+						},
+						{
+							"title": "Article 17. Forfaits de maintenance et d'hébergement",
+							"paragraphs": [
+								"17.1. Objet : les forfaits de maintenance (hébergement, sauvegardes, mises à jour de sécurité, surveillance et interventions selon la formule choisie) sont souscrits par devis ou bon de commande précisant la formule retenue.",
+								"17.2. Durée et reconduction : les forfaits sont conclus pour une durée d'un mois, reconduite tacitement. Ils sont sans engagement de durée.",
+								"17.3. Résiliation : chaque Partie peut résilier le forfait par écrit (e-mail faisant foi) moyennant un préavis d'un (1) mois. Tout mois entamé est dû.",
+								"17.4. Facturation et impayé : les forfaits sont facturés mensuellement et payables à réception. En cas d'impayé non régularisé sous quinze (15) jours après mise en demeure, le Prestataire peut suspendre les services (y compris l'hébergement du site) sans indemnité, sans préjudice des pénalités prévues à l'article 9.3.",
+								"17.5. Fin du contrat : le nom de domaine demeure la propriété du Client. À la résiliation, le Prestataire remet au Client, sur demande, une copie des fichiers et données de son site. L'hébergement prend fin à la date effective de résiliation ; il appartient au Client d'assurer la migration vers un nouvel hébergeur.",
+								"17.6. Révision des tarifs : les tarifs des forfaits peuvent être révisés moyennant un préavis écrit de deux (2) mois. En cas de désaccord, le Client peut résilier sans frais avant l'entrée en vigueur du nouveau tarif."
+							]
 						}
 					]
 				}

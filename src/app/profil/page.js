@@ -1,6 +1,6 @@
 'use client';
 
-import profilePic from './profile-picV2.jpg';
+import profilePic from './profile-picV2.webp';
 import Image from 'next/image';
 
 export default function profil() {

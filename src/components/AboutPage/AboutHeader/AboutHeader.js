@@ -21,7 +21,7 @@ export default function AboutHeader() {
 
         <div data-reveal className="ah-portrait" style={{ transitionDelay: '100ms' }}>
           <Image
-            src="/img/portrait.jpg"
+            src="/img/portrait.webp"
             alt="Alexandre Saudemont"
             fill
             style={{ objectFit: 'cover' }}

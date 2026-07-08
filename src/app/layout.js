@@ -20,8 +20,30 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: 'Alexandre Saudemont — Développeur web freelance',
+  metadataBase: new URL('https://as-webdev.com'),
+  title: {
+    default: 'Alexandre Saudemont — Développeur web freelance',
+    template: '%s — AS-WebDev',
+  },
   description: 'Je conçois des sites web et applications modernes, rapides et performants pour entreprises, startups et indépendants.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'fr_FR',
+    url: 'https://as-webdev.com',
+    siteName: 'AS-WebDev',
+    title: 'Alexandre Saudemont — Développeur web freelance',
+    description: 'Sites web et applications modernes, rapides et performants pour entreprises, startups et indépendants.',
+    images: [{ url: '/img/og.png', width: 1200, height: 630, alt: 'AS-WebDev — Alexandre Saudemont, développeur web freelance' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Alexandre Saudemont — Développeur web freelance',
+    description: 'Sites web et applications modernes, rapides et performants.',
+    images: ['/img/og.png'],
+  },
 };
 
 export default function RootLayout({ children }) {

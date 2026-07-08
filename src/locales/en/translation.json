@@ -25,7 +25,6 @@
 		"hero": {
 			"status": "Available",
 			"tagline": "React · Next.js · TypeScript",
-			"titlePrefix": "Hi, I'm",
 			"subtitle": "Full-stack developer passionate about creating beautiful digital experiences",
 			"description": "I create modern and performant websites to help businesses develop their online presence.",
 			"cta": {
@@ -690,6 +689,12 @@
 							"title": "Article 15. Applicable law & dispute",
 							"paragraphs": [
 								"These General Terms and Conditions and the services are governed by French law. Any dispute falls under the jurisdiction of the competent Commercial Court at the Provider's domicile."
+							]
+						},
+						{
+							"title": "Article 16. Contract language",
+							"paragraphs": [
+								"These terms and conditions are written in French. Only the French text is authoritative in the event of a dispute."
 							]
 						}
 					]

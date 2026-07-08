@@ -4,7 +4,8 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "next build && node scripts/fix-rsc-export.mjs",
+		"build": "npm run check-i18n && next build && node scripts/fix-rsc-export.mjs",
+		"check-i18n": "node scripts/check-i18n.mjs",
 		"start": "next start",
 		"lint": "eslint"
 	},

@@ -2,7 +2,7 @@
 
 import {useMemo} from 'react';
 import {useTranslation} from 'react-i18next';
-import Link from 'next/link';
+import Link from '@/components/LocaleLink';
 import LegalHeader from '../LegalHeader/LegalHeader';
 import LegalContent from '../LegalContent/LegalContent';
 import LastUpdate from '../LastUpdate/LastUpdate';

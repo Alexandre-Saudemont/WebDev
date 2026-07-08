@@ -6,14 +6,20 @@
 		"projects": "Projects",
 		"contact": "Contact"
 	},
-
 	"homePage": {
 		"home": "Home",
 		"title": "Custom website creation for businesses and freelancers",
 		"subtitle": "Full-stack developer passionate about creating beautiful digital experiences",
-		"typingTexts": ["FullStack JavaScript", "Web", "Front-End"],
+		"typingTexts": [
+			"FullStack JavaScript",
+			"Web",
+			"Front-End"
+		],
 		"skills": "Skills",
-		"about": "About",
+		"about": {
+			"title": "A few words about me",
+			"link": "Learn more →"
+		},
 		"contact": "Contact",
 		"project": "My Work",
 		"hero": {
@@ -27,8 +33,14 @@
 				"secondary": "My projects"
 			},
 			"cards": {
-				"frontend": {"title": "Front-end", "desc": "React.js, Next.js, JavaScript, Responsive Design"},
-				"backend": {"title": "Back-end", "desc": "Node.js, Express.js, PostgreSQL"}
+				"frontend": {
+					"title": "Front-end",
+					"desc": "React.js, Next.js, JavaScript, Responsive Design"
+				},
+				"backend": {
+					"title": "Back-end",
+					"desc": "Node.js, Express.js, PostgreSQL"
+				}
 			}
 		},
 		"stats": {
@@ -41,7 +53,6 @@
 			"title": "Process",
 			"subtitle": "How I Work",
 			"description": "A clear and transparent process for your project",
-
 			"discovery": {
 				"title": "Discovery",
 				"description": "Discussion to understand your needs and objectives"
@@ -74,13 +85,8 @@
 			"description": "Get a free quote with no commitment within 24h.",
 			"primary": "Let's talk",
 			"email": "Direct email"
-		},
-		"about": {
-			"title": "A few words about me",
-			"link": "Learn more →"
 		}
 	},
-
 	"aboutPage": {
 		"sections": {
 			"intro": {
@@ -124,20 +130,25 @@
 			},
 			"objectif": {
 				"title": "Goal",
-				"content": ["My goal: for you to be proud of your website and for it to become a real asset for growing your business."]
+				"content": [
+					"My goal: for you to be proud of your website and for it to become a real asset for growing your business."
+				]
 			},
 			"skills": {
 				"title": "Skills",
 				"subtitle": "Core skills",
-				"content": ["I create modern and performant websites using the following technologies:"]
+				"content": [
+					"I create modern and performant websites using the following technologies:"
+				]
 			},
 			"cta": {
 				"title": "Let's Discuss Your Project",
-				"content": ["Have an idea or specific need? Contact me to talk about it!"]
+				"content": [
+					"Have an idea or specific need? Contact me to talk about it!"
+				]
 			}
 		}
 	},
-
 	"services": {
 		"title": "Services",
 		"subtitle": "Services & pricing",
@@ -223,39 +234,122 @@
 			}
 		],
 		"support": {
-			"title": "Post-delivery support",
-			"description": "Once your project is live, I can continue to support you to ensure its stability, security and evolution.",
-			"priceLabel": "Starting from",
-			"price": "€89/h",
-			"services": [
-				"Bug fixes",
-				"Updates",
-				"Optimizations",
-				"Feature additions",
-				"Technical assistance"
+			"eyebrow": "After launch",
+			"title": "Your project doesn’t stop at launch",
+			"subtitle": "Once your website or application is live, I can keep handling the entire technical side: hosting, security, backups, maintenance and support. You stay focused on your business, I take care of the rest.",
+			"plans": [
+				{
+					"title": "Serenity",
+					"price": "€39",
+					"period": "/ month",
+					"description": "The essentials to keep your website fast and secure.",
+					"features": [
+						"Hosting in France included",
+						"Deployment & go-live",
+						"Automatic backups",
+						"Security updates",
+						"Site monitoring",
+						"Small content updates"
+					],
+					"cta": "Choose this plan"
+				},
+				{
+					"popular": true,
+					"badge": "Most popular",
+					"title": "Serenity Business",
+					"price": "€79",
+					"period": "/ month",
+					"description": "For businesses looking for more complete support.",
+					"features": [
+						"Everything in Serenity",
+						"Priority support",
+						"Performance optimization",
+						"Continuous monitoring",
+						"Minor changes included",
+						"Advice and guidance"
+					],
+					"cta": "Choose this plan"
+				},
+				{
+					"title": "Serenity E-commerce",
+					"price": "€149",
+					"period": "/ month",
+					"description": "Maintenance tailored to online stores.",
+					"features": [
+						"Everything in Serenity Business",
+						"Store maintenance",
+						"Payment checks",
+						"Order tracking",
+						"Priority support",
+						"Incident assistance"
+					],
+					"cta": "Choose this plan"
+				}
 			],
-			"cta": "Get in touch"
+			"custom": {
+				"title": "Custom web applications, SaaS, platforms or business tools",
+				"text": "Every application is different, so maintenance is assessed case by case based on features, traffic and the level of support you need.",
+				"cta": "Custom quote"
+			},
+			"note": "All plans include hosting in France, automatic backups and security updates. The domain name remains the client’s property. Plans are commitment-free and can evolve with your project’s needs."
 		},
 		"process": {
 			"title": "How we work together",
 			"subtitle": "A transparent workflow where you validate at every step.",
 			"steps": [
-				{"step": "01", "title": "Scoping", "description": "We clarify your objectives, users and the exact project scope. Free quote."},
-				{"step": "02", "title": "Design", "description": "Clear mockups validated together before a single line of code."},
-				{"step": "03", "title": "Development", "description": "Clean, tested code delivered in iterations you follow in real time."},
-				{"step": "04", "title": "Launch & follow-up", "description": "Go live, measure results and continuous optimization."}
+				{
+					"step": "01",
+					"title": "Scoping",
+					"description": "We clarify your objectives, users and the exact project scope. Free quote."
+				},
+				{
+					"step": "02",
+					"title": "Design",
+					"description": "Clear mockups validated together before a single line of code."
+				},
+				{
+					"step": "03",
+					"title": "Development",
+					"description": "Clean, tested code delivered in iterations you follow in real time."
+				},
+				{
+					"step": "04",
+					"title": "Launch & follow-up",
+					"description": "Go live, measure results and continuous optimization."
+				}
 			]
 		},
 		"faq": {
 			"title": "Frequently asked questions",
 			"items": [
-				{"q": "How long does a project take?", "a": "A showcase site is typically delivered in 2 to 4 weeks. For a custom web application, timelines depend on the project's complexity. A precise schedule is defined together before we start."},
-				{"q": "Who owns the project once delivered?", "a": "You are the full owner of your website or application and its source code. You are free to host it wherever you choose, with no dependency on any proprietary platform."},
-				{"q": "How does payment work?", "a": "A deposit is required at signing to kick off the project. The balance is paid on delivery. For larger projects, a payment schedule can be arranged."},
-				{"q": "Do you work with non-technical clients?", "a": "Yes. I mainly work with entrepreneurs, craftsmen and SMEs. My role is to turn your needs into a concrete solution — jargon-free and with a single point of contact."},
-				{"q": "Do you offer support after launch?", "a": "Yes. I can continue to handle updates, bug fixes, optimizations and new features so your project stays performant over time."},
-				{"q": "Why choose custom development?", "a": "Every project is built around your real needs, without unnecessary features. You get a performant, scalable solution designed to support your business in the long run."},
-				{"q": "Why are prices listed as \"starting from\"?", "a": "Every project is unique. The prices shown are a starting point. A detailed quote is then provided free of charge based on your specific needs and desired features."}
+				{
+					"q": "How long does a project take?",
+					"a": "A showcase site is typically delivered in 2 to 4 weeks. For a custom web application, timelines depend on the project's complexity. A precise schedule is defined together before we start."
+				},
+				{
+					"q": "Who owns the project once delivered?",
+					"a": "You are the full owner of your website or application and its source code. You are free to host it wherever you choose, with no dependency on any proprietary platform."
+				},
+				{
+					"q": "How does payment work?",
+					"a": "A deposit is required at signing to kick off the project. The balance is paid on delivery. For larger projects, a payment schedule can be arranged."
+				},
+				{
+					"q": "Do you work with non-technical clients?",
+					"a": "Yes. I mainly work with entrepreneurs, craftsmen and SMEs. My role is to turn your needs into a concrete solution — jargon-free and with a single point of contact."
+				},
+				{
+					"q": "Do you offer support after launch?",
+					"a": "Yes. I can continue to handle updates, bug fixes, optimizations and new features so your project stays performant over time."
+				},
+				{
+					"q": "Why choose custom development?",
+					"a": "Every project is built around your real needs, without unnecessary features. You get a performant, scalable solution designed to support your business in the long run."
+				},
+				{
+					"q": "Why are prices listed as \"starting from\"?",
+					"a": "Every project is unique. The prices shown are a starting point. A detailed quote is then provided free of charge based on your specific needs and desired features."
+				}
 			]
 		},
 		"cta": {
@@ -264,7 +358,6 @@
 			"button": "Request my quote →"
 		}
 	},
-
 	"projectsPage": {
 		"title": "Projects",
 		"subtitle": "My Projects",
@@ -272,25 +365,41 @@
 		"project1": {
 			"title": "Pokedeck Website",
 			"description": "A Pokémon card collection application to create, sort and manage your personal deck",
-			"tech": ["ReactJS", "NodeJS", "PostgreSQL"],
+			"tech": [
+				"ReactJS",
+				"NodeJS",
+				"PostgreSQL"
+			],
 			"link": "null"
 		},
 		"project2": {
 			"title": "Taiwan Website",
 			"description": "Travel diary of Taiwan: cultural discoveries, local specialties and places that marked me",
-			"tech": ["NextJS", "Responsive Design", "Scss"],
+			"tech": [
+				"NextJS",
+				"Responsive Design",
+				"Scss"
+			],
 			"link": "https://taiwan.as-webdev.com"
 		},
 		"project3": {
 			"title": "HSK Match Website",
 			"description": "An interactive game to learn Chinese characters while having fun, classified by HSK levels",
-			"tech": ["ReactJS", "Interactive learning", "React-DnD"],
+			"tech": [
+				"ReactJS",
+				"Interactive learning",
+				"React-DnD"
+			],
 			"link": "null"
 		},
 		"project4": {
 			"title": "Avenso",
 			"description": "SaaS management platform for craftsmen and artisans, solo or in teams — clients, appointments, quotes and electronic invoicing brought together in one interface.",
-			"tech": ["SaaS", "Next.js", "TypeScript"],
+			"tech": [
+				"SaaS",
+				"Next.js",
+				"TypeScript"
+			],
 			"link": "https://avenso.fr/"
 		},
 		"cta": {
@@ -298,7 +407,6 @@
 			"description": "Let's discuss your project and create a web solution tailored to your needs."
 		}
 	},
-
 	"contact": {
 		"title": "Contact",
 		"subtitle": "Contact me",
@@ -353,7 +461,6 @@
 			}
 		}
 	},
-
 	"footer": {
 		"copyrights": "All rights reserved",
 		"madeWith": "Designed and developed by AS-WebDev",
@@ -363,16 +470,13 @@
 			"legal": "Legal"
 		}
 	},
-
 	"legal": {
 		"title": "Legal Notice",
 		"subtitle": "General Terms and Conditions of Sale",
-
 		"mention": {
 			"title": "Legal Notice",
 			"subtitle": "Mandatory legal information according to French law",
 			"description": "In accordance with French legislation, this page presents information regarding the publisher, hosting, intellectual property, and liability of the website.",
-
 			"editor": {
 				"title": "Website Publisher",
 				"name": "AS-WebDev",
@@ -380,10 +484,8 @@
 				"email": "contact@as-webdev.com",
 				"siret": "992 762 674 00016"
 			},
-
 			"hosting": {
 				"title": "Hosting",
-
 				"prodiver": "Infomaniak Network SA",
 				"address": "Rue Eugène-Marziano 25, 1227 Genève, Switzerland",
 				"phone": "+41 22 820 35 44",
@@ -394,22 +496,18 @@
 				"description": "The entire website (structure, design, texts, logos, images, code, etc.) is the exclusive property of AS-WebDev, unless otherwise stated.",
 				"description2": "Any reproduction, in whole or in part, is prohibited without prior written authorization."
 			},
-
 			"liability": {
 				"title": "Liability",
 				"description": "AS-WebDev strives to keep the website's information up-to-date and accurate, but cannot be held responsible for errors, interruptions, or damages related to its use."
 			},
-
 			"law": {
 				"title": "Applicable Law",
 				"description": "These legal notices are governed by French law. Any dispute falls under the exclusive jurisdiction of French courts."
 			},
-
 			"privacy": {
 				"title": "Personal Data Protection",
 				"description": "This website does not collect any personal data for commercial purposes. No nominative information is recorded or shared."
 			},
-
 			"lastUpdate": "Last update: "
 		},
 		"cgvkeypoint": {

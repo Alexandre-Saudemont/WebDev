@@ -1,14 +1,15 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
+import Link, { useLang, localePath } from '@/components/LocaleLink';
 import './Header.css';
 
 export default function Header() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const pathname = usePathname();
+  const lang = useLang();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [prevPathname, setPrevPathname] = useState(pathname);
@@ -33,8 +34,10 @@ export default function Header() {
     { href: '/about', label: t('navigation.about') },
   ];
 
-  const isActive = (href) =>
-    href === '/' ? pathname === '/' : pathname.startsWith(href);
+  const isActive = (href) => {
+    const localized = localePath(lang, href);
+    return href === '/' ? pathname === localized : pathname.startsWith(localized);
+  };
 
   return (
     <header className={`site-header ${scrolled ? 'scrolled' : ''}`}>
@@ -60,7 +63,7 @@ export default function Header() {
         </nav>
 
         <div className="header-right">
-          <LanguageSelector i18n={i18n} />
+          <LanguageSelector lang={lang} pathname={pathname} />
           <button
             className="burger"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -94,18 +97,28 @@ export default function Header() {
   );
 }
 
-function LanguageSelector({ i18n }) {
+function LanguageSelector({ lang, pathname }) {
   const langs = ['fr', 'en', 'cn'];
+
+  // Chemin équivalent dans une autre langue : on retire le préfixe actuel
+  // puis on applique celui de la langue cible (les pages fr-only retombent sur l'accueil)
+  const switchPath = (target) => {
+    let base = pathname;
+    if (lang !== 'fr') {
+      base = pathname.replace(`/${lang}`, '') || '/';
+    }
+    if (target !== 'fr' && (base.startsWith('/legal') || base.startsWith('/profil'))) {
+      base = '/';
+    }
+    return localePath(target, base);
+  };
+
   return (
     <div className="lang-selector">
       {langs.map((l) => (
-        <button
-          key={l}
-          onClick={() => i18n.changeLanguage(l)}
-          className={`lang-btn ${i18n.language === l ? 'active' : ''}`}
-        >
+        <a key={l} href={switchPath(l)} className={`lang-btn ${lang === l ? 'active' : ''}`}>
           {l.toUpperCase()}
-        </button>
+        </a>
       ))}
     </div>
   );

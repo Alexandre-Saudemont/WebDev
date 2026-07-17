@@ -50,7 +50,7 @@ export default function ServicesPreview() {
               className={`sp-card ${s.popular ? 'sp-card--popular' : ''}`}
               style={{ '--reveal-delay': `${i * 80}ms` }}
             >
-              {s.popular && <span className="sp-badge">POPULAIRE</span>}
+              {s.popular && <span className="sp-badge">{t('services.popularShort')}</span>}
               <div className={`sp-num mono-num ${s.popular ? 'green' : ''}`}>{s.num}</div>
               <h3 className="sp-card-title">{s.title}</h3>
               <p className="sp-card-desc">{s.desc}</p>

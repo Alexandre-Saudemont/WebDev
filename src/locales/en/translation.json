@@ -4,7 +4,9 @@
 		"about": "About",
 		"services": "Services",
 		"projects": "Projects",
-		"contact": "Contact"
+		"contact": "Contact",
+		"openMenu": "Open menu",
+		"closeMenu": "Close menu"
 	},
 	"homePage": {
 		"home": "Home",
@@ -99,6 +101,7 @@
 			"parcours": {
 				"title": "Journey",
 				"subtitle": "My journey",
+				"steps": ["Journey", "Training", "Team project"],
 				"content": [
 					"Since childhood, I have been passionate about computer science. After several years in administration, I chose to reorient myself towards web development.",
 					"I started by learning web development on my own, then joined O'Clock school to structure my skills.\nI followed an intensive 5-month program covering web fundamentals (HTML, CSS, JS, Node.js, PostgreSQL) and a Front-end specialization with React.js.",
@@ -156,6 +159,7 @@
 		"headerSubtitle": "Free quote within 24h, price agreed before starting, and a single point of contact from start to finish.",
 		"pricingNote": "Every project is unique — these prices are starting points. The final quote is established after an initial discussion. · VAT not applicable (art. 293 B CGI).",
 		"popularLabel": "Most popular",
+		"popularShort": "Popular",
 		"items": [
 			{
 				"icon": "🌐",

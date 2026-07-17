@@ -67,7 +67,7 @@ export default function Header() {
           <button
             className="burger"
             onClick={() => setMenuOpen(!menuOpen)}
-            aria-label={menuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+            aria-label={menuOpen ? t('navigation.closeMenu') : t('navigation.openMenu')}
           >
             <span className={`burger-line ${menuOpen ? 'open' : ''}`} />
             <span className={`burger-line ${menuOpen ? 'open' : ''}`} />

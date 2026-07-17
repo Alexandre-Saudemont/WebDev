@@ -4,7 +4,9 @@
 		"about": "关于",
 		"services": "服务",
 		"projects": "项目",
-		"contact": "联系我"
+		"contact": "联系我",
+		"openMenu": "打开菜单",
+		"closeMenu": "关闭菜单"
 	},
 	"homePage": {
 		"home": "首页",
@@ -99,6 +101,7 @@
 			"parcours": {
 				"title": "经历",
 				"subtitle": "我的经历",
+				"steps": ["经历", "培训", "团队项目"],
 				"content": [
 					"自幼以来，我就对计算机科学充满热情。在行政领域工作数年后，我选择重新定向于网页开发。",
 					"我最初通过自学学习网页开发，随后加入了O'Clock学校来系统化我的技能。\n我完成了为期5个月的强化课程，学习了网页开发基础（HTML、CSS、JS、Node.js、PostgreSQL）并专攻前端 React.js 开发。",
@@ -156,6 +159,7 @@
 		"headerSubtitle": "24小时内免费报价，开始前公开透明的定价，全程只有一个联络人。",
 		"pricingNote": "每个项目都是独特的——这些价格只是起点。最终报价在初次沟通后确定。· 免征增值税（法国税法第293 B条）。",
 		"popularLabel": "最受欢迎",
+		"popularShort": "热门",
 		"items": [
 			{
 				"icon": "🌐",

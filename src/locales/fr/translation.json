@@ -4,7 +4,9 @@
 		"about": "A propos",
 		"services": "Services",
 		"projects": "Projets",
-		"contact": "Contact"
+		"contact": "Contact",
+		"openMenu": "Ouvrir le menu",
+		"closeMenu": "Fermer le menu"
 	},
 	"homePage": {
 		"home": "Accueil",
@@ -99,6 +101,7 @@
 			"parcours": {
 				"title": "Parcours",
 				"subtitle": "Mon parcours",
+				"steps": ["Parcours", "Formation", "Projet d'équipe"],
 				"content": [
 					"Depuis mon enfance, l’informatique me passionne.\nAprès plusieurs années dans l’administration, j’ai choisi de me réorienter vers le développement web.",
 					"J'ai commencé par apprendre le développement web en autodidacte, puis j'ai rejoint l'école O'Clock pour structurer mes compétences. \nJ'y ai suivi un programme intensif de 5 mois, avec les fondamentaux du web (HTML, CSS, JS, Node.js, PostgreSQL) et une spécialisation Front-end avec React.js.",
@@ -156,6 +159,7 @@
 		"headerSubtitle": "Un devis gratuit sous 24h, un tarif annoncé avant de commencer, et un interlocuteur unique du début à la fin.",
 		"pricingNote": "Chaque projet est unique — ces tarifs sont des points de départ. Le devis final est établi après un premier échange. · TVA non applicable, art. 293 B du CGI.",
 		"popularLabel": "Le plus populaire",
+		"popularShort": "Populaire",
 		"items": [
 			{
 				"icon": "🌐",

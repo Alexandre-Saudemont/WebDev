@@ -10,12 +10,13 @@ export default function TimelineSection() {
   const { t } = useTranslation();
 
   const items = useMemo(() => {
-    const title = t('aboutPage.sections.parcours.title');
+    const steps = t('aboutPage.sections.parcours.steps', { returnObjects: true });
+    const titles = Array.isArray(steps) ? steps : [];
     const content = t('aboutPage.sections.parcours.content', { returnObjects: true });
     const lines = Array.isArray(content) ? content : [];
     return lines.map((text, i) => ({
       date: TIMELINE_DATES[i] ?? '',
-      title: i === 0 ? title : i === 1 ? 'Formation' : "Projet d'équipe",
+      title: titles[i] ?? '',
       text,
     }));
   }, [t]);

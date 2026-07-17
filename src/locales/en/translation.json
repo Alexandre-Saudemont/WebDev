@@ -162,7 +162,7 @@
 				"title": "Starter",
 				"description": "For freelancers, craftsmen and small businesses looking for a professional online presence.",
 				"priceLabel": "Starting from",
-				"price": "€1,300",
+				"price": "€990",
 				"priceSuffix": "",
 				"popular": false,
 				"features": [
@@ -171,7 +171,6 @@
 					"Responsive (mobile, tablet, desktop)",
 					"Basic SEO",
 					"Contact form",
-					"Performance optimization",
 					"Ready-to-launch delivery"
 				],
 				"cta": "Request a quote"
@@ -181,15 +180,15 @@
 				"title": "Business",
 				"description": "For businesses looking for a more complete and impactful website.",
 				"priceLabel": "Starting from",
-				"price": "€2,200",
+				"price": "€1,890",
 				"priceSuffix": "",
 				"popular": true,
 				"features": [
 					"5 to 7 custom pages",
-					"Fully custom design",
+					"Personalized design",
 					"Advanced SEO",
-					"Premium animations & finishes",
 					"Performance optimization",
+					"Bilingual website (FR / EN)",
 					"Launch support"
 				],
 				"cta": "Start my project"
@@ -199,16 +198,16 @@
 				"title": "E-commerce",
 				"description": "To sell your products online.",
 				"priceLabel": "Starting from",
-				"price": "€4,500",
+				"price": "€4,000",
 				"priceSuffix": "",
 				"popular": false,
 				"features": [
-					"Online store",
-					"Product management",
+					"Custom online store",
+					"Product catalog",
 					"Secure payment",
 					"Order management",
-					"Dashboard",
-					"SEO optimization"
+					"SEO optimization",
+					"Simplified onboarding"
 				],
 				"cta": "Request a quote"
 			},
@@ -247,8 +246,8 @@
 						"Deployment & go-live",
 						"Automatic backups",
 						"Security updates",
-						"Site monitoring",
-						"Small content updates"
+						"Site health checks",
+						"Minor content updates"
 					],
 					"cta": "Choose this plan"
 				},
@@ -263,9 +262,9 @@
 						"Everything in Serenity",
 						"Priority support",
 						"Performance optimization",
-						"Continuous monitoring",
+						"Regular site checks",
 						"Minor changes included",
-						"Advice and guidance"
+						"Up to 1 hour of changes / month"
 					],
 					"cta": "Choose this plan"
 				},
@@ -277,9 +276,9 @@
 					"features": [
 						"Everything in Serenity Business",
 						"Store maintenance",
-						"Payment checks",
+						"Payment functionality checks",
 						"Order tracking",
-						"Priority support",
+						"Dedicated priority support",
 						"Incident assistance"
 					],
 					"cta": "Choose this plan"
@@ -323,7 +322,7 @@
 			"items": [
 				{
 					"q": "How long does a project take?",
-					"a": "A showcase site is typically delivered in 2 to 4 weeks. For a custom web application, timelines depend on the project's complexity. A precise schedule is defined together before we start."
+					"a": "The timeline depends on the project's scope: number of pages, features and content to provide. A precise schedule is defined together before we start, and the delivery timeframe is stated on the quote."
 				},
 				{
 					"q": "Who owns the project once delivered?",
@@ -331,7 +330,7 @@
 				},
 				{
 					"q": "How does payment work?",
-					"a": "A deposit is required at signing to kick off the project. The balance is paid on delivery. For larger projects, a payment schedule can be arranged."
+					"a": "Payment is made in three instalments: a 30% deposit at signing to kick off the project, 50% at the end of development before the site goes live, and the remaining 20% on delivery."
 				},
 				{
 					"q": "Do you work with non-technical clients?",

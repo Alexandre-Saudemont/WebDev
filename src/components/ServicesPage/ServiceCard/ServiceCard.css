@@ -9,6 +9,18 @@
   transition: transform .5s cubic-bezier(.16,1,.3,1), box-shadow .4s, border-color .4s;
 }
 
+/* Aligne titre, prix, séparateur et CTA entre les cartes : chaque carte
+   partage les rangées de la grille parente, quelle que soit la longueur
+   des contenus (le flex ci-dessus sert de fallback sans subgrid) */
+@supports (grid-template-rows: subgrid) {
+  .sv-card {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 8;
+    row-gap: 0;
+  }
+}
+
 .sv-card:hover {
   transform: translateY(-6px);
   border-color: rgba(255,255,255,.15);

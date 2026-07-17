@@ -162,16 +162,15 @@
 				"title": "Présence",
 				"description": "Pour les indépendants, artisans et petites entreprises souhaitant une présence professionnelle sur Internet.",
 				"priceLabel": "À partir de",
-				"price": "1 300 €",
+				"price": "990 €",
 				"priceSuffix": "",
 				"popular": false,
 				"features": [
 					"3 à 4 pages sur mesure",
 					"Design moderne adapté à votre activité",
 					"Responsive (mobile, tablette, ordinateur)",
-					"SEO de base",
+					"Référencement SEO de base",
 					"Formulaire de contact",
-					"Optimisation des performances",
 					"Livraison clé en main"
 				],
 				"cta": "Demander un devis"
@@ -181,15 +180,15 @@
 				"title": "Business",
 				"description": "Pour les entreprises souhaitant un site plus complet et plus impactant.",
 				"priceLabel": "À partir de",
-				"price": "2 200 €",
+				"price": "1 890 €",
 				"priceSuffix": "",
 				"popular": true,
 				"features": [
 					"5 à 7 pages sur mesure",
-					"Design sur mesure",
-					"SEO avancé",
-					"Animations et finitions premium",
+					"Design personnalisé",
+					"Référencement SEO avancé",
 					"Optimisation des performances",
+					"Site bilingue (FR / EN)",
 					"Accompagnement au lancement"
 				],
 				"cta": "Démarrer mon projet"
@@ -199,16 +198,16 @@
 				"title": "E-commerce",
 				"description": "Pour vendre vos produits en ligne.",
 				"priceLabel": "À partir de",
-				"price": "4 500 €",
+				"price": "4 000 €",
 				"priceSuffix": "",
 				"popular": false,
 				"features": [
-					"Boutique en ligne",
-					"Gestion des produits",
+					"Boutique en ligne sur mesure",
+					"Catalogue produits",
 					"Paiement sécurisé",
 					"Gestion des commandes",
-					"Tableau de bord",
-					"Optimisation SEO"
+					"Optimisation SEO",
+					"Prise en main simplifiée"
 				],
 				"cta": "Demander un devis"
 			},
@@ -247,8 +246,8 @@
 						"Mise en ligne & déploiement",
 						"Sauvegardes automatiques",
 						"Mises à jour de sécurité",
-						"Surveillance du site",
-						"Petites modifications de contenu"
+						"Vérification du bon fonctionnement",
+						"Modifications mineures de contenu"
 					],
 					"cta": "Choisir cette formule"
 				},
@@ -263,9 +262,9 @@
 						"Tout le forfait Sérénité",
 						"Support prioritaire",
 						"Optimisation des performances",
-						"Surveillance continue",
+						"Vérification régulière du site",
 						"Interventions mineures incluses",
-						"Conseils et accompagnement"
+						"Jusqu'à 1 h de modifications / mois"
 					],
 					"cta": "Choisir cette formule"
 				},
@@ -277,9 +276,9 @@
 					"features": [
 						"Tout le forfait Sérénité Business",
 						"Maintenance de la boutique",
-						"Vérification des paiements",
+						"Vérification des fonctionnalités de paiement",
 						"Suivi des commandes",
-						"Support prioritaire",
+						"Support prioritaire dédié",
 						"Assistance en cas d’incident"
 					],
 					"cta": "Choisir cette formule"
@@ -323,7 +322,7 @@
 			"items": [
 				{
 					"q": "Combien de temps prend un projet ?",
-					"a": "Un site vitrine est généralement livré en 2 à 4 semaines. Pour une application web sur mesure, les délais dépendent de la complexité du projet. Un calendrier précis est défini ensemble avant le démarrage."
+					"a": "Le délai dépend du périmètre du projet : nombre de pages, fonctionnalités et contenus à fournir. Un calendrier précis est défini ensemble avant le démarrage, et le délai de livraison est indiqué sur le devis."
 				},
 				{
 					"q": "À qui appartient le projet une fois livré ?",
@@ -331,7 +330,7 @@
 				},
 				{
 					"q": "Comment se passe le paiement ?",
-					"a": "Un acompte est demandé à la signature afin de lancer le projet. Le solde est réglé à la livraison. Pour les projets les plus importants, un échéancier peut être mis en place."
+					"a": "Le paiement s’effectue en trois étapes : un acompte de 30 % à la signature pour lancer le projet, 50 % à la fin du développement avant la mise en ligne, et le solde de 20 % à la livraison."
 				},
 				{
 					"q": "Travaillez-vous avec des clients qui ne sont pas techniciens ?",

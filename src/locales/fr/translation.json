@@ -465,11 +465,21 @@
 	},
 	"footer": {
 		"copyrights": "Tous droits réservés",
-		"madeWith": "Conçu et développé par AS-WebDev",
+		"tagline": "Création de sites web, e-commerce et applications sur mesure.",
 		"sections": {
 			"navigation": "Navigation",
-			"information": "Informations",
+			"contact": "Contact",
 			"legal": "Légal"
+		},
+		"contact": {
+			"location": "Reims, France",
+			"availability": "Disponible partout en France",
+			"response": "Réponse sous 24 à 48 h"
+		},
+		"legalLinks": {
+			"mentions": "Mentions légales",
+			"privacy": "Politique de confidentialité",
+			"cgv": "CGV"
 		}
 	},
 	"legal": {

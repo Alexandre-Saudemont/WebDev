@@ -465,11 +465,21 @@
 	},
 	"footer": {
 		"copyrights": "All rights reserved",
-		"madeWith": "Designed and developed by AS-WebDev",
+		"tagline": "Custom websites, e-commerce and web applications.",
 		"sections": {
 			"navigation": "Navigation",
-			"information": "Information",
+			"contact": "Contact",
 			"legal": "Legal"
+		},
+		"contact": {
+			"location": "Reims, France",
+			"availability": "Available anywhere in France",
+			"response": "Reply within 24–48 hours"
+		},
+		"legalLinks": {
+			"mentions": "Legal notice",
+			"privacy": "Privacy policy",
+			"cgv": "General terms of sale"
 		}
 	},
 	"legal": {

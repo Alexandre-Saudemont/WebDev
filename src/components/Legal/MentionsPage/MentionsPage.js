@@ -61,6 +61,7 @@ export default function MentionsPage() {
 				content: t('legal.mention.liability.description'),
 			},
 			{
+				id: 'confidentialite',
 				title: t('legal.mention.privacy.title'),
 				content: t('legal.mention.privacy.description'),
 			},

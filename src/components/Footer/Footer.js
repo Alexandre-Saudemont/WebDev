@@ -16,9 +16,16 @@ export default function Footer() {
     { href: '/contact', label: t('navigation.contact') },
   ];
 
+  const contactItems = [
+    t('footer.contact.location'),
+    t('footer.contact.availability'),
+    t('footer.contact.response'),
+  ];
+
   const legalLinks = [
-    { href: '/legal/mentions-legales', label: t('legal.title') },
-    { href: '/legal/conditions-generales-vente', label: t('legal.subtitle') },
+    { href: '/legal/mentions-legales', label: t('footer.legalLinks.mentions') },
+    { href: '/legal/mentions-legales#confidentialite', label: t('footer.legalLinks.privacy') },
+    { href: '/legal/conditions-generales-vente', label: t('footer.legalLinks.cgv') },
   ];
 
   return (
@@ -27,20 +34,23 @@ export default function Footer() {
         <div className="footer-brand">
           <Link href="/" className="footer-logo">
             <span className="footer-logo-badge">AS</span>
-            Alexandre Saudemont
+            AS-WebDev
           </Link>
-          <p className="footer-tagline">{t('homePage.subtitle')}</p>
-          <div className="footer-socials">
-            <a href="https://github.com/alexandre-saudemont" target="_blank" rel="noopener noreferrer" className="footer-social-link">GitHub</a>
-            <a href="https://www.linkedin.com/in/alexandre-saudemont-535481239/" target="_blank" rel="noopener noreferrer" className="footer-social-link">LinkedIn</a>
-            <a href="mailto:contact@as-webdev.com" className="footer-social-link">Email</a>
-          </div>
+          <p className="footer-tagline">{t('footer.tagline')}</p>
         </div>
 
         <div className="footer-nav-col">
           <h3 className="footer-col-title">{t('footer.sections.navigation')}</h3>
           {navLinks.map((l) => (
             <Link key={l.href} href={l.href} className="footer-nav-link">{l.label}</Link>
+          ))}
+        </div>
+
+        <div className="footer-nav-col">
+          <h3 className="footer-col-title">{t('footer.sections.contact')}</h3>
+          <a href="mailto:contact@as-webdev.com" className="footer-nav-link">contact@as-webdev.com</a>
+          {contactItems.map((item) => (
+            <span key={item} className="footer-contact-item">{item}</span>
           ))}
         </div>
 
@@ -53,10 +63,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <span>© {year} Alexandre Saudemont. {t('footer.copyrights')}</span>
-        <span className="footer-made" style={{ fontFamily: 'var(--font-mono, monospace)' }}>
-          {t('footer.madeWith')}
-        </span>
+        <span>© {year} AS-WebDev — {t('footer.copyrights')}</span>
       </div>
     </footer>
   );

@@ -465,11 +465,21 @@
 	},
 	"footer": {
 		"copyrights": "保留所有权利",
-		"madeWith": "由 AS-WebDev 设计和开发",
+		"tagline": "定制网站、电子商务与应用程序开发。",
 		"sections": {
 			"navigation": "导航",
-			"information": "信息",
+			"contact": "联系方式",
 			"legal": "法律"
+		},
+		"contact": {
+			"location": "兰斯（Reims），法国",
+			"availability": "服务覆盖法国全境",
+			"response": "24 至 48 小时内回复"
+		},
+		"legalLinks": {
+			"mentions": "法律声明",
+			"privacy": "隐私政策",
+			"cgv": "销售通用条款"
 		}
 	},
 	"legal": {

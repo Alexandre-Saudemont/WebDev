@@ -67,5 +67,5 @@
     grid-template-columns: 1fr;
     padding: 0 24px;
   }
-  .ah-portrait { max-width: 260px; aspect-ratio: 1; }
+  .ah-portrait { max-width: 260px; aspect-ratio: 1; margin: 0 auto; }
 }

@@ -47,6 +47,7 @@ export default function ServicesPreview() {
             <div
               key={i}
               data-reveal
+              data-spotlight
               className={`sp-card ${s.popular ? 'sp-card--popular' : ''}`}
               style={{ '--reveal-delay': `${i * 80}ms` }}
             >

@@ -12,6 +12,7 @@ export default function ServiceCard({ service, index }) {
     <div
       className={`sv-card ${isPopular ? 'sv-card--popular' : ''}`}
       data-reveal
+      data-spotlight
       style={{ '--reveal-delay': `${index * 90}ms` }}
     >
       {isPopular && (

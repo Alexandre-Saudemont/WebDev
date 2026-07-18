@@ -3,6 +3,8 @@ import I18nProvider from '@/components/I18nProvider';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
+import Spotlight from '@/components/Spotlight';
+import MobileCta from '@/components/MobileCta/MobileCta';
 
 export default function AppShell({lang, children}) {
 	return (
@@ -15,10 +17,12 @@ export default function AppShell({lang, children}) {
 			</div>
 			<div className='grain-overlay' aria-hidden='true' />
 			<ScrollReveal />
+			<Spotlight />
 			<div className='page-wrapper'>
 				<Header />
 				<main>{children}</main>
 				<Footer />
+				<MobileCta />
 			</div>
 		</I18nProvider>
 	);

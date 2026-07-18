@@ -159,6 +159,52 @@ a { color: inherit; text-decoration: none; }
   flex-shrink: 0;
 }
 
+/* Halo émeraude suivant le curseur (voir Spotlight.js).
+   isolation:isolate garantit que le ::before en z-index négatif reste
+   au-dessus du fond de la carte mais sous son contenu. */
+[data-spotlight] {
+  --spot-x: 50%;
+  --spot-y: 50%;
+  isolation: isolate;
+}
+
+@media (hover: hover) {
+  /* Halo intérieur diffus */
+  [data-spotlight]::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: radial-gradient(300px circle at var(--spot-x) var(--spot-y), rgba(0,230,118,.16), transparent 70%);
+    opacity: 0;
+    transition: opacity .35s;
+    pointer-events: none;
+  }
+
+  /* Liseré néon : le dégradé n'est visible que sur un anneau de 1px
+     (masque XOR entre la boîte pleine et la boîte intérieure) */
+  [data-spotlight]::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    border-radius: inherit;
+    padding: 1px;
+    background: radial-gradient(220px circle at var(--spot-x) var(--spot-y), rgba(0,230,118,.9), transparent 70%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity .35s;
+    pointer-events: none;
+  }
+
+  [data-spotlight]:hover::before,
+  [data-spotlight]:hover::after { opacity: 1; }
+}
+
 .gradient-heading {
   background: linear-gradient(180deg, #fff, #b6bcc2);
   -webkit-background-clip: text;

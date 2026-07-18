@@ -5,7 +5,7 @@ import ServicesPreview from './ServicesPreview/ServicesPreview';
 import ProjectsPreview from './ProjectsPreview/ProjectsPreview';
 import SkillsPreview from './SkillsPreview/SkillsPreview';
 import ProcessSection from './ProcessSection/ProcessSection';
-import AboutPreview from './AboutPreview/AboutPreview';
+import HomeFaq from './HomeFaq/HomeFaq';
 import HomeCtaSection from './HomeCtaSection/HomeCtaSection';
 
 export default function Hero() {
@@ -16,7 +16,7 @@ export default function Hero() {
       <ProjectsPreview />
       <SkillsPreview />
       <ProcessSection />
-      <AboutPreview />
+      <HomeFaq />
       <HomeCtaSection />
     </>
   );

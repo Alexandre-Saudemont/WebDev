@@ -1,11 +1,15 @@
 'use client';
 
 import Link from '@/components/LocaleLink';
+import { Check } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import './HeroSection.css';
 
 export default function HeroSection() {
   const { t } = useTranslation();
+
+  const reassuranceData = t('homePage.hero.reassurance', { returnObjects: true });
+  const reassurance = Array.isArray(reassuranceData) ? reassuranceData : [];
 
   return (
     <section className="hero-section">
@@ -31,6 +35,15 @@ export default function HeroSection() {
             {t('homePage.hero.cta.secondary')}
           </Link>
         </div>
+
+        <ul data-reveal className="hero-reassurance" style={{ transitionDelay: '80ms' }}>
+          {reassurance.map((item) => (
+            <li key={item}>
+              <Check size={13} strokeWidth={2.5} aria-hidden="true" />
+              {item}
+            </li>
+          ))}
+        </ul>
 
         <div data-reveal className="hero-tagline">
           {t('homePage.hero.tagline')}

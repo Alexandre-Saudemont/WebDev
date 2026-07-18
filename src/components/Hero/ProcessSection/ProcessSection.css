@@ -16,18 +16,89 @@
   margin-bottom: 56px;
 }
 
+.proc-track {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* La vague : centrée verticalement sur les orbs (centre orb = 28px, centre viewBox = 40px) */
+.proc-line {
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.proc-line-draw {
+  stroke-dasharray: 1400;
+  stroke-dashoffset: 1400;
+}
+
+.proc-line.in .proc-line-draw {
+  animation: proc-draw 2.2s ease-out .2s forwards;
+}
+
+.proc-line-flow {
+  stroke-dashoffset: 1500;
+}
+
+.proc-line.in .proc-line-flow {
+  animation: proc-flow 4.5s linear 1.4s infinite;
+}
+
+@keyframes proc-draw {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes proc-flow {
+  from { stroke-dashoffset: 1500; }
+  to { stroke-dashoffset: 0; }
+}
+
 .proc-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  max-width: 1000px;
-  margin: 0 auto;
+}
+
+.proc-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 8px;
+}
+
+/* Fond quasi opaque : masque la vague qui passe derrière l'icône */
+.proc-orb {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  color: var(--green);
+  background: radial-gradient(120% 100% at 0 0, rgba(0, 230, 118, .13), transparent 70%), rgba(9, 11, 12, .88);
+  border: 1px solid rgba(255, 255, 255, .09);
+  transition: border-color .25s, transform .3s;
+}
+
+.proc-step:hover .proc-orb {
+  border-color: rgba(0, 230, 118, .35);
+  transform: translateY(-2px);
 }
 
 .proc-num {
   font: 600 13px var(--font-mono, monospace);
   color: var(--green);
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 .proc-step-title {
@@ -40,12 +111,22 @@
   font-size: 13.5px;
   color: var(--text-muted);
   line-height: 1.6;
+  max-width: 230px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .proc-line.in .proc-line-draw {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+  .proc-line-flow { display: none; }
 }
 
 @media (max-width: 768px) {
   .proc-container { padding: 0 24px; }
-  .proc-grid { grid-template-columns: repeat(2, 1fr); }
+  .proc-grid { grid-template-columns: repeat(2, 1fr); gap: 32px 24px; }
   .proc-title { font-size: 28px; }
+  .proc-line { display: none; }
 }
 
 @media (max-width: 480px) {

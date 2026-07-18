@@ -1,10 +1,29 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import './ContactForm.css';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/myzbrkkl';
+
+function PillGroup({ name, label, hint, options, required = false }) {
+  return (
+    <fieldset className="cf-group">
+      <legend className="cf-legend">
+        {label}
+        {hint && <span className="cf-optional"> ({hint})</span>}
+      </legend>
+      <div className="cf-pills">
+        {options.map((opt) => (
+          <label key={opt} className="cf-pill">
+            <input type="radio" name={name} value={opt} required={required} />
+            <span>{opt}</span>
+          </label>
+        ))}
+      </div>
+    </fieldset>
+  );
+}
 
 export default function ContactForm() {
   const { t } = useTranslation();
@@ -15,6 +34,15 @@ export default function ContactForm() {
     const timer = setTimeout(() => setFormReady(true), 2000);
     return () => clearTimeout(timer);
   }, []);
+
+  const asArray = (key) => {
+    const data = t(key, { returnObjects: true });
+    return Array.isArray(data) ? data : [];
+  };
+
+  const projectTypes = useMemo(() => asArray('contact.form.qualify.projectTypeOptions'), [t]);
+  const budgets = useMemo(() => asArray('contact.form.qualify.budgetOptions'), [t]);
+  const timelines = useMemo(() => asArray('contact.form.qualify.timelineOptions'), [t]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -67,15 +95,24 @@ export default function ContactForm() {
         </label>
       </div>
 
-      <label className="cf-label">
-        {t('contact.form.fields.subject')}
-        <input
-          className="cf-field"
-          type="text"
-          name="subject"
-          placeholder={t('contact.form.fields.subjectPlaceholder')}
-        />
-      </label>
+      <PillGroup
+        name="projectType"
+        label={t('contact.form.qualify.projectType')}
+        options={projectTypes}
+        required
+      />
+      <PillGroup
+        name="budget"
+        label={t('contact.form.qualify.budget')}
+        hint={t('contact.form.qualify.optional')}
+        options={budgets}
+      />
+      <PillGroup
+        name="timeline"
+        label={t('contact.form.qualify.timeline')}
+        hint={t('contact.form.qualify.optional')}
+        options={timelines}
+      />
 
       <label className="cf-label">
         {t('contact.form.fields.message')}

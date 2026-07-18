@@ -6,7 +6,8 @@
 		"projects": "项目",
 		"contact": "联系我",
 		"openMenu": "打开菜单",
-		"closeMenu": "关闭菜单"
+		"closeMenu": "关闭菜单",
+		"quickQuote": "24小时内免费报价"
 	},
 	"homePage": {
 		"home": "首页",
@@ -25,8 +26,13 @@
 		"project": "我的作品",
 		"contact": "联系我",
 		"hero": {
-			"status": "可接单",
+			"status": "可承接新项目",
 			"tagline": "React · Next.js · TypeScript",
+			"reassurance": [
+				"24 小时内免费报价",
+				"无需承诺",
+				"全程一对一对接"
+			],
 			"subtitle": "热衷于打造精美数字体验的全栈开发者",
 			"description": "我创建现代化且高性能的网站，帮助企业发展其在线形象。",
 			"cta": {
@@ -80,6 +86,10 @@
 		},
 		"stack": {
 			"title": "技术栈"
+		},
+		"faq": {
+			"title": "常见问题",
+			"link": "查看全部问题"
 		},
 		"cta": {
 			"title": "有项目想法？",
@@ -425,6 +435,30 @@
 				"subjectPlaceholder": "网站创建、改版、报价、问题等...",
 				"message": "留言",
 				"messagePlaceholder": "请描述您的项目或请求..."
+			},
+			"qualify": {
+				"optional": "选填",
+				"projectType": "项目类型",
+				"projectTypeOptions": [
+					"展示型网站",
+					"电商网站",
+					"定制化网页应用",
+					"网站改版",
+					"其他"
+				],
+				"budget": "预算范围",
+				"budgetOptions": [
+					"低于 1 500 €",
+					"1 500 – 4 000 €",
+					"高于 4 000 €",
+					"待定"
+				],
+				"timeline": "期望周期",
+				"timelineOptions": [
+					"尽快",
+					"3 个月内",
+					"灵活"
+				]
 			},
 			"submit": "发送消息",
 			"submitting": "发送中...",

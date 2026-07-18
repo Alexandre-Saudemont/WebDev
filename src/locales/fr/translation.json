@@ -6,7 +6,8 @@
 		"projects": "Projets",
 		"contact": "Contact",
 		"openMenu": "Ouvrir le menu",
-		"closeMenu": "Fermer le menu"
+		"closeMenu": "Fermer le menu",
+		"quickQuote": "Devis gratuit sous 24h"
 	},
 	"homePage": {
 		"home": "Accueil",
@@ -25,8 +26,13 @@
 		"contact": "Contact",
 		"project": "Mes projets",
 		"hero": {
-			"status": "Disponible",
+			"status": "Disponible pour de nouveaux projets",
 			"tagline": "React · Next.js · TypeScript",
+			"reassurance": [
+				"Devis gratuit sous 24h",
+				"Sans engagement",
+				"Interlocuteur unique"
+			],
 			"subtitle": "Développeur full-stack freelance passionné par le web et le front-end (React, Next.js).",
 			"description": "Je conçois des sites web modernes, intuitifs et performants, pensés pour offrir une expérience utilisateur optimale.",
 			"cta": {
@@ -80,6 +86,10 @@
 		},
 		"stack": {
 			"title": "Stack technique"
+		},
+		"faq": {
+			"title": "Questions fréquentes",
+			"link": "Voir toutes les questions"
 		},
 		"cta": {
 			"title": "Un projet en tête ?",
@@ -425,6 +435,30 @@
 				"subjectPlaceholder": "Création de site, refonte, devis, question...",
 				"message": "Message",
 				"messagePlaceholder": "Décrivez votre projet ou votre demande..."
+			},
+			"qualify": {
+				"optional": "facultatif",
+				"projectType": "Type de projet",
+				"projectTypeOptions": [
+					"Site vitrine",
+					"E-commerce",
+					"Application sur mesure",
+					"Refonte de site",
+					"Autre"
+				],
+				"budget": "Budget estimé",
+				"budgetOptions": [
+					"Moins de 1 500 €",
+					"1 500 – 4 000 €",
+					"Plus de 4 000 €",
+					"À définir"
+				],
+				"timeline": "Délai souhaité",
+				"timelineOptions": [
+					"Dès que possible",
+					"D'ici 3 mois",
+					"Flexible"
+				]
 			},
 			"submit": "Envoyer le message",
 			"submitting": "Envoi en cours...",

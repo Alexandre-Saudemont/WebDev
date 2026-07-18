@@ -6,7 +6,8 @@
 		"projects": "Projects",
 		"contact": "Contact",
 		"openMenu": "Open menu",
-		"closeMenu": "Close menu"
+		"closeMenu": "Close menu",
+		"quickQuote": "Free quote within 24h"
 	},
 	"homePage": {
 		"home": "Home",
@@ -25,8 +26,13 @@
 		"contact": "Contact",
 		"project": "My Work",
 		"hero": {
-			"status": "Available",
+			"status": "Available for new projects",
 			"tagline": "React · Next.js · TypeScript",
+			"reassurance": [
+				"Free quote within 24h",
+				"No commitment",
+				"A single point of contact"
+			],
 			"subtitle": "Full-stack developer passionate about creating beautiful digital experiences",
 			"description": "I create modern and performant websites to help businesses develop their online presence.",
 			"cta": {
@@ -80,6 +86,10 @@
 		},
 		"stack": {
 			"title": "Tech stack"
+		},
+		"faq": {
+			"title": "Frequently asked questions",
+			"link": "See all questions"
 		},
 		"cta": {
 			"title": "Have a project in mind?",
@@ -425,6 +435,30 @@
 				"subjectPlaceholder": "Website creation, redesign, quote, question...",
 				"message": "Message",
 				"messagePlaceholder": "Describe your project or request..."
+			},
+			"qualify": {
+				"optional": "optional",
+				"projectType": "Project type",
+				"projectTypeOptions": [
+					"Showcase website",
+					"E-commerce",
+					"Custom web app",
+					"Website redesign",
+					"Other"
+				],
+				"budget": "Estimated budget",
+				"budgetOptions": [
+					"Under €1,500",
+					"€1,500 – €4,000",
+					"Over €4,000",
+					"Not sure yet"
+				],
+				"timeline": "Desired timeline",
+				"timelineOptions": [
+					"As soon as possible",
+					"Within 3 months",
+					"Flexible"
+				]
 			},
 			"submit": "Send Message",
 			"submitting": "Sending...",

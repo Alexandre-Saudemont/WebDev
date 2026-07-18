@@ -60,7 +60,7 @@ export default function ServicesPage() {
       </section>
 
       {/* FAQ */}
-      <section className="sv-faq-section">
+      <section className="sv-faq-section" id="faq">
         <div className="sv-faq-container">
           <h2 data-reveal className="sv-section-heading">{t('services.faq.title')}</h2>
           <div data-reveal className="sv-faq-list">

@@ -64,9 +64,15 @@
   line-height: 2;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
   color: #fff;
+}
+
+/* Même code visuel que .lang-btn.active : pilule verte discrète */
+.nav-link.active {
+  color: var(--green);
+  background: rgba(0,230,118,.1);
+  border-radius: 100px;
 }
 
 .nav-cta {
@@ -154,8 +160,8 @@
   transition: color .2s;
 }
 
-.mobile-link:hover,
-.mobile-link.active { color: #fff; }
+.mobile-link:hover { color: #fff; }
+.mobile-link.active { color: var(--green); }
 
 .mobile-cta {
   display: inline-flex;

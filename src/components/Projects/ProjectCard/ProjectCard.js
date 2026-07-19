@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
+import BrowserFrame from '@/components/BrowserFrame/BrowserFrame';
 import './ProjectCard.css';
 
 export default function ProjectCard({ project, index }) {
@@ -13,23 +14,25 @@ export default function ProjectCard({ project, index }) {
       data-reveal
       style={{ '--reveal-delay': `${index * 90}ms` }}
     >
-      <div className="pc-image">
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          className="pc-img"
-          sizes="(max-width: 768px) 100vw, 50vw"
-          style={{ objectPosition: project.imagePosition ?? 'center' }}
-        />
-        <div className="pc-overlay" />
-        {project.wip && (
-          <div className="pc-wip-badge">
-            <span className="pc-wip-dot" />
-            En cours
-          </div>
-        )}
-      </div>
+      <BrowserFrame url={project.link}>
+        <div className="pc-image">
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            className="pc-img"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            style={{ objectPosition: project.imagePosition ?? 'center' }}
+          />
+          <div className="pc-overlay" />
+          {project.wip && (
+            <div className="pc-wip-badge">
+              <span className="pc-wip-dot" />
+              En cours
+            </div>
+          )}
+        </div>
+      </BrowserFrame>
       <div className="pc-body">
         <div className="pc-tags">
           {project.tech.map((tag) => (

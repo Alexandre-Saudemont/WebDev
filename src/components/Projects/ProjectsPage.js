@@ -15,7 +15,7 @@ export default function ProjectsPage() {
 			const projectKeys = ['project2', 'project3', 'project4', 'project1'];
 			const projectsList = [];
 
-			const projectImages = ['/img/projects/taiwan.webp', '/img/projects/hsk.webp', '/img/projects/avenso.webp', '/img/projects/pokedeck.webp'];
+			const projectImages = ['/img/projects/taiwan-desktop.webp', '/img/projects/matchpair-desktop.webp', '/img/projects/avenso-desktop.webp', '/img/projects/pokedeck.webp'];
 			projectKeys.forEach((key, index) => {
 				const title = t(`projectsPage.${key}.title`);
 				const description = t(`projectsPage.${key}.description`);

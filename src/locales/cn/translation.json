@@ -371,6 +371,7 @@
 		}
 	},
 	"projectsPage": {
+		"viewProject": "查看项目 →",
 		"title": "项目",
 		"subtitle": "我的项目",
 		"description": "探索我的作品以及每个项目所使用的技术。",

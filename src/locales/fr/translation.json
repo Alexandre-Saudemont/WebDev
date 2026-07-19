@@ -371,6 +371,7 @@
 		}
 	},
 	"projectsPage": {
+		"viewProject": "Voir le projet →",
 		"title": "Projets",
 		"subtitle": "Mes Projets",
 		"description": "Découvrez mes réalisations et les technologies utilisées pour chaque projet",

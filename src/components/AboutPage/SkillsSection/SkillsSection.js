@@ -3,7 +3,7 @@
 import { useTranslation } from 'react-i18next';
 import './SkillsSection.css';
 
-const STACK = ['React', 'Next.js', 'TypeScript', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind', 'Vercel'];
+const STACK = ['React', 'Next.js', 'JavaScript', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind'];
 
 export default function SkillsSection({ title }) {
   const { t } = useTranslation();

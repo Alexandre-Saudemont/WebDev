@@ -3,7 +3,7 @@
 import { useTranslation } from 'react-i18next';
 import './SkillsPreview.css';
 
-const STACK = ['React', 'Next.js', 'JavaScript', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind', 'Vercel'];
+const STACK = ['React', 'Next.js', 'JavaScript', 'Node.js', 'PostgreSQL', 'Prisma', 'Tailwind'];
 
 export default function SkillsPreview() {
   const { t } = useTranslation();

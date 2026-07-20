@@ -39,6 +39,15 @@
   margin-bottom: 32px;
 }
 
+/* Mot-pivot du titre : sort du dégradé blanc/gris pour porter le bénéfice client */
+.hero-title-accent {
+  background: none;
+  -webkit-background-clip: initial;
+  background-clip: initial;
+  color: var(--green);
+  -webkit-text-fill-color: var(--green);
+}
+
 .hero-desc {
   margin: 0 auto;
   max-width: 600px;

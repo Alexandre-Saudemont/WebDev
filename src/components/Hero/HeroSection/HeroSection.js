@@ -20,7 +20,9 @@ export default function HeroSection() {
         </div>
 
         <h1 data-reveal className="hero-title">
-          {t('homePage.title')}
+          {t('homePage.hero.titleLead')}{' '}
+          <span className="hero-title-accent">{t('homePage.hero.titleAccent')}</span>{' '}
+          {t('homePage.hero.titleTrail')}
         </h1>
 
         <p data-reveal className="hero-desc">

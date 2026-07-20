@@ -11,7 +11,6 @@
 	},
 	"homePage": {
 		"home": "Accueil",
-		"title": "Création de sites web sur mesure pour entreprises et indépendants",
 		"subtitle": "Développeur full-stack passionné par les belles expériences numériques",
 		"typingTexts": [
 			"FullStack JavaScript ",
@@ -27,6 +26,9 @@
 		"project": "Mes projets",
 		"hero": {
 			"status": "Disponible pour de nouveaux projets",
+			"titleLead": "Un site qui",
+			"titleAccent": "inspire confiance",
+			"titleTrail": "dès la première visite",
 			"tagline": "React · Next.js · TypeScript",
 			"reassurance": [
 				"Devis gratuit sous 24h",
@@ -95,7 +97,10 @@
 			"title": "Un projet en tête ?",
 			"description": "Obtenez un devis gratuit et sans engagement sous 24h.",
 			"primary": "Discutons-en",
-			"email": "Email direct"
+			"email": "Email direct",
+			"formSubmit": "Recevoir mon devis gratuit →",
+			"formAlt": "Vous préférez un message détaillé ?",
+			"formAltLink": "Formulaire complet"
 		}
 	},
 	"aboutPage": {

@@ -11,7 +11,6 @@
 	},
 	"homePage": {
 		"home": "首页",
-		"title": "为企业及自由职业者定制网站开发",
 		"subtitle": "热衷于打造精美数字体验的全栈开发者",
 		"typingTexts": [
 			"全栈 JavaScript",
@@ -27,6 +26,9 @@
 		"contact": "联系我",
 		"hero": {
 			"status": "可承接新项目",
+			"titleLead": "让访客",
+			"titleAccent": "立刻产生信任",
+			"titleTrail": "的网站",
 			"tagline": "React · Next.js · TypeScript",
 			"reassurance": [
 				"24 小时内免费报价",
@@ -95,7 +97,10 @@
 			"title": "有项目想法？",
 			"description": "24小时内获取免费报价，无任何承诺。",
 			"primary": "立即联系",
-			"email": "直接发邮件"
+			"email": "直接发邮件",
+			"formSubmit": "获取免费报价 →",
+			"formAlt": "想留下更详细的信息？",
+			"formAltLink": "完整表单"
 		}
 	},
 	"aboutPage": {

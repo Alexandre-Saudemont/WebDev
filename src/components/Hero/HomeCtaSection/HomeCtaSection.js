@@ -1,7 +1,7 @@
 'use client';
 
-import Link from '@/components/LocaleLink';
 import { useTranslation } from 'react-i18next';
+import HomeContactForm from './HomeContactForm';
 import './HomeCtaSection.css';
 
 export default function HomeCtaSection() {
@@ -16,11 +16,8 @@ export default function HomeCtaSection() {
       <p data-reveal className="hcta-desc">
         {t('homePage.cta.description')}
       </p>
-      <div data-reveal className="hcta-actions">
-        <Link href="/contact" className="btn-primary hcta-btn">
-          {t('homePage.cta.primary')}
-        </Link>
-        <span className="hcta-email">contact@as-webdev.com</span>
+      <div data-reveal>
+        <HomeContactForm />
       </div>
     </section>
   );

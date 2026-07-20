@@ -11,7 +11,6 @@
 	},
 	"homePage": {
 		"home": "Home",
-		"title": "Custom website creation for businesses and freelancers",
 		"subtitle": "Full-stack developer passionate about creating beautiful digital experiences",
 		"typingTexts": [
 			"FullStack JavaScript",
@@ -27,6 +26,9 @@
 		"project": "My Work",
 		"hero": {
 			"status": "Available for new projects",
+			"titleLead": "A website that",
+			"titleAccent": "builds trust",
+			"titleTrail": "from the first visit",
 			"tagline": "React · Next.js · TypeScript",
 			"reassurance": [
 				"Free quote within 24h",
@@ -95,7 +97,10 @@
 			"title": "Have a project in mind?",
 			"description": "Get a free quote with no commitment within 24h.",
 			"primary": "Let's talk",
-			"email": "Direct email"
+			"email": "Direct email",
+			"formSubmit": "Get my free quote →",
+			"formAlt": "Prefer a detailed message?",
+			"formAltLink": "Full form"
 		}
 	},
 	"aboutPage": {

@@ -108,6 +108,23 @@
   margin-top: 36px;
 }
 
+.sp-payment-note {
+  font-size: 13.5px;
+  color: var(--text-light);
+  margin-bottom: 14px;
+}
+
+.sp-payment-note::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 9px;
+  border-radius: 50%;
+  background: var(--green);
+  vertical-align: middle;
+}
+
 .sp-link {
   font-size: 14.5px;
   color: var(--green);

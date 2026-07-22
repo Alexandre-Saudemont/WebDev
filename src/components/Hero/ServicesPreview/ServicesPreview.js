@@ -65,6 +65,7 @@ export default function ServicesPreview() {
         </div>
 
         <div data-reveal className="sp-footer">
+          <p className="sp-payment-note">{t('services.paymentNote')}</p>
           <Link href="/services" className="sp-link">
             {t('homePage.services.viewAll')} →
           </Link>

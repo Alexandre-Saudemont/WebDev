@@ -31,6 +31,7 @@ export default function ServicesPage() {
       <ServicesHeader />
       <ServicesGrid services={services} />
 
+      <p data-reveal className="sv-payment-note">{t('services.paymentNote')}</p>
       <p data-reveal className="sv-pricing-note">{t('services.pricingNote')}</p>
 
       <SupportSection />

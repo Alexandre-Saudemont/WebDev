@@ -194,6 +194,7 @@
 		"description": "Des offres claires, pensées pour votre retour sur investissement.",
 		"badge": "Mes offres",
 		"headerSubtitle": "Un devis gratuit sous 24h, un tarif annoncé avant de commencer, et un interlocuteur unique du début à la fin.",
+		"paymentNote": "Paiement échelonné : 30 % à la signature, 50 % en fin de développement, le solde à la livraison.",
 		"pricingNote": "Chaque projet est unique — ces tarifs sont des points de départ. Le devis final est établi après un premier échange. · TVA non applicable, art. 293 B du CGI.",
 		"popularLabel": "Le plus populaire",
 		"popularShort": "Populaire",
@@ -221,7 +222,7 @@
 				"title": "Business",
 				"description": "Pour les entreprises souhaitant un site plus complet et plus impactant.",
 				"priceLabel": "À partir de",
-				"price": "1 890 €",
+				"price": "1 690 €",
 				"priceSuffix": "",
 				"popular": true,
 				"features": [

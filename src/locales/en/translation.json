@@ -194,6 +194,7 @@
 		"description": "Clear offers designed for your return on investment.",
 		"badge": "My offers",
 		"headerSubtitle": "Free quote within 24h, price agreed before starting, and a single point of contact from start to finish.",
+		"paymentNote": "Staged payment: 30% on signing, 50% at the end of development, the balance on delivery.",
 		"pricingNote": "Every project is unique — these prices are starting points. The final quote is established after an initial discussion. · VAT not applicable (art. 293 B CGI).",
 		"popularLabel": "Most popular",
 		"popularShort": "Popular",
@@ -221,7 +222,7 @@
 				"title": "Business",
 				"description": "For businesses looking for a more complete and impactful website.",
 				"priceLabel": "Starting from",
-				"price": "€1,890",
+				"price": "€1,690",
 				"priceSuffix": "",
 				"popular": true,
 				"features": [

@@ -194,6 +194,7 @@
 		"description": "清晰的报价，专为您的投资回报而设计。",
 		"badge": "我的服务方案",
 		"headerSubtitle": "24小时内免费报价，开始前公开透明的定价，全程只有一个联络人。",
+		"paymentNote": "分期付款：签约时支付 30%，开发完成时支付 50%，交付时支付余款。",
 		"pricingNote": "每个项目都是独特的——这些价格只是起点。最终报价在初次沟通后确定。· 免征增值税（法国税法第293 B条）。",
 		"popularLabel": "最受欢迎",
 		"popularShort": "热门",
@@ -221,7 +222,7 @@
 				"title": "商务版",
 				"description": "适合希望拥有更完整、更具影响力网站的企业。",
 				"priceLabel": "起价",
-				"price": "¥14,200",
+				"price": "¥12,700",
 				"priceSuffix": "",
 				"popular": true,
 				"features": [

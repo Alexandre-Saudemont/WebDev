@@ -1,6 +1,7 @@
 'use client';
 
 import HeroSection from './HeroSection/HeroSection';
+import WhyMe from './WhyMe/WhyMe';
 import ServicesPreview from './ServicesPreview/ServicesPreview';
 import ProjectsPreview from './ProjectsPreview/ProjectsPreview';
 import SkillsPreview from './SkillsPreview/SkillsPreview';
@@ -12,10 +13,11 @@ export default function Hero() {
   return (
     <>
       <HeroSection />
-      <ServicesPreview />
+      <WhyMe />
       <ProjectsPreview />
       <SkillsPreview />
       <ProcessSection />
+      <ServicesPreview />
       <HomeFaq />
       <HomeCtaSection />
     </>

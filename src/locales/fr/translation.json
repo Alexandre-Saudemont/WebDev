@@ -79,6 +79,28 @@
 				"description": "Mise en ligne et accompagnement pour la suite"
 			}
 		},
+		"whyMe": {
+			"subtitle": "Ce qui fait la différence",
+			"title": "Travailler avec moi, concrètement",
+			"items": {
+				"contact": {
+					"title": "Un seul interlocuteur",
+					"desc": "Du premier échange à la mise en ligne, c'est moi qui suis votre projet."
+				},
+				"custom": {
+					"title": "Conçu pour vous",
+					"desc": "Pas de template recyclé : un site pensé autour de votre activité."
+				},
+				"reactivity": {
+					"title": "Devis sous 24h",
+					"desc": "Vous m'écrivez, je reviens vers vous vite et sans engagement."
+				},
+				"performance": {
+					"title": "Pensé performance",
+					"desc": "Chargement rapide, code propre et référencement soigné."
+				}
+			}
+		},
 		"services": {
 			"viewAll": "Voir le détail →"
 		},

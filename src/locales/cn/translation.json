@@ -79,6 +79,28 @@
 				"description": "在线发布和后续支持"
 			}
 		},
+		"whyMe": {
+			"subtitle": "与众不同之处",
+			"title": "与我合作，实际如此",
+			"items": {
+				"contact": {
+					"title": "全程唯一对接人",
+					"desc": "从初次沟通到网站上线，全程由我负责您的项目。"
+				},
+				"custom": {
+					"title": "为您量身打造",
+					"desc": "绝不套用模板：围绕您的业务专门设计。"
+				},
+				"reactivity": {
+					"title": "24小时内报价",
+					"desc": "您来信，我很快回复，且无需任何承诺。"
+				},
+				"performance": {
+					"title": "注重性能",
+					"desc": "加载迅速、代码整洁、精心优化搜索排名。"
+				}
+			}
+		},
 		"services": {
 			"viewAll": "查看详情 →"
 		},

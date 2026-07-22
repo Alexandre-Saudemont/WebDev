@@ -79,6 +79,28 @@
 				"description": "Online launch and support for the future"
 			}
 		},
+		"whyMe": {
+			"subtitle": "What makes the difference",
+			"title": "Working with me, in practice",
+			"items": {
+				"contact": {
+					"title": "One person, start to finish",
+					"desc": "From the first talk to going live, I'm the one handling your project."
+				},
+				"custom": {
+					"title": "Built around you",
+					"desc": "No recycled template: a site designed around your business."
+				},
+				"reactivity": {
+					"title": "Quote within 24h",
+					"desc": "You write to me, I get back to you fast and with no commitment."
+				},
+				"performance": {
+					"title": "Performance-minded",
+					"desc": "Fast loading, clean code and careful SEO."
+				}
+			}
+		},
 		"services": {
 			"viewAll": "View details →"
 		},

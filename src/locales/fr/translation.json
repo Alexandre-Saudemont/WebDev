@@ -503,7 +503,7 @@
 			},
 			"location": {
 				"title": "Localisation",
-				"value": "France - Télétravail uniquement."
+				"value": "Basé à Reims — disponible partout en France, à distance."
 			},
 			"availability": {
 				"title": "Disponibilité",
@@ -529,7 +529,7 @@
 			"legal": "Légal"
 		},
 		"contact": {
-			"location": "Reims, France",
+			"location": "Reims, Grand Est",
 			"availability": "Disponible partout en France",
 			"response": "Réponse sous 24 à 48 h"
 		},

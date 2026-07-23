@@ -13,15 +13,17 @@ const PATHS = {
 
 const CONTENT = {
 	fr: {
+		// Le mot-clé précède le nom : personne ne cherche « Alexandre Saudemont »,
+		// et Reims ouvre les recherches locales où la concurrence est atteignable
 		home: {
-			title: 'Alexandre Saudemont — Développeur web freelance',
+			title: 'Développeur web freelance à Reims — Alexandre Saudemont',
 			description:
-				'Je conçois des sites web et applications modernes, rapides et performants pour entreprises, startups et indépendants.',
+				'Développeur web freelance basé à Reims. Je conçois des sites web et applications modernes, rapides et performants pour entreprises, artisans et indépendants, dans le Grand Est et partout en France.',
 		},
 		services: {
 			title: 'Services & tarifs',
 			description:
-				'Création de sites vitrines, e-commerce et applications web sur mesure. Tarifs transparents, maintenance et hébergement en France inclus.',
+				'Création de sites vitrines, e-commerce et applications web sur mesure, depuis Reims. Tarifs transparents, maquette offerte avant engagement, hébergement en France inclus.',
 		},
 		projects: {
 			title: 'Projets',
@@ -30,11 +32,12 @@ const CONTENT = {
 		about: {
 			title: 'À propos',
 			description:
-				'Développeur web freelance passionné, je vous accompagne de la conception à la mise en ligne de votre projet web.',
+				'Développeur web freelance à Reims, je vous accompagne de la conception à la mise en ligne de votre projet web.',
 		},
 		contact: {
 			title: 'Contact',
-			description: 'Un projet de site web ou d’application ? Parlons-en. Devis gratuit et réponse rapide.',
+			description:
+				'Un projet de site web ou d’application ? Parlons-en. Développeur freelance à Reims, disponible dans toute la France. Devis gratuit sous 24 h.',
 		},
 	},
 	en: {

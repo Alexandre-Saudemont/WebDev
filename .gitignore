@@ -42,3 +42,6 @@ next-env.d.ts
 
 # maquettes de travail locales
 /design/
+
+# accès de déploiement (jamais commité)
+/scripts/deploy.config.ps1

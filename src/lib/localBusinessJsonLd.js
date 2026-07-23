@@ -32,7 +32,11 @@ const localBusinessJsonLd = {
 		{'@type': 'Country', name: 'France'},
 	],
 	knowsLanguage: ['fr', 'en', 'zh'],
-	sameAs: ['https://www.linkedin.com/in/alexandre-saudemont'],
+	// Relie le site à l'entité Google Business (identifiant stable /g/11zd4dlv2p)
+	sameAs: [
+		'https://www.google.com/search?kgmid=/g/11zd4dlv2p',
+		'https://www.linkedin.com/in/alexandre-saudemont-535481239/',
+	],
 };
 
 export default localBusinessJsonLd;

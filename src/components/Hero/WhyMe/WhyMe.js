@@ -1,6 +1,6 @@
 'use client';
 
-import { UserRound, PenTool, Clock, Gauge } from 'lucide-react';
+import { ShieldCheck, UserRound, Clock, Gauge } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import './WhyMe.css';
 
@@ -8,8 +8,9 @@ export default function WhyMe() {
   const { t } = useTranslation();
 
   const items = [
+    // La garantie ouvre la liste : c'est l'argument qui lève le plus de freins
+    { icon: ShieldCheck, key: 'mockup' },
     { icon: UserRound, key: 'contact' },
-    { icon: PenTool, key: 'custom' },
     { icon: Clock, key: 'reactivity' },
     { icon: Gauge, key: 'performance' },
   ];

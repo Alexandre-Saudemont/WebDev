@@ -52,12 +52,6 @@
 				}
 			}
 		},
-		"stats": {
-			"projects": "已完成项目",
-			"satisfaction": "对每个项目的专注投入",
-			"years": "年经验",
-			"support": "代码行数"
-		},
 		"process": {
 			"title": "工作流程",
 			"subtitle": "我的工作方式",
@@ -83,13 +77,13 @@
 			"subtitle": "与众不同之处",
 			"title": "与我合作，实际如此",
 			"items": {
+				"mockup": {
+					"title": "先看方案，再谈付款",
+					"desc": "我会先为您设计首页方案。如果不满意，您无需支付任何费用。"
+				},
 				"contact": {
 					"title": "全程唯一对接人",
 					"desc": "从初次沟通到网站上线，全程由我负责您的项目。"
-				},
-				"custom": {
-					"title": "为您量身打造",
-					"desc": "绝不套用模板：围绕您的业务专门设计。"
 				},
 				"reactivity": {
 					"title": "24小时内报价",

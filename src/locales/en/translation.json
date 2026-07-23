@@ -52,12 +52,6 @@
 				}
 			}
 		},
-		"stats": {
-			"projects": "Completed Projects",
-			"satisfaction": "Dedication to Every Project",
-			"years": "Years of Experience",
-			"support": "Lines of Code"
-		},
 		"process": {
 			"title": "Process",
 			"subtitle": "How I Work",
@@ -83,13 +77,13 @@
 			"subtitle": "What makes the difference",
 			"title": "Working with me, in practice",
 			"items": {
+				"mockup": {
+					"title": "See it before you pay",
+					"desc": "I design a mockup of your homepage first. If it doesn't win you over, you pay nothing."
+				},
 				"contact": {
 					"title": "One person, start to finish",
 					"desc": "From the first talk to going live, I'm the one handling your project."
-				},
-				"custom": {
-					"title": "Built around you",
-					"desc": "No recycled template: a site designed around your business."
 				},
 				"reactivity": {
 					"title": "Quote within 24h",

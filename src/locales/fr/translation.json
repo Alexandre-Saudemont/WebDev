@@ -52,12 +52,6 @@
 				}
 			}
 		},
-		"stats": {
-			"projects": "Projets réalisés",
-			"satisfaction": "Implication sur chaque projet",
-			"years": "Années d'expérience",
-			"support": "Lignes de code"
-		},
 		"process": {
 			"title": "Processus",
 			"subtitle": "Comment je travaille",
@@ -83,13 +77,13 @@
 			"subtitle": "Ce qui fait la différence",
 			"title": "Travailler avec moi, concrètement",
 			"items": {
+				"mockup": {
+					"title": "Vous jugez avant de payer",
+					"desc": "Je réalise une maquette de votre page d'accueil. Si elle ne vous convainc pas, vous ne payez rien."
+				},
 				"contact": {
 					"title": "Un seul interlocuteur",
 					"desc": "Du premier échange à la mise en ligne, c'est moi qui suis votre projet."
-				},
-				"custom": {
-					"title": "Conçu pour vous",
-					"desc": "Pas de template recyclé : un site pensé autour de votre activité."
 				},
 				"reactivity": {
 					"title": "Devis sous 24h",

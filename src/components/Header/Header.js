@@ -91,6 +91,7 @@ export default function Header() {
           <Link href="/contact" className="mobile-cta" onClick={() => setMenuOpen(false)}>
             {t('navigation.contact')}
           </Link>
+          <LanguageSelector lang={lang} pathname={pathname} />
         </div>
       )}
     </header>

@@ -181,4 +181,18 @@
   .lang-selector { display: none; }
   .burger { display: flex; }
   .mobile-menu { display: flex; }
+
+  /* Le sélecteur du header est masqué faute de place : on le reprend
+     dans le menu burger, avec des cibles tactiles confortables */
+  .mobile-menu .lang-selector {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .mobile-menu .lang-btn {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
 }

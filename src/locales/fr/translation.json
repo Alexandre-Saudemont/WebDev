@@ -278,7 +278,7 @@
 					"period": "/ mois",
 					"description": "L’essentiel pour garder votre site performant et sécurisé.",
 					"features": [
-						"Hébergement en France inclus",
+						"Hébergement européen inclus",
 						"Mise en ligne & déploiement",
 						"Sauvegardes automatiques",
 						"Mises à jour de sécurité",
@@ -325,7 +325,7 @@
 				"text": "Chaque application étant différente, la maintenance est étudiée au cas par cas selon les fonctionnalités, le trafic et le niveau d’accompagnement souhaité.",
 				"cta": "Devis personnalisé"
 			},
-			"note": "Tous les forfaits incluent l’hébergement en France, les sauvegardes automatiques ainsi que les mises à jour de sécurité. Le nom de domaine reste la propriété du client. Les forfaits sont sans engagement et peuvent évoluer selon les besoins de votre projet."
+			"note": "Tous les forfaits incluent l’hébergement européen, les sauvegardes automatiques ainsi que les mises à jour de sécurité. Le nom de domaine reste la propriété du client. Les forfaits sont sans engagement et peuvent évoluer selon les besoins de votre projet."
 		},
 		"process": {
 			"title": "Comment on travaille ensemble",
@@ -555,10 +555,11 @@
 			},
 			"hosting": {
 				"title": "Hébergement",
-				"prodiver": "Infomaniak Network SA",
-				"address": "Rue Eugène-Marziano 25, 1227 Genève, Suisse",
-				"phone": "+41 22 820 35 44",
-				"website": "https://www.infomaniak.com"
+				"prodiver": "OVH SAS",
+				"address": "2 rue Kellermann, 59100 Roubaix, France",
+				"location": "Londres, Royaume-Uni",
+				"phone": "1007",
+				"website": "https://www.ovhcloud.com"
 			},
 			"intellectual": {
 				"title": "Propriété intellectuelle",

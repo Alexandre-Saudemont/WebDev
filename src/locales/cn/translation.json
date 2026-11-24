@@ -278,7 +278,7 @@
 					"period": "/ 月",
 					"description": "保持网站高效与安全的基础服务。",
 					"features": [
-						"含法国主机托管",
+						"含欧洲主机托管",
 						"部署与上线",
 						"自动备份",
 						"安全更新",
@@ -325,7 +325,7 @@
 				"text": "每个应用各不相同，维护方案将根据功能、流量和所需支持程度逐案评估。",
 				"cta": "定制报价"
 			},
-			"note": "所有方案均包含法国主机托管、自动备份及安全更新。域名始终归客户所有。价格以人民币标示，按当期汇率折算，最终以欧元报价单为准。方案无合约限制，可随项目需求调整。"
+			"note": "所有方案均包含欧洲主机托管、自动备份及安全更新。域名始终归客户所有。价格以人民币标示，按当期汇率折算，最终以欧元报价单为准。方案无合约限制，可随项目需求调整。"
 		},
 		"process": {
 			"title": "我们如何合作",
@@ -555,10 +555,11 @@
 			},
 			"hosting": {
 				"title": "托管服务",
-				"prodiver": "Infomaniak Network SA",
-				"address": "瑞士日内瓦 1227，Eugène-Marziano 街 25号",
-				"phone": "+41 22 820 35 44",
-				"website": "https://www.infomaniak.com"
+				"prodiver": "OVH SAS",
+				"address": "法国鲁贝 59100，Kellermann 街 2号",
+				"location": "英国伦敦",
+				"phone": "1007",
+				"website": "https://www.ovhcloud.com"
 			},
 			"intellectual": {
 				"title": "知识产权",

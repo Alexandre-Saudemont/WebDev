@@ -278,7 +278,7 @@
 					"period": "/ month",
 					"description": "The essentials to keep your website fast and secure.",
 					"features": [
-						"Hosting in France included",
+						"European hosting included",
 						"Deployment & go-live",
 						"Automatic backups",
 						"Security updates",
@@ -325,7 +325,7 @@
 				"text": "Every application is different, so maintenance is assessed case by case based on features, traffic and the level of support you need.",
 				"cta": "Custom quote"
 			},
-			"note": "All plans include hosting in France, automatic backups and security updates. The domain name remains the client’s property. Plans are commitment-free and can evolve with your project’s needs."
+			"note": "All plans include European hosting, automatic backups and security updates. The domain name remains the client’s property. Plans are commitment-free and can evolve with your project’s needs."
 		},
 		"process": {
 			"title": "How we work together",
@@ -555,10 +555,11 @@
 			},
 			"hosting": {
 				"title": "Hosting",
-				"prodiver": "Infomaniak Network SA",
-				"address": "Rue Eugène-Marziano 25, 1227 Genève, Switzerland",
-				"phone": "+41 22 820 35 44",
-				"website": "https://www.infomaniak.com"
+				"prodiver": "OVH SAS",
+				"address": "2 rue Kellermann, 59100 Roubaix, France",
+				"location": "London, United Kingdom",
+				"phone": "1007",
+				"website": "https://www.ovhcloud.com"
 			},
 			"intellectual": {
 				"title": "Intellectual Property",

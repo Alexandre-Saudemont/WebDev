@@ -23,7 +23,7 @@ const CONTENT = {
 		services: {
 			title: 'Services & tarifs',
 			description:
-				'Création de sites vitrines, e-commerce et applications web sur mesure, depuis Reims. Tarifs transparents, maquette offerte avant engagement, hébergement en France inclus.',
+				'Création de sites vitrines, e-commerce et applications web sur mesure, depuis Reims. Tarifs transparents, maquette offerte avant engagement, hébergement européen inclus.',
 		},
 		projects: {
 			title: 'Projets',
@@ -49,7 +49,7 @@ const CONTENT = {
 		services: {
 			title: 'Services & Pricing',
 			description:
-				'Showcase websites, e-commerce and custom web applications. Transparent pricing, maintenance and hosting in France included.',
+				'Showcase websites, e-commerce and custom web applications. Transparent pricing, maintenance and European hosting included.',
 		},
 		projects: {
 			title: 'Projects',
@@ -71,7 +71,7 @@ const CONTENT = {
 		},
 		services: {
 			title: '服务与价格',
-			description: '企业展示网站、电商网站及定制网页应用开发。价格透明，含维护与法国主机托管。',
+			description: '企业展示网站、电商网站及定制网页应用开发。价格透明，含维护与欧洲主机托管。',
 		},
 		projects: {
 			title: '项目案例',

@@ -33,6 +33,7 @@ export default function MentionsPage() {
 				info: [
 					{label: 'Fournisseur', value: t('legal.mention.hosting.prodiver')},
 					{label: 'Adresse', value: t('legal.mention.hosting.address')},
+					{label: 'Lieu d’hébergement', value: t('legal.mention.hosting.location')},
 					{
 						label: 'Téléphone',
 						value: t('legal.mention.hosting.phone'),

@@ -1,3 +1,8 @@
+# Utilisé uniquement si le site est servi par Apache.
+# Le site est servi par nginx (Dockerfile déployé par Coolify), qui ignore ce
+# fichier : la configuration active est deploy/nginx.conf.
+# Toute modification doit être reportée des deux côtés.
+
 # --- Headers de sécurité ---
 <IfModule mod_headers.c>
 	# Empêche l'affichage du site dans une iframe (clickjacking)
@@ -12,7 +17,7 @@
 	# Désactive les API navigateur non utilisées
 	Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
 
-	# Force HTTPS pendant 1 an (Infomaniak fournit le SSL)
+	# Force HTTPS pendant 1 an
 	Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
 
 	# CSP : 'unsafe-inline' est requis par les scripts d'hydratation de Next.js en export statique

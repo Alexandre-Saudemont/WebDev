@@ -1,0 +1,9 @@
+node_modules
+.next
+out
+.git
+.claude
+design
+*.md
+.env*
+scripts/deploy.config.ps1
